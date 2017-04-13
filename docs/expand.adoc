@@ -1,0 +1,293 @@
+= Expand paths
+
+Expand from start node following the given relationships from min to max-level adhering to the label filters. Several variations exist:
+
+`apoc.path.expand()` expands paths using Cypher's default expansion modes (bfs and 'RELATIONSHIP_PATH' uniqueness)
+
+`apoc.path.expandConfig()` allows more flexible configuration of parameters and expansion modes
+
+`apoc.path.subgraphNodes()` expands to nodes of a subgraph
+
+`apoc.path.subgraphAll()` expands to nodes of a subgraph and also returns all relationships in the subgraph
+
+`apoc.path.spanningTree()` expands to paths collectively forming a spanning tree
+
+== Expand
+
+[source,cypher]
+----
+CALL apoc.path.expand(startNode <id>|Node, relationshipFilter, labelFilter, minLevel, maxLevel )
+
+CALL apoc.path.expand(startNode <id>|Node|list, 'TYPE|TYPE_OUT>|<TYPE_IN', '+YesLabel|-NoLabel|/TerminationLabel|>EndNodeLabel', minLevel, maxLevel ) yield path
+----
+
+==== Relationship Filter
+
+Syntax: `[<]RELATIONSHIP_TYPE1[>]|[<]RELATIONSHIP_TYPE2[>]|...`
+
+[opts=header,cols="m,m,a"]
+|===
+| input | type | direction
+| LIKES> | LIKES | OUTGOING
+| <FOLLOWS | FOLLOWS  | INCOMING
+| KNOWS  | KNOWS | BOTH
+|===
+
+==== Label Filter
+
+Syntax: `[+-/>]LABEL1|LABEL2|...`
+
+As of APOC 3.1.3.x multiple label filter operations are allowed.
+
+In prior versions, only one type of operation is allowed in the label filter (`+` or `-` or `/` or `>`, never more than one).
+
+With APOC 3.2.x.x, label filters will no longer apply to starting nodes of the expansion by default.
+
+[opts=header,cols="m,m,a"]
+|===
+| input | label | result
+| -Foe | Foe | blacklist filter - No node in the path will have a label in the blacklist.
+| +Friend | Friend | whitelist filter - All nodes in the path must have a label in the whitelist (exempting termination and end nodes, if using those filters).
+
+If no whitelist operator is present, all labels are considered whitelisted.
+| /Friend | Friend | termination filter - Only return paths up to a node of the given labels, and stop further expansion beyond it.
+
+Termination nodes do not have to respect the whitelist. Termination filtering takes precedence over end node filtering.
+| >Friend | Friend | end node filter - Only return paths up to a node of the given labels, but continue expansion to match on end nodes beyond it.
+
+End nodes do not have to respect the whitelist to be returned, but expansion beyond them is only allowed if the node has a label in the whitelist.
+|===
+
+
+.Examples
+
+[source,cypher]
+----
+call apoc.path.expand(1,"ACTED_IN>|PRODUCED<|FOLLOWS<","+Movie|Person",0,3)
+call apoc.path.expand(1,"ACTED_IN>|PRODUCED<|FOLLOWS<","-BigBrother",0,3)
+call apoc.path.expand(1,"ACTED_IN>|PRODUCED<|FOLLOWS<","",0,3)
+
+// combined with cypher:
+
+match (tom:Person {name :"Tom Hanks"})
+call apoc.path.expand(tom,"ACTED_IN>|PRODUCED<|FOLLOWS<","+Movie|Person",0,3) yield path as pp
+return pp;
+
+// or
+
+match (p:Person) with p limit 3
+call apoc.path.expand(p,"ACTED_IN>|PRODUCED<|FOLLOWS<","+Movie|Person",1,2) yield path as pp
+return p, pp
+----
+
+.Termination and end node label filter example
+
+We will first set a `:Western` label on some nodes.
+
+[source,cypher]
+----
+match (p:Person)
+where p.name in ['Clint Eastwood', 'Gene Hackman']
+set p:Western
+----
+
+Now expand from 'Keanu Reeves' to all `:Western` nodes with a termination filter:
+
+[source,cypher]
+----
+match (k:Person {name:'Keanu Reeves'})
+call apoc.path.expandConfig(k, {relationshipFilter:'ACTED_IN|PRODUCED|DIRECTED', labelFilter:'/Western', uniqueness: 'NODE_GLOBAL'}) yield path
+return path
+----
+
+The one returned path only matches up to 'Gene Hackman'.
+While there is a path from 'Keanu Reeves' to 'Clint Eastwood' through 'Gene Hackman', no further expansion is permitted through a node in the termination filter.
+
+If you didn't want to stop expansion on reaching 'Gene Hackman', and wanted 'Clint Eastwood' returned as well, use the end node filter  instead (`>`).
+
+.Label filter operator precedence and behavior
+
+As of APOC 3.1.3.x, multiple label filter operators are allowed at the same time.
+
+When processing the labelFilter string, once a filter operator is introduced, it remains the active filter until another filter supplants it.
+
+In the following example, `:Person` and `:Movie` labels are whitelisted, `:SciFi` is blacklisted, with `:Western` acting as an end node label, and `:Romance` acting as a termination label.
+
+`... labelFilter:'+Person|Movie|-SciFi|>Western|/Romance' ...`
+
+The precedence of operator evaluation isn't dependent upon their location in the labelFilter but is fixed:
+
+Blacklist filter `-`, termination filter `/`, end node filter `>`, whitelist filter `+`.
+
+The consequences are as follows:
+
+* No blacklisted label `-` will ever be present in the nodes of paths returned, no matter if the same label (or another label of a node with a blacklisted label) is included in another filter list.
+* If the termination filter `/` or end node filter `>` is used, then only paths up to nodes with those labels will be returned as results. These end nodes are exempt from the whitelist filter.
+* If a node is a termination node `/`, no further expansion beyond the node will occur.
+* If a node is an end node `>`, expansion beyond that node will only occur if the end node has a label in the whitelist. This is to prevent returning paths to nodes where a node on that path violates the whitelist.
+* The whitelist only applies to nodes up to but not including end nodes from the termination or end node filters. If no end node or termination node operators are present, then the whitelist applies to all nodes of the path.
+* If no whitelist operators are present in the labelFilter, this is treated as if all labels are whitelisted.
+* If `filterStartNode` is false (which will be default in APOC 3.2.x.x), then the start node is exempt from the label filter.
+
+
+== Expand with Config
+
+----
+apoc.path.expandConfig(startNode <id>Node/list, {config}) yield path expands from start nodes using the given configuration and yields the resulting paths
+----
+
+Takes an additional map parameter, `config`, to provide configuration options:
+
+.Config
+----
+{minLevel: -1|number,
+ maxLevel: -1|number,
+ relationshipFilter: '[<]RELATIONSHIP_TYPE1[>]|[<]RELATIONSHIP_TYPE2[>]|...',
+ labelFilter: '[+-/>]LABEL1|LABEL2|...',
+ uniqueness: RELATIONSHIP_PATH|NONE|NODE_GLOBAL|NODE_LEVEL|NODE_PATH|NODE_RECENT|
+             RELATIONSHIP_GLOBAL|RELATIONSHIP_LEVEL|RELATIONSHIP_RECENT,
+ bfs: true|false,
+ filterStartNode: true|false,
+ limit: -1|number}
+----
+
+.Start Node and label filters
+The config parameter `filterStartNode` defines whether or not the labelFilter applies to the start node of the expansion.
+
+Use `filterStartNode = false` when you want your label filter to only apply to all other nodes in the path, ignoring the start node.
+
+`filterStartNode` defaults for all path expander procedures:
+
+[opts=header,cols="a,a"]
+|===
+| version |  default
+| >= APOC 3.2.x.x | filterStartNode = false
+| < APOC 3.2.x.x | filterStartNode = true
+|===
+
+.Limit
+
+Only when using the termination label filter `/` or end node filter `>`, you can use the `limit` config parameter to limit the number of paths returned.
+
+When using `bfs:true` (which is the default for all expand procedures), this has the effect of returning paths to the `n` nearest nodes with labels in the termination or end node filter, where `n` is the limit given.
+
+The default limit value, `-1`, means no limit.
+
+If you want to make sure multiple paths should never match to the same node, use `expandConfig()` with 'NODE_GLOBAL' uniqueness, or any expand procedure which already uses this uniqueness
+(`subgraphNodes()`, `subgraphAll()`, and `spanningTree()`).
+
+.Uniqueness
+
+Uniqueness of nodes and relationships guides the expansion and the results returned.
+Uniqueness is only configurable using `expandConfig()`.
+
+`subgraphNodes()`, `subgraphAll()`, and `spanningTree()` all use 'NODE_GLOBAL' uniqueness.
+
+[opts=header,cols="m,a"]
+|===
+| value | description
+| RELATIONSHIP_PATH | For each returned node there's a (relationship wise) unique path from the start node to it. This is Cypher's default expansion mode.
+| NODE_GLOBAL | A node cannot be traversed more than once. This is what the legacy traversal framework does.
+| NODE_LEVEL | Entities on the same level are guaranteed to be unique.
+| NODE_PATH | For each returned node there's a unique path from the start node to it.
+| NODE_RECENT | This is like NODE_GLOBAL, but only guarantees uniqueness among the most recent visited nodes, with a configurable count. Traversing a huge graph is quite memory intensive in that it keeps track of all the nodes it has visited.
+For huge graphs a traverser can hog all the memory in the JVM, causing OutOfMemoryError. Together with this Uniqueness you can supply a count, which is the number of most recent visited nodes. This can cause a node to be visited more than once, but scales infinitely.
+| RELATIONSHIP_GLOBAL | A relationship cannot be traversed more than once, whereas nodes can.
+| RELATIONSHIP_LEVEL | Entities on the same level are guaranteed to be unique.
+| RELATIONSHIP_RECENT | Same as for NODE_RECENT, but for relationships.
+| NONE | No restriction (the user will have to manage it)
+|===
+
+.Examples
+
+You can turn this cypher query:
+
+[source,cypher]
+----
+MATCH (user:User) WHERE user.id = 460
+MATCH (user)-[:RATED]->(movie)<-[:RATED]-(collab)-[:RATED]->(reco)
+RETURN count(*);
+----
+
+into this procedure call, with changed semantics for uniqueness and bfs (which is Cypher's expand mode)
+
+[source,cypher]
+----
+MATCH (user:User) WHERE user.id = 460
+CALL apoc.path.expandConfig(user,{relationshipFilter:"RATED",minLevel:3,maxLevel:3,bfs:false,uniqueness:"NONE"}) YIELD path
+RETURN count(*);
+----
+
+== Expand to nodes in a subgraph
+
+----
+apoc.path.subgraphNodes(startNode <id>Node/list, {maxLevel, relationshipFilter, labelFilter, bfs:true, filterStartNode:true, limit:-1}) yield node
+----
+
+Expand to subgraph nodes reachable from the start node following relationships to max-level adhering to the label filters.
+
+Accepts the same `config` values as in `expandConfig()`, though `uniqueness` and `minLevel` are not configurable.
+
+.Examples
+
+Expand to all nodes of a connected subgraph:
+
+[source,cypher]
+----
+MATCH (user:User) WHERE user.id = 460
+CALL apoc.path.subgraphNodes(user, {}) YIELD node
+RETURN node;
+----
+
+Expand to all nodes reachable by :FRIEND relationships:
+
+[source,cypher]
+----
+MATCH (user:User) WHERE user.id = 460
+CALL apoc.path.subgraphNodes(user, {relationshipFilter:'FRIEND'}) YIELD node
+RETURN node;
+----
+
+== Expand to a subgraph and return all nodes and relationships within the subgraph
+
+----
+apoc.path.subgraphAll(startNode <id>Node/list, {maxLevel, relationshipFilter, labelFilter, bfs:true, filterStartNode:true, limit:-1}) yield nodes, relationships
+----
+
+Expand to subgraph nodes reachable from the start node following relationships to max-level adhering to the label filters.
+Returns the collection of nodes in the subgraph, and the collection of relationships between all subgraph nodes.
+
+Accepts the same `config` values as in `expandConfig()`, though `uniqueness` and `minLevel` are not configurable.
+
+.Example
+
+Expand to local subgraph (and all its relationships) within 4 traversals:
+
+[source,cypher]
+----
+MATCH (user:User) WHERE user.id = 460
+CALL apoc.path.subgraphAll(user, {maxLevel:4}) YIELD nodes, relationships
+RETURN nodes, relationships;
+----
+
+== Expand a spanning tree
+
+----
+apoc.path.spanningTree(startNode <id>Node/list, {maxLevel, relationshipFilter, labelFilter, bfs:true, filterStartNode:true, limit:-1}) yield path
+----
+
+Expand a spanning tree reachable from start node following relationships to max-level adhering to the label filters.
+The paths returned collectively form a spanning tree.
+
+Accepts the same `config` values as in `expandConfig()`, though `uniqueness` and `minLevel` are not configurable.
+
+.Example
+
+Expand a spanning tree of all contiguous :User nodes:
+
+[source,cypher]
+----
+MATCH (user:User) WHERE user.id = 460
+CALL apoc.path.spanningTree(user, {labelFilter:'+User'}) YIELD path
+RETURN path;
+----

@@ -1,0 +1,323 @@
+= Load JDBC
+
+== Overview: Database Integration
+
+Data Integration is an important topic.
+Reading data from relational databases to create and augment data models is a very helpful exercise.
+
+With `apoc.load.jdbc` you can access any database that provides a JDBC driver, and execute queries whose results are turned into streams of rows. 
+Those rows can then be used to update or create graph structures.
+
+[separator=¦,opts=header,cols="1,1m,5"]
+|===
+include::../build/generated-documentation/apoc.load.csv[lines=1..4]
+|===
+
+image::{img}/apoc-jdbc-northwind-load.jpg[width=600]
+
+//include::overview.adoc[tags=jdbc,leveloffset=-1]
+////
+[cols="1m,5"]
+|===
+| CALL apoc.load.jdbc('jdbc:derby:derbyDB','PERSON') YIELD row CREATE (:Person {name:row.name}) | load from relational database, either a full table or a sql statement
+| CALL apoc.load.jdbc('jdbc:derby:derbyDB','SELECT * FROM PERSON WHERE AGE > 18') | load from relational database, either a full table or a sql statement
+| CALL apoc.load.driver('org.apache.derby.jdbc.EmbeddedDriver') | register JDBC driver of source database
+|===
+////
+
+To simplify the JDBC URL syntax and protect credentials, you can configure aliases in `conf/neo4j.conf`:
+
+----
+apoc.jdbc.myDB.url=jdbc:derby:derbyDB
+----
+
+----
+CALL apoc.load.jdbc('jdbc:derby:derbyDB','PERSON')
+
+becomes
+
+CALL apoc.load.jdbc('myDB','PERSON')
+----
+
+The 3rd value in the `apoc.jdbc.<alias>.url=` effectively defines an alias to be used in  `apoc.load.jdbc('<alias>',....`
+
+
+== MySQL Example
+
+Northwind is a common example set for relational databases, which is also covered in our import guides, e.g. pass:a[<a play-topic='northwind graph'>:play northwind graph</a>] in the Neo4j browser.
+
+=== MySQL Northwind Data
+
+----
+select count(*) from products;
++----------+
+| count(*) |
++----------+
+|       77 |
++----------+
+1 row in set (0,00 sec)
+----
+
+----
+describe products;
++-----------------+---------------+------+-----+---------+----------------+
+| Field           | Type          | Null | Key | Default | Extra          |
++-----------------+---------------+------+-----+---------+----------------+
+| ProductID       | int(11)       | NO   | PRI | NULL    | auto_increment |
+| ProductName     | varchar(40)   | NO   | MUL | NULL    |                |
+| SupplierID      | int(11)       | YES  | MUL | NULL    |                |
+| CategoryID      | int(11)       | YES  | MUL | NULL    |                |
+| QuantityPerUnit | varchar(20)   | YES  |     | NULL    |                |
+| UnitPrice       | decimal(10,4) | YES  |     | 0.0000  |                |
+| UnitsInStock    | smallint(2)   | YES  |     | 0       |                |
+| UnitsOnOrder    | smallint(2)   | YES  |     | 0       |                |
+| ReorderLevel    | smallint(2)   | YES  |     | 0       |                |
+| Discontinued    | bit(1)        | NO   |     | b'0'    |                |
++-----------------+---------------+------+-----+---------+----------------+
+10 rows in set (0,00 sec)
+----
+
+== Load JDBC Examples
+
+.Load the JDBC driver
+[source,cypher]
+----
+cypher CALL apoc.load.driver("com.mysql.jdbc.Driver");
+----
+
+.Count rows in products table
+[source,cypher]
+----
+with "jdbc:mysql://localhost:3306/northwind?user=root" as url
+cypher CALL apoc.load.jdbc(url,"products") YIELD row
+RETURN count(*);
+----
+
+----
++----------+
+| count(*) |
++----------+
+| 77       |
++----------+
+1 row
+23 ms
+----
+
+.Return row from products table
+[source,cypher]
+----
+with "jdbc:mysql://localhost:3306/northwind?user=root" as url
+cypher CALL apoc.load.jdbc(url,"products") YIELD row
+RETURN row limit 1;
+----
+
+----
++--------------------------------------------------------------------------------+
+| row                                                                            |
++--------------------------------------------------------------------------------+
+| {UnitPrice -> 18.0000, UnitsOnOrder -> 0, CategoryID -> 1, UnitsInStock -> 39} |
++--------------------------------------------------------------------------------+
+1 row
+10 ms
+----
+
+image::{img}/apoc-load-jdbc.jpg[width=800]
+
+// apoc.load.jdbc('jdbc:derby:derbyDB/key','PERSON' || 'SELECT * FROM PERSON WHERE AGE > 18') YIELD row CREATE (:Person {name:row.name}) load from relational database, either a full table or a sql statement
+
+== Load data in transactional batches
+
+You can load data from jdbc and create/update the graph using the query results in batches (and in parallel).
+
+[source,cypher]
+----
+CALL apoc.periodic.iterate('
+call apoc.load.jdbc("jdbc:mysql://localhost:3306/northwind?user=root","company")',
+'CREATE (p:Person) SET p += value', {batchSize:10000, parallel:true})
+RETURN batches, total
+----
+
+== Cassandra Example
+
+Setup Song database as initial dataset
+
+----
+curl -OL https://raw.githubusercontent.com/neo4j-contrib/neo4j-cassandra-connector/master/db_gen/playlist.cql
+curl -OL https://raw.githubusercontent.com/neo4j-contrib/neo4j-cassandra-connector/master/db_gen/artists.csv
+curl -OL https://raw.githubusercontent.com/neo4j-contrib/neo4j-cassandra-connector/master/db_gen/songs.csv
+$CASSANDRA_HOME/bin/cassandra
+$CASSANDRA_HOME/bin/cqlsh -f playlist.cql
+----
+
+Download the https://github.com/adejanovski/cassandra-jdbc-wrapper#installing[Cassandra JDBC Wrapper], and put it into your `$NEO4J_HOME/plugins` directory.
+Add this config option to `$NEO4J_HOME/conf/neo4j.conf` to make it easier to interact with the cassandra instance.
+
+.Add to conf/neo4j.conf
+----
+apoc.jdbc.cassandra_songs.url=jdbc:cassandra://localhost:9042/playlist
+----
+
+Restart the server.
+
+Now you can inspect the data in Cassandra with.
+
+[source,cypher]
+----
+CALL apoc.load.jdbc('cassandra_songs','artists_by_first_letter') yield row
+RETURN count(*);
+----
+
+----
+╒════════╕
+│count(*)│
+╞════════╡
+│3605    │
+└────────┘
+----
+
+
+
+[source,cypher]
+----
+CALL apoc.load.jdbc('cassandra_songs','artists_by_first_letter') yield row
+RETURN row LIMIT 5;
+----
+
+[source,cypher]
+----
+CALL apoc.load.jdbc('cassandra_songs','artists_by_first_letter') yield row
+RETURN row.first_letter, row.artist LIMIT 5;
+----
+
+----
+╒════════════════╤═══════════════════════════════╕
+│row.first_letter│row.artist                     │
+╞════════════════╪═══════════════════════════════╡
+│C               │C.W. Stoneking                 │
+├────────────────┼───────────────────────────────┤
+│C               │CH2K                           │
+├────────────────┼───────────────────────────────┤
+│C               │CHARLIE HUNTER WITH LEON PARKER│
+├────────────────┼───────────────────────────────┤
+│C               │Calvin Harris                  │
+├────────────────┼───────────────────────────────┤
+│C               │Camané                         │
+└────────────────┴───────────────────────────────┘
+----
+
+Let's create some graph data, we have a look at the track_by_artist table, which contains about 60k records.
+
+[source,cypher]
+----
+CALL apoc.load.jdbc('cassandra_songs','track_by_artist') yield row RETURN count(*);
+----
+
+[source,cypher]
+----
+CALL apoc.load.jdbc('cassandra_songs','track_by_artist') yield row
+RETURN row LIMIT 5;
+----
+
+[source,cypher]
+----
+CALL apoc.load.jdbc('cassandra_songs','track_by_artist') yield row
+RETURN row.track_id, row.track_length_in_seconds, row.track, row.music_file, row.genre, row.artist, row.starred LIMIT 2;
+----
+
+[.small]
+----
+╒════════════════════════════════════╤══════╤════════════════╤══════════════════╤═════════╤════════════════════════════╤═══════════╕
+│row.track_id                        │length│row.track       │row.music_file    │row.genre│row.artist                  │row.starred│
+╞════════════════════════════════════╪══════╪════════════════╪══════════════════╪═════════╪════════════════════════════╪═══════════╡
+│c0693b1e-0eaa-4e81-b23f-b083db303842│219   │1913 Massacre   │TRYKHMD128F934154C│folk     │Woody Guthrie & Jack Elliott│false      │
+├────────────────────────────────────┼──────┼────────────────┼──────────────────┼─────────┼────────────────────────────┼───────────┤
+│7d114937-0bc7-41c7-8e0c-94b5654ac77f│178   │Alabammy Bound  │TRMQLPV128F934152B│folk     │Woody Guthrie & Jack Elliott│false      │
+└────────────────────────────────────┴──────┴────────────────┴──────────────────┴─────────┴────────────────────────────┴───────────┘
+----
+
+Let's create some indexes and constraints, note that other indexes and constraints will be dropped by this.
+
+[source,cypher]
+----
+CALL apoc.schema.assert(
+  {Track:['title','length']},
+  {Artist:['name'],Track:['id'],Genre:['name']});
+----
+
+----
+╒════════════╤═══════╤══════╤═══════╕
+│label       │key    │unique│action │
+╞════════════╪═══════╪══════╪═══════╡
+│Track       │title  │false │CREATED│
+├────────────┼───────┼──────┼───────┤
+│Track       │length │false │CREATED│
+├────────────┼───────┼──────┼───────┤
+│Artist      │name   │true  │CREATED│
+├────────────┼───────┼──────┼───────┤
+│Genre       │name   │true  │CREATED│
+├────────────┼───────┼──────┼───────┤
+│Track       │id     │true  │CREATED│
+└────────────┴───────┴──────┴───────┘
+----
+
+// TODO add some nice queries, create graph data from cassandra
+
+
+[source,cypher]
+----
+CALL apoc.load.jdbc('cassandra_songs','track_by_artist') yield row
+MERGE (a:Artist {name:row.artist})
+MERGE (g:Genre {name:row.genre})
+CREATE (t:Track {id:toString(row.track_id), title:row.track, length:row.track_length_in_seconds})
+CREATE (a)-[:PERFORMED]->(t)
+CREATE (t)-[:GENRE]->(g);
+----
+
+----
+Added 63213 labels, created 63213 nodes, set 182413 properties, created 119200 relationships, statement executed in 40076 ms.
+----
+
+== LOAD JDBC - Resources
+
+To use other JDBC drivers use these download links and JDBC URL.
+Put the JDBC driver into the `$NEO4J_HOME/plugins` directory and configure the JDBC-URL in `$NEO4J_HOME/conf/neo4j.conf` with `apoc.jdbc.<alias>.url=<jdbc-url>`
+
+[options="header",cols="a,3m,a"]
+|===
+|Database | JDBC-URL | Driver Source
+
+|MySQL 
+|jdbc:mysql://<hostname>:<port/3306>/<database>?user=<user>&password=<pass>
+|http://dev.mysql.com/downloads/connector/j/[MySQL Driver]
+
+|Postgres
+|jdbc:postgresql://<hostname>/<database>?user=<user>&password=<pass>
+|https://jdbc.postgresql.org/download.html[PostgresSQL JDBC Driver]
+
+|Oracle
+|jdbc:oracle:thin:<user>/<pass>@<host>:<port>/<service_name>
+|http://www.oracle.com/technetwork/database/features/jdbc/index.html[Oracle JDBC Driver]
+
+|MS SQLServer
+|jdbc:sqlserver://;servername=<servername>;databaseName=<database>;user=<user>;password=<pass>
+|https://www.microsoft.com/en-us/download/details.aspx?id=11774[SQLServer Driver]
+
+|IBM DB2
+|jdbc:db2://<host>:<port/5021>/<database>:user=<user>;password=<pass>;
+|http://www-01.ibm.com/support/docview.wss?uid=swg21363866[DB2 Driver]
+
+|Derby
+|jdbc:derby:derbyDB
+|Included in JDK6-8
+
+|Cassandra 
+|jdbc:cassandra://<host>:<port/9042>/<database>
+|link:https://github.com/adejanovski/cassandra-jdbc-wrapper#installing[Cassandra JDBC Wrapper]
+|===
+
+There are a number of blog posts / examples that details usage of apoc.load.jdbc
+
+* https://jesusbarrasa.wordpress.com/2016/09/30/quickgraph4-explore-your-browser-history-in-neo4j/[Explore your browser history in Neo4j]
+* https://blog.knoldus.com/2016/09/12/neo4j-with-scala-migrate-data-from-other-database-to-neo4j/[Neo4j With Scala : Migrate Data From Other Database to Neo4j]
+* 
+* https://neo4j.com/blog/apoc-database-integration-import-export-cypher/[APOC: Database Integration, Import and Export with Awesome Procedures On Cypher]

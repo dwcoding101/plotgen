@@ -1,0 +1,213 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath "io.codearte.gradle.nexus:gradle-nexus-staging-plugin:0.5.3"
+    }
+}
+
+plugins {
+    id 'java'
+    id 'idea'
+    id 'com.github.johnrengelman.shadow' version '1.2.3'
+    id "org.asciidoctor.convert" version "1.5.3"
+    id "com.bmuschko.nexus" version "2.3.1"
+}
+asciidoctorj {
+    version = '1.5.5'
+}
+apply plugin: 'io.codearte.nexus-staging'
+
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+idea {
+    project {
+        ext.jdkName = '1.8'
+        ext.languageLevel = '1.8'
+    }
+}
+
+group = 'org.neo4j.procedure'
+version = '3.1.3.6'
+archivesBaseName = 'apoc'
+
+description = """neo4j-apoc-procedures"""
+
+ext {
+    neo4jVersion = "3.1.3"
+}
+
+repositories {
+     mavenLocal()
+     mavenCentral()
+     maven { url "http://oss.sonatype.org/content/repositories/snapshots/" }
+//     maven { url "https://m2.neo4j.org/content/groups/everything/" }
+}
+
+compileJava {
+// type¦qualified name¦signature¦description¦execution mode¦location¦deprecated by
+    options.compilerArgs += [
+            "-AIgnoreContextWarnings",
+            "-AGeneratedDocumentationPath=" + projectDir + "/build/generated-documentation",
+            "-ADocumentation.FieldDelimiter=¦",
+            "-ADocumentation.ExportedHeaders=type¦qualified name¦description",
+            "-ADocumentation.QuotedFields=false",
+            "-ADocumentation.DelimitedFirstField=true",
+            "-ADocumentation.ExportGrouping=SINGLE,PACKAGE"]
+}
+
+dependencies {
+    compile group: 'commons-codec', name: 'commons-codec', version:'1.9'
+    compile 'com.jayway.jsonpath:json-path:2.2.0'
+    compileOnly group: 'net.biville.florent', name: 'neo4j-sproc-compiler', version:'1.2-SNAPSHOT'
+
+    testCompile group: 'junit', name: 'junit', version:'4.12'
+    testCompile group: 'org.hamcrest', name: 'hamcrest-library', version:'1.3'
+    testCompile group: 'org.apache.derby', name: 'derby', version:'10.12.1.1'
+    testCompile group: 'org.neo4j', name: 'neo4j-enterprise', version:neo4jVersion
+    testCompile group: 'org.neo4j', name: 'neo4j-causal-clustering', version:neo4jVersion, classifier: "tests"
+    testCompile group: 'org.neo4j', name: 'neo4j-kernel', version:neo4jVersion, classifier: "tests"
+    testCompile group: 'org.neo4j', name: 'neo4j-io', version:neo4jVersion, classifier: "tests"
+
+    compileOnly 'org.mongodb:mongodb-driver:3.2.2'
+    testCompile 'org.mongodb:mongodb-driver:3.2.2'
+
+    compileOnly 'com.couchbase.client:java-client:2.3.1'
+    testCompile 'com.couchbase.client:java-client:2.3.1'
+
+    compileOnly(group: 'org.neo4j', name: 'neo4j', version:neo4jVersion)
+    compileOnly(group: 'org.neo4j', name: 'neo4j-enterprise', version:neo4jVersion)
+    compileOnly(group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version:'1.9.7')
+    testCompile(group: 'org.codehaus.jackson', name: 'jackson-mapper-asl', version:'1.9.7')
+    compileOnly(group: 'org.ow2.asm', name: 'asm', version:'5.0.2')
+    compile group: 'com.github.javafaker', name: 'javafaker', version:'0.10'
+}
+
+test {
+    systemProperties 'user.language': 'en', 'user.country': 'US'
+    testLogging {
+        events "failed"
+        exceptionFormat "short"
+    }
+    if (System.env.TRAVIS !=null) {
+        minHeapSize = "128m"
+        maxHeapSize = "512m"
+    }
+}
+
+javadoc {
+    failOnError = false
+    options.addStringOption('Xdoclint:none', '-quiet')
+}
+
+shadowJar {
+  dependencies {
+    include(dependency('commons-codec:commons-codec'))
+    include(dependency('com.jayway.jsonpath:json-path'))
+    include(dependency('net.minidev:asm'))
+    include(dependency('net.minidev:json-smart'))
+    include(dependency('org.slf4j:slf4j-api'))
+    include(dependency('net.minidev:accessors-smart'))
+    include(dependency('com.github.javafaker:javafaker'))
+  }
+}
+
+/**************
+* ASCIIDOCTOR *
+**************/
+
+asciidoctor {
+    sourceDir = file('docs')
+    sources { include 'index.adoc' }
+    outputDir = file('build/docs')
+    attributes  'apoc-version' : version,
+                'apoc-release' : "3.1.3.6",
+                'neo4j-version' : neo4jVersion,
+                'branch' : "3.1"
+}
+
+asciidoctor.doLast {
+    copy {
+        from 'build/docs/html5/index.html'
+        into "build/docs"
+        rename { String filename -> filename.replace("index","index31") }
+    }
+}
+
+assemble.dependsOn(asciidoctor)
+
+/******
+* END *
+******/
+
+// publishing
+
+nexusStaging {
+    packageGroup = "org.neo4j"
+    stagingProfileId = "acdc2431d20c3d"
+
+    //serverUrl = stable release repository - by default Sonatype OSSRH - https://oss.sonatype.org/service/local/
+    //username  = (optional) - username to the server
+    // password = (optional) - password
+    //numberOfRetries (optional) - number of retries when waiting for a repository to change a state - by default 7
+    //delayBetweenRetriesInMillis (optional) - delay between retries - by default 1000 milliseconds
+}
+
+modifyPom {
+    project {
+        name 'neo4j-apoc-procedures'
+        packaging 'jar'
+        description 'A collection of useful Neo4j Procedures'
+        url 'http://github.com/neo4j-contrib/neo4j-apoc-procedures'
+
+        organization {
+            name "Neo Technology, Inc."
+            url "http://neotechnology.com"
+        }
+
+        scm {
+            url 'https://github.com/neo4j-contrib/neo4j-apoc-procedures'
+        }
+
+        licenses {
+            license {
+                name 'The Apache Software License, Version 2.0'
+                url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+                comments """Note that this license is for the project itself,
+and not for its dependencies."""
+                distribution "repo"
+            }
+        }
+
+        developers {
+            developer {
+                id 'michaelhunger'
+                name 'Michael Hunger'
+                email 'michael.hunger@neo4j.com'
+            }
+        }
+    }
+}
+
+// tweaks for travis
+// from
+if (System.env.TRAVIS == 'true') {
+  allprojects {
+    tasks.withType(GroovyCompile) {
+      groovyOptions.fork = false
+    }
+    tasks.withType(Test) {
+      // containers (currently) have 2 dedicated cores and 4GB of memory
+      maxParallelForks = 2
+      minHeapSize = '128m'
+    }
+  }
+}
+
+task copyRuntimeLibs(type: Copy) {
+    into "lib"
+    from configurations.testRuntime 
+}

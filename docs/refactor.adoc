@@ -1,0 +1,50 @@
+= Graph Refactoring Procedures
+
+These procedures help refactor the structure of your graph.
+This is helpful when you need to change your data model or for cleaning up data that was imported from an external source.
+
+== Normalize boolean properties
+
+Given raw data boolean properties are often represented by placeholder values.
+This procedure turns them into boolean properties.
+
+Will be true if "Y", YES"; false if "N", "NO"; null otherwise:
+
+[source,cypher]
+----
+MATCH (n)
+CALL apoc.refactor.normalizeAsBoolean(n, "prop", ["Y", "YES"], ["N", NO"])
+RETURN n.prop
+----
+
+== Categorization
+
+Categorize replaces string property values on nodes with relationship to a unique category node for that property value.
+
+This example will turn all n.color properties into :HAS_ATTRIBUTE relationships to :Color nodes with a matching .colour property.
+
+[source,cypher]
+----
+CALL apoc.refactor.categorize('color','HAS_ATTRIBUTE',true,'Color','colour',['popularity'],1)
+----
+
+Additionally, it will also copy over the first 'popularity' property value encountered on any node n for each newly created :Color node and remove any occurrences of that property value on nodes with the same 'Color'.
+
+= Using Cypher and APOC to move a property value to a label
+
+You can use the procedure link:#_creating_data[`apoc.create.addLabels`] to move a property to a label with Cypher as follows
+
+.Create a node with property studio
+[source,cypher]
+----
+CREATE (:Movie {title: 'A Few Good Men', genre: 'Drama'})
+----
+
+.Move the 'genre' property to a label and remove it as a property
+[source,cypher]
+----
+MATCH (n:Movie) 
+CALL apoc.create.addLabels( id(n), [ n.genre ] ) YIELD node 
+REMOVE node.studio
+RETURN node
+----
