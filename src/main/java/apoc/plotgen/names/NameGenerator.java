@@ -17,6 +17,324 @@ import java.util.Random;
 public class NameGenerator {
 
 
+    @UserFunction(name = "apoc.plotgen.names.humanSurname")
+    @Description("apoc.plotgen.names.humanSurmane()")
+    public String humanSurname() {
+        String ret;
+        int randNumber;
+
+        Random random = new Random();
+        int min = 1;
+        int max = 100;
+        randNumber = random.nextInt(max - min + 1) + min;
+        switch (randNumber) {
+            case 1  :
+                ret = "Adelhof";
+                break;
+            case 2  :
+                ret = "Albrecht";
+                break;
+            case 3  :
+                ret = "Allenstag";
+                break;
+            case 4  :
+                ret = "Altmann";
+                break;
+            case 5  :
+                ret = "Atzwig";
+                break;
+            case 6  :
+                ret = "Bacher";
+                break;
+            case 7  :
+                ret = "Baer";
+                break;
+            case 8  :
+                ret = "Baumann";
+                break;
+            case 9  :
+                ret = "Becker";
+                break;
+            case 10 :
+                ret = "Behn";
+                break;
+            case 11 :
+                ret = "Betz";
+                break;
+            case 12 :
+                ret = "Beyer";
+                break;
+            case 13 :
+                ret = "Bischof";
+                break;
+            case 14 :
+                ret = "Boehm";
+                break;
+            case 15 :
+                ret = "Breitenbach";
+                break;
+            case 16 :
+                ret = "Breuer";
+                break;
+            case 17 :
+                ret = "Dahmbach";
+                break;
+            case 18 :
+                ret = "Delfholt";
+                break;
+            case 19 :
+                ret = "Drakenhof";
+                break;
+            case 20 :
+                ret = "Drauwulf";
+                break;
+            case 21 :
+                ret = "Durrbein";
+                break;
+            case 22 :
+                ret = "Ehrhard";
+                break;
+            case 23 :
+                ret = "Eisenhauer";
+                break;
+            case 24 :
+                ret = "Eschlimann";
+                break;
+            case 25 :
+                ret = "Falkznheim";
+                break;
+            case 26 :
+                ret = "Fehr";
+                break;
+            case 27 :
+                ret = "Fiegler";
+                break;
+            case 28 :
+                ret = "Fleischer";
+                break;
+            case 29 :
+                ret = "Frohlich";
+                break;
+            case 30 :
+                ret = "Frueh";
+                break;
+            case 31 :
+                ret = "Fuchs";
+                break;
+            case 32 :
+                ret = "Gaffwig";
+                break;
+            case 33 :
+                ret = "Gaertner";
+                break;
+            case 34 :
+                ret = "Gebauer";
+                break;
+            case 35 :
+                ret = "Godlgraf";
+                break;
+            case 36 :
+                ret = "Grunenwald";
+                break;
+            case 37 :
+                ret = "Guth";
+                break;
+            case 38 :
+                ret = "Haintz";
+                break;
+            case 39 :
+                ret = "Herz";
+                break;
+            case 40 :
+                ret = "Herzog";
+                break;
+            case 41 :
+                ret = "Hirtzel";
+                break;
+            case 42 :
+                ret = "Hoch";
+                break;
+            case 43 :
+                ret = "Hoefer";
+                break;
+            case 44 :
+                ret = "Hofstetter";
+                break;
+            case 45 :
+                ret = "Jaeger";
+                break;
+            case 46 :
+                ret = "Jochutz";
+                break;
+            case 47 :
+                ret = "Jutzenbach";
+                break;
+            case 48 :
+                ret = "Kalb";
+                break;
+            case 49 :
+                ret = "Kaltenbach";
+                break;
+            case 50 :
+                ret = "Kraemer";
+                break;
+            case 51 :
+                ret = "Krebs";
+                break;
+            case 52 :
+                ret = "Kuhn";
+                break;
+            case 53 :
+                ret = "Kummel";
+                break;
+            case 54 :
+                ret = "Konig";
+                break;
+            case 55 :
+                ret = "Konlgsamen";
+                break;
+            case 56 :
+                ret = "Iang";
+                break;
+            case 57 :
+                ret = "Iankdorf";
+                break;
+            case 58 :
+                ret = "Liess";
+                break;
+            case 59 :
+                ret = "Lebengut";
+                break;
+            case 60 :
+                ret = "Lutzen";
+                break;
+            case 61 :
+                ret = "Machholt";
+                break;
+            case 62 :
+                ret = "Meusmann";
+                break;
+            case 63 :
+                ret = "Meyer";
+                break;
+            case 64 :
+                ret = "Mohr";
+                break;
+            case 65 :
+                ret = "Muller";
+                break;
+            case 66 :
+                ret = "Nachtmann";
+                break;
+            case 67 :
+                ret = "Naubhof";
+                break;
+            case 68 :
+                ret = "Netzhoch";
+                break;
+            case 69 :
+                ret = "Neumann";
+                break;
+            case 70 :
+                ret = "Niederlitz";
+                break;
+            case 71 :
+                ret = "Nuhr";
+                break;
+            case 72 :
+                ret = "Oberholtzer";
+                break;
+            case 73 :
+                ret = "Ohrsten";
+                break;
+            case 74 :
+                ret = "Otzlowe";
+                break;
+            case 75 :
+                ret = "Reichert";
+                break;
+            case 76 :
+                ret = "Reifneider";
+                break;
+            case 77 :
+                ret = "Riese";
+                break;
+            case 78 :
+                ret = "Rohrig";
+                break;
+            case 79 :
+                ret = "Reiss";
+                break;
+            case 80 :
+                ret = "Schaffer";
+                break;
+            case 81 :
+                ret = "Schaumer";
+                break;
+            case 82 :
+                ret = "Scherer";
+                break;
+            case 83 :
+                ret = "Schultz";
+                break;
+            case 84 :
+                ret = "Schleirmacher";
+                break;
+            case 85 :
+                ret = "Schreiber";
+                break;
+            case 86 :
+                ret = "Schwalb";
+                break;
+            case 87 :
+                ret = "Steiner";
+                break;
+            case 88 :
+                ret = "Tabbeck";
+                break;
+            case 89 :
+                ret = "Teuber";
+                break;
+            case 90 :
+                ret = "Tolzen";
+                break;
+            case 91 :
+                ret = "Trachsel";
+                break;
+            case 92 :
+                ret = "Weber";
+                break;
+            case 93 :
+                ret = "Wechsler";
+                break;
+            case 94 :
+                ret = "Wirtz";
+                break;
+            case 95 :
+                ret = "Widmann";
+                break;
+            case 96 :
+                ret = "Widmer";
+                break;
+            case 97 :
+                ret = "Veit";
+                break;
+            case 98 :
+                ret = "Vogt";
+                break;
+            case 99 :
+                ret = "Vogel";
+                break;
+            case 100:
+                ret = "Zumwald";
+                break;
+            default:
+                ret ="Not Set";
+                break;
+        }
+        return ret;
+    }
+
     @UserFunction(name = "apoc.plotgen.names.humanMale")
     @Description("apoc.plotgen.names.humanMale()")
     public String humanMale() {

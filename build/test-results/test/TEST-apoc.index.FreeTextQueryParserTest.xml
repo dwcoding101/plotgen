@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.index.FreeTextQueryParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-18T13:39:02" hostname="Pc" time="0.026">
+<testsuite name="apoc.index.FreeTextQueryParserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-18T15:09:29" hostname="Pc" time="0.04">
   <properties/>
-  <testcase name="shouldParseNumericRange" classname="apoc.index.FreeTextQueryParserTest" time="0.026"/>
+  <testcase name="shouldParseNumericRange" classname="apoc.index.FreeTextQueryParserTest" time="0.04"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

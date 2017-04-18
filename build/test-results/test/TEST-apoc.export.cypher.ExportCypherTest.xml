@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.export.cypher.ExportCypherTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-18T13:38:53" hostname="Pc" time="0.046">
+<testsuite name="apoc.export.cypher.ExportCypherTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-18T15:09:20" hostname="Pc" time="0.052">
   <properties/>
-  <testcase name="testExportGraphCypher" classname="apoc.export.cypher.ExportCypherTest" time="0.031"/>
+  <testcase name="testExportGraphCypher" classname="apoc.export.cypher.ExportCypherTest" time="0.037"/>
   <testcase name="testExportAllCypher" classname="apoc.export.cypher.ExportCypherTest" time="0.015"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

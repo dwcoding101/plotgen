@@ -297,6 +297,7 @@
 "function"¦"apoc.number.format"¦"apoc.number.format(number)  | format a long or double using the default system pattern and language to produce a string"
 "function"¦"apoc.number.parseInt"¦"apoc.number.parseInt(text)  | parse a text using the default system pattern and language to produce a long"
 "function"¦"apoc.number.parseFloat"¦"apoc.number.parseFloat(text)  | parse a text using the default system pattern and language to produce a double"
+"function"¦"apoc.plotgen.names.humanSurname"¦"apoc.plotgen.names.humanSurmane()"
 "function"¦"apoc.plotgen.names.humanMale"¦"apoc.plotgen.names.humanMale()"
 "function"¦"apoc.scoring.existence"¦"apoc.scoring.existence(5, true) returns the provided score if true, 0 if false"
 "function"¦"apoc.scoring.pareto"¦"apoc.scoring.pareto(10, 20, 100, 11) applies a Pareto scoring function over the inputs"

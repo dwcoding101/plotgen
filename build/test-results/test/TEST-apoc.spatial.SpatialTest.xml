@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.spatial.SpatialTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-18T13:40:31" hostname="Pc" time="0.589">
+<testsuite name="apoc.spatial.SpatialTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-18T15:10:56" hostname="Pc" time="0.617">
   <properties/>
-  <testcase name="testGeocodePointAndDistance" classname="apoc.spatial.SpatialTest" time="0.171"/>
-  <testcase name="testSimpleGeocode" classname="apoc.spatial.SpatialTest" time="0.116"/>
-  <testcase name="testAllTheThings" classname="apoc.spatial.SpatialTest" time="0.148"/>
-  <testcase name="testGraphRefactoring" classname="apoc.spatial.SpatialTest" time="0.153"/>
+  <testcase name="testGeocodePointAndDistance" classname="apoc.spatial.SpatialTest" time="0.192"/>
+  <testcase name="testSimpleGeocode" classname="apoc.spatial.SpatialTest" time="0.128"/>
+  <testcase name="testAllTheThings" classname="apoc.spatial.SpatialTest" time="0.14"/>
+  <testcase name="testGraphRefactoring" classname="apoc.spatial.SpatialTest" time="0.157"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
