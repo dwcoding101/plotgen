@@ -1,0 +1,5 @@
+"type"¦"qualified name"¦"description"
+"procedure"¦"apoc.static.get"¦"apoc.static.get(name) - returns statically stored value from config (apoc.static.<key>) or server lifetime storage"
+"procedure"¦"apoc.static.getAll"¦"apoc.static.getAll(prefix) - returns statically stored values from config (apoc.static.<prefix>.*) or server lifetime storage"
+"procedure"¦"apoc.static.list"¦"apoc.static.list(prefix) - returns statically stored values from config (apoc.static.<prefix>.*) or server lifetime storage"
+"procedure"¦"apoc.static.set"¦"apoc.static.set(name, value) - stores value under key for server livetime storage, returns previously stored or configured value"

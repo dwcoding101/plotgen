@@ -1,0 +1,2 @@
+"type"¦"qualified name"¦"description"
+"procedure"¦"apoc.warmup.run"¦"apoc.warmup.run() - quickly loads all nodes and rels into memory by skipping one page at a time"

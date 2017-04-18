@@ -1,0 +1,5 @@
+"type"¦"qualified name"¦"description"
+"procedure"¦"apoc.util.sleep"¦"apoc.util.sleep(<duration>) | sleeps for <duration> millis, transaction termination is honored"
+"procedure"¦"apoc.util.validate"¦"apoc.util.validate(predicate, message, params) | if the predicate yields to true raise an exception"
+"function"¦"apoc.util.sha1"¦"apoc.util.sha1([values]) | computes the sha1 of the concatenation of all string values of the list"
+"function"¦"apoc.util.md5"¦"apoc.util.md5([values]) | computes the md5 of the concatenation of all string values of the list"

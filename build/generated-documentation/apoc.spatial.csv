@@ -1,0 +1,4 @@
+"type"¦"qualified name"¦"description"
+"procedure"¦"apoc.spatial.sortByDistance"¦"apoc.spatial.sortPathsByDistance(List<Path>) sort the given paths based on the geo informations (lat/long) in ascending order"
+"procedure"¦"apoc.spatial.geocodeOnce"¦"apoc.spatial.geocodeOnce('address') YIELD location, latitude, longitude, description, osmData - look up geographic location of address from openstreetmap geocoding service"
+"procedure"¦"apoc.spatial.geocode"¦"apoc.spatial.geocode('address') YIELD location, latitude, longitude, description, osmData - look up geographic location of address from openstreetmap geocoding service"

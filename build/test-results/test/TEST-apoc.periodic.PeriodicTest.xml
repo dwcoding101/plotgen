@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="apoc.periodic.PeriodicTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-04-18T13:13:34" hostname="Pc" time="3.76">
+  <properties/>
+  <testcase name="testIterateBatchPrefix" classname="apoc.periodic.PeriodicTest" time="0.148"/>
+  <testcase name="testSubmitStatement" classname="apoc.periodic.PeriodicTest" time="2.115"/>
+  <testcase name="testIterateErrors" classname="apoc.periodic.PeriodicTest" time="0.108"/>
+  <testcase name="testIteratePrefix" classname="apoc.periodic.PeriodicTest" time="0.141"/>
+  <testcase name="testIterateRetries" classname="apoc.periodic.PeriodicTest" time="0.201"/>
+  <testcase name="testIterateFail" classname="apoc.periodic.PeriodicTest" time="0.176"/>
+  <testcase name="testIterateJDBC" classname="apoc.periodic.PeriodicTest" time="0.091"/>
+  <testcase name="testRock_n_roll" classname="apoc.periodic.PeriodicTest" time="0.15"/>
+  <testcase name="testRunDown" classname="apoc.periodic.PeriodicTest" time="0.188"/>
+  <testcase name="testIterateBatch" classname="apoc.periodic.PeriodicTest" time="0.134"/>
+  <testcase name="testRock_n_roll_while" classname="apoc.periodic.PeriodicTest" time="0.159"/>
+  <testcase name="testIterate" classname="apoc.periodic.PeriodicTest" time="0.148"/>
+  <system-out><![CDATA[empty iterator
+empty iterator
+row = {batches=10, timeTaken=0, retries=0, errorMessages={Variable `x` not defined (line 1, column 46 (offset: 45))
+"WITH {p} as p SET p.lastname = p.name REMOVE x.name"
+                                              ^=100}, total=100, operations={total=100, failed=100, committed=0, errors={Variable `x` not defined (line 1, column 46 (offset: 45))
+"WITH {p} as p SET p.lastname = p.name REMOVE x.name"
+                                              ^=100}}, failedOperations=100, committedOperations=0, batch={total=10, failed=10, committed=0, errors={org.neo4j.graphdb.TransactionFailureException: Transaction was marked as successful, but unable to commit transaction so rolled back.=10}}, failedBatches=10}
+empty iterator
+]]></system-out>
+  <system-err><![CDATA[Ignoring Exception org.neo4j.graphdb.QueryExecutionException: Failed to invoke procedure `apoc.periodic.iterate`: Caused by: org.neo4j.graphdb.QueryExecutionException: Failed to invoke procedure `apoc.load.jdbc`: Caused by: java.lang.RuntimeException: Cannot execute SQL statement `SELECT * FROM customers`.
+Error:
+No suitable driver found for jdbc:mysql://localhost:3306/northwind?user=root: Failed to invoke procedure `apoc.periodic.iterate`: Caused by: org.neo4j.graphdb.QueryExecutionException: Failed to invoke procedure `apoc.load.jdbc`: Caused by: java.lang.RuntimeException: Cannot execute SQL statement `SELECT * FROM customers`.
+Error:
+No suitable driver found for jdbc:mysql://localhost:3306/northwind?user=root due to causes [class java.sql.SQLException]
+]]></system-err>
+</testsuite>

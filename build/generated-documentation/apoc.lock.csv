@@ -1,0 +1,4 @@
+"type"¦"qualified name"¦"description"
+"procedure"¦"apoc.lock.all"¦"apoc.lock.all([nodes],[relationships]) acquires a write lock on the given nodes and relationships"
+"procedure"¦"apoc.lock.nodes"¦"apoc.lock.nodes([nodes]) acquires a write lock on the given nodes"
+"procedure"¦"apoc.lock.rels"¦"apoc.lock.rels([relationships]) acquires a write lock on the given relationship"

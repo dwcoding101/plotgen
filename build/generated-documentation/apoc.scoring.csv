@@ -1,0 +1,3 @@
+"type"¦"qualified name"¦"description"
+"function"¦"apoc.scoring.existence"¦"apoc.scoring.existence(5, true) returns the provided score if true, 0 if false"
+"function"¦"apoc.scoring.pareto"¦"apoc.scoring.pareto(10, 20, 100, 11) applies a Pareto scoring function over the inputs"

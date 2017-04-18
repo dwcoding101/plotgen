@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="apoc.number.NumbersTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-18T13:13:32" hostname="Pc" time="0.092">
+  <properties/>
+  <testcase name="testParseFloat" classname="apoc.number.NumbersTest" time="0.023"/>
+  <testcase name="testFormat" classname="apoc.number.NumbersTest" time="0.046"/>
+  <testcase name="testParseInt" classname="apoc.number.NumbersTest" time="0.023"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

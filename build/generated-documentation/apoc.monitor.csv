@@ -1,0 +1,6 @@
+"type"¦"qualified name"¦"description"
+"procedure"¦"apoc.monitor.ids"¦"apoc.monitor.ids() returns the object ids in use for this neo4j instance"
+"procedure"¦"apoc.monitor.kernel"¦"apoc.monitor.kernel() returns informations about the neo4j kernel"
+"procedure"¦"apoc.monitor.locks"¦"apoc.monitor.locks(minWaitTime) yield advertedDeadLocks, lockCount, contendedLockCount, minimumWaitTimeMs, contendedLocks, info"
+"procedure"¦"apoc.monitor.store"¦"apoc.monitor.store() returns informations about the sizes of the different parts of the neo4j graph store"
+"procedure"¦"apoc.monitor.tx"¦"apoc.monitor.tx() returns informations about the neo4j transaction manager"

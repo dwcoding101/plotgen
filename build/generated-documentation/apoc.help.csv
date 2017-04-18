@@ -1,0 +1,2 @@
+"type"¦"qualified name"¦"description"
+"procedure"¦"apoc.help"¦"Provides descriptions of available procedures. To narrow the results, supply a search string. To also search in the description text, append + to the end of the search string."

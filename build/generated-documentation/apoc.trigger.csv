@@ -1,0 +1,6 @@
+"type"¦"qualified name"¦"description"
+"procedure"¦"apoc.trigger.add"¦""
+"procedure"¦"apoc.trigger.remove"¦""
+"procedure"¦"apoc.trigger.list"¦""
+"function"¦"apoc.trigger.nodesByLabel"¦""
+"function"¦"apoc.trigger.propertiesByKey"¦""

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="apoc.refactor.GraphRefactoringTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-04-18T13:13:38" hostname="Pc" time="1.759">
+  <properties/>
+  <testcase name="testMergeNodes" classname="apoc.refactor.GraphRefactoringTest" time="0.109"/>
+  <testcase name="testCategorizeOutgoing" classname="apoc.refactor.GraphRefactoringTest" time="0.165"/>
+  <testcase name="testCategorizeIncoming" classname="apoc.refactor.GraphRefactoringTest" time="0.166"/>
+  <testcase name="testCollapseNode" classname="apoc.refactor.GraphRefactoringTest" time="0.118"/>
+  <testcase name="testMergeNodesEagerAggregation" classname="apoc.refactor.GraphRefactoringTest" time="0.172"/>
+  <testcase name="testInvertRelationship" classname="apoc.refactor.GraphRefactoringTest" time="0.132"/>
+  <testcase name="testDeleteOneNode" classname="apoc.refactor.GraphRefactoringTest" time="0.128"/>
+  <testcase name="testRedirectRelationship" classname="apoc.refactor.GraphRefactoringTest" time="0.1"/>
+  <testcase name="testNormalizeAsBoolean" classname="apoc.refactor.GraphRefactoringTest" time="0.108"/>
+  <testcase name="testMergeNodesEagerIndex" classname="apoc.refactor.GraphRefactoringTest" time="0.153"/>
+  <testcase name="testExtractNode" classname="apoc.refactor.GraphRefactoringTest" time="0.105"/>
+  <testcase name="testCloneNodes" classname="apoc.refactor.GraphRefactoringTest" time="0.085"/>
+  <testcase name="testChangeType" classname="apoc.refactor.GraphRefactoringTest" time="0.088"/>
+  <testcase name="testEagernessMergeNodesFails" classname="apoc.refactor.GraphRefactoringTest" time="0.126"/>
+  <system-out><![CDATA[Compiler CYPHER 3.1
+
+Planner COST
+
+Runtime INTERPRETED
+
++--------------------+----------------+-------------------------+------------------------------------------------------------------------+
+| Operator           | Estimated Rows | Variables               | Other                                                                  |
++--------------------+----------------+-------------------------+------------------------------------------------------------------------+
+| +ProduceResults    |          10000 | node                    | node                                                                   |
+| |                  +----------------+-------------------------+------------------------------------------------------------------------+
+| +ProcedureCall     |          10000 | node -- anon[65], nodes | apoc.refactor.mergeNodes(CoerceTo(nodes,List<Node>)) :: (node :: Node) |
+| |                  +----------------+-------------------------+------------------------------------------------------------------------+
+| +Projection        |              1 | nodes -- anon[65]       | {nodes : ContainerIndex(,Literal(0))}                                  |
+| |                  +----------------+-------------------------+------------------------------------------------------------------------+
+| +EagerAggregation  |              0 | anon[65]                |                                                                        |
+| |                  +----------------+-------------------------+------------------------------------------------------------------------+
+| +CartesianProduct  |              0 | o -- n                  |                                                                        |
+| |\                 +----------------+-------------------------+------------------------------------------------------------------------+
+| | +Filter          |              0 | n                       | n.ID == {newID}                                                        |
+| | |                +----------------+-------------------------+------------------------------------------------------------------------+
+| | +NodeByLabelScan |              2 | n                       | :Person                                                                |
+| |                  +----------------+-------------------------+------------------------------------------------------------------------+
+| +Filter            |              0 | o                       | o.ID == {oldID}                                                        |
+| |                  +----------------+-------------------------+------------------------------------------------------------------------+
+| +NodeByLabelScan   |              2 | o                       | :Person                                                                |
++--------------------+----------------+-------------------------+------------------------------------------------------------------------+
+
+Total database accesses: ?
+
+Compiler CYPHER 3.1
+
+Planner COST
+
+Runtime INTERPRETED
+
++--------------------+----------------+--------------+-----------------+
+| Operator           | Estimated Rows | Variables    | Other           |
++--------------------+----------------+--------------+-----------------+
+| +ProduceResults    |              0 | node         | node            |
+| |                  +----------------+--------------+-----------------+
+| +Projection        |              0 | node -- n, o | {node : o}      |
+| |                  +----------------+--------------+-----------------+
+| +Delete            |              0 | n, o         |                 |
+| |                  +----------------+--------------+-----------------+
+| +Eager             |                | n, o         |                 |
+| |                  +----------------+--------------+-----------------+
+| +CartesianProduct  |              0 | o -- n       |                 |
+| |\                 +----------------+--------------+-----------------+
+| | +Filter          |              0 | n            | n.ID == {newID} |
+| | |                +----------------+--------------+-----------------+
+| | +NodeByLabelScan |              2 | n            | :Person         |
+| |                  +----------------+--------------+-----------------+
+| +Filter            |              0 | o            | o.ID == {oldID} |
+| |                  +----------------+--------------+-----------------+
+| +NodeByLabelScan   |              2 | o            | :Person         |
++--------------------+----------------+--------------+-----------------+
+
+Total database accesses: ?
+
+Compiler CYPHER 3.1
+
+Planner COST
+
+Runtime INTERPRETED
+
++-------------------+----------------+--------------+------------------------------------------------------------------------------------------+
+| Operator          | Estimated Rows | Variables    | Other                                                                                    |
++-------------------+----------------+--------------+------------------------------------------------------------------------------------------+
+| +ProduceResults   |          10000 | node         | node                                                                                     |
+| |                 +----------------+--------------+------------------------------------------------------------------------------------------+
+| +ProcedureCall    |          10000 | node -- n, o | apoc.refactor.mergeNodes(CoerceTo(ListLiteral(List(o, n)),List<Node>)) :: (node :: Node) |
+| |                 +----------------+--------------+------------------------------------------------------------------------------------------+
+| +CartesianProduct |              1 | o -- n       |                                                                                          |
+| |\                +----------------+--------------+------------------------------------------------------------------------------------------+
+| | +NodeIndexSeek  |              1 | n            | :Person(ID)                                                                              |
+| |                 +----------------+--------------+------------------------------------------------------------------------------------------+
+| +NodeIndexSeek    |              1 | o            | :Person(ID)                                                                              |
++-------------------+----------------+--------------+------------------------------------------------------------------------------------------+
+
+Total database accesses: ?
+
+Compiler CYPHER 3.1
+
+Planner COST
+
+Runtime INTERPRETED
+
++-------------------+----------------+--------------+------------------------------------------------------------------------------------------+
+| Operator          | Estimated Rows | Variables    | Other                                                                                    |
++-------------------+----------------+--------------+------------------------------------------------------------------------------------------+
+| +ProduceResults   |          10000 | node         | node                                                                                     |
+| |                 +----------------+--------------+------------------------------------------------------------------------------------------+
+| +ProcedureCall    |          10000 | node -- n, o | apoc.refactor.mergeNodes(CoerceTo(ListLiteral(List(o, n)),List<Node>)) :: (node :: Node) |
+| |                 +----------------+--------------+------------------------------------------------------------------------------------------+
+| +CartesianProduct |              1 | o -- n       |                                                                                          |
+| |\                +----------------+--------------+------------------------------------------------------------------------------------------+
+| | +NodeIndexSeek  |              1 | n            | :Person(ID)                                                                              |
+| |                 +----------------+--------------+------------------------------------------------------------------------------------------+
+| +NodeIndexSeek    |              1 | o            | :Person(ID)                                                                              |
++-------------------+----------------+--------------+------------------------------------------------------------------------------------------+
+
+Total database accesses: ?
+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

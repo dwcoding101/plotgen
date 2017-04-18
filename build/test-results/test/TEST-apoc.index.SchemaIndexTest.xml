@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="apoc.index.SchemaIndexTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-18T13:12:59" hostname="Pc" time="0.116">
+  <properties/>
+  <testcase name="testOrderedRangeNumbers" classname="apoc.index.SchemaIndexTest" time="0.03"/>
+  <testcase name="testOrderedRangeText" classname="apoc.index.SchemaIndexTest" time="0.009"/>
+  <testcase name="testOrderedRangeNumbersLowerBound" classname="apoc.index.SchemaIndexTest" time="0.005"/>
+  <testcase name="testOrderByText" classname="apoc.index.SchemaIndexTest" time="0.009"/>
+  <testcase name="testRelated" classname="apoc.index.SchemaIndexTest" time="0.021"/>
+  <testcase name="testDistinctProperties" classname="apoc.index.SchemaIndexTest" time="0.031"/>
+  <testcase name="testOrderedRangeNumbersUpperBound" classname="apoc.index.SchemaIndexTest" time="0.005"/>
+  <testcase name="testOrderedRangeNumbersRangeSmallerSize" classname="apoc.index.SchemaIndexTest" time="0.005"/>
+  <system-out><![CDATA[[]
+id  1 age 1
+id  2 age 2
+id  3 age 3
+id  4 age 4
+id  5 age 5
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

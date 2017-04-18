@@ -1,0 +1,4 @@
+"type"¦"qualified name"¦"description"
+"function"¦"apoc.number.format"¦"apoc.number.format(number)  | format a long or double using the default system pattern and language to produce a string"
+"function"¦"apoc.number.parseInt"¦"apoc.number.parseInt(text)  | parse a text using the default system pattern and language to produce a long"
+"function"¦"apoc.number.parseFloat"¦"apoc.number.parseFloat(text)  | parse a text using the default system pattern and language to produce a double"

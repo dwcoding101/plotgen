@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="apoc.scoring.ScoringTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-18T13:13:40" hostname="Pc" time="0.021">
+  <properties/>
+  <testcase name="existence" classname="apoc.scoring.ScoringTest" time="0.011"/>
+  <testcase name="pareto" classname="apoc.scoring.ScoringTest" time="0.01"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

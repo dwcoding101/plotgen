@@ -1,0 +1,8 @@
+"type"¦"qualified name"¦"description"
+"procedure"¦"apoc.mongodb.get"¦"apoc.mongodb.get(host-or-port,db-or-null,collection-or-null,query-or-null) yield value - perform a find operation on mongodb collection"
+"procedure"¦"apoc.mongodb.count"¦"apoc.mongodb.count(host-or-port,db-or-null,collection-or-null,query-or-null) yield value - perform a find operation on mongodb collection"
+"procedure"¦"apoc.mongodb.first"¦"apoc.mongodb.first(host-or-port,db-or-null,collection-or-null,query-or-null) yield value - perform a first operation on mongodb collection"
+"procedure"¦"apoc.mongodb.find"¦"apoc.mongodb.find(host-or-port,db-or-null,collection-or-null,query-or-null,projection-or-null,sort-or-null) yield value - perform a find,project,sort operation on mongodb collection"
+"procedure"¦"apoc.mongodb.insert"¦"apoc.mongodb.insert(host-or-port,db-or-null,collection-or-null,list-of-maps) - inserts the given documents into the mongodb collection"
+"procedure"¦"apoc.mongodb.delete"¦"apoc.mongodb.delete(host-or-port,db-or-null,collection-or-null,list-of-maps) - inserts the given documents into the mongodb collection"
+"procedure"¦"apoc.mongodb.update"¦"apoc.mongodb.update(host-or-port,db-or-null,collection-or-null,list-of-maps) - inserts the given documents into the mongodb collection"

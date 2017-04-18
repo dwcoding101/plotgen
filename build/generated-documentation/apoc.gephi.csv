@@ -1,0 +1,2 @@
+"type"¦"qualified name"¦"description"
+"procedure"¦"apoc.gephi.add"¦"apoc.gephi.add(url-or-key, workspace, data, weightproperty) | streams passed in data to Gephi"

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="apoc.date.DateTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2017-04-18T13:12:04" hostname="Pc" time="0.235">
+  <properties/>
+  <testcase name="testFromUnixtimeWithCorrectFormat" classname="apoc.date.DateTest" time="0.011"/>
+  <testcase name="testfields" classname="apoc.date.DateTest" time="0.027"/>
+  <testcase name="testFromUnixtimeWithNegativeInput" classname="apoc.date.DateTest" time="0.008"/>
+  <testcase name="testfieldsNullInput" classname="apoc.date.DateTest" time="0.005"/>
+  <testcase name="testFromUnixtime" classname="apoc.date.DateTest" time="0.004"/>
+  <testcase name="testToHours" classname="apoc.date.DateTest" time="0.006"/>
+  <testcase name="testAdd" classname="apoc.date.DateTest" time="0.007"/>
+  <testcase name="testToMillis" classname="apoc.date.DateTest" time="0.005"/>
+  <testcase name="toYears" classname="apoc.date.DateTest" time="0.014"/>
+  <testcase name="testToUnixtime" classname="apoc.date.DateTest" time="0.005"/>
+  <testcase name="testAddNegative" classname="apoc.date.DateTest" time="0.006"/>
+  <testcase name="testGetTimezone" classname="apoc.date.DateTest" time="0.003"/>
+  <testcase name="testFromUnixtimeWithIncorrectPatternFormat" classname="apoc.date.DateTest" time="0.006"/>
+  <testcase name="testfieldsCustomFormat" classname="apoc.date.DateTest" time="0.03"/>
+  <testcase name="testToUnixtimeWithCorrectFormat" classname="apoc.date.DateTest" time="0.018"/>
+  <testcase name="testFromUnixtimeWithIncorrectPatternFormatAndTimeZone" classname="apoc.date.DateTest" time="0.005"/>
+  <testcase name="testToMinutes" classname="apoc.date.DateTest" time="0.006"/>
+  <testcase name="testFromUnixtimeWithCorrectFormatAndTimeZone" classname="apoc.date.DateTest" time="0.006"/>
+  <testcase name="testOrderByDate" classname="apoc.date.DateTest" time="0.024"/>
+  <testcase name="testConvert" classname="apoc.date.DateTest" time="0.007"/>
+  <testcase name="testToUnixtimeWithNullInput" classname="apoc.date.DateTest" time="0.007"/>
+  <testcase name="testToUnixtimeWithIncorrectPatternFormat" classname="apoc.date.DateTest" time="0.007"/>
+  <testcase name="testToDays" classname="apoc.date.DateTest" time="0.006"/>
+  <testcase name="testDateParserDifference" classname="apoc.date.DateTest" time="0.007"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[                The time argument should be >= 0, got: -1000
+                apoc.date.Date.parse(Date.java:154)
+                apoc.date.Date.format(Date.java:123)
+                java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+                org.neo4j.kernel.impl.api.OperationsFacade.callFunction(OperationsFacade.java:1641)
+                org.neo4j.kernel.impl.api.OperationsFacade.functionCall(OperationsFacade.java:1621)
+                apoc.date.DateTest.testFromUnixtimeWithNegativeInput(DateTest.java:171)
+                org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+                org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+                org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+                org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+                org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+                org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+                org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+                org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+                com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+                org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+                org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+                org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+                org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+                org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+                org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+                java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+                java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+                java.lang.Thread.run(Thread.java:745)
+                Illegal pattern character 'n'
+                java.text.SimpleDateFormat.compile(SimpleDateFormat.java:826)
+                java.text.SimpleDateFormat.initialize(SimpleDateFormat.java:634)
+                java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:605)
+                java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:580)
+                apoc.date.Date.getFormat(Date.java:161)
+                apoc.date.Date.parse(Date.java:156)
+                apoc.date.Date.format(Date.java:123)
+                java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+                org.neo4j.kernel.impl.api.OperationsFacade.callFunction(OperationsFacade.java:1641)
+                org.neo4j.kernel.impl.api.OperationsFacade.functionCall(OperationsFacade.java:1621)
+                apoc.date.DateTest.testFromUnixtimeWithIncorrectPatternFormat(DateTest.java:157)
+                org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+                org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+                org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+                org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+                org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+                org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+                org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+                org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+                com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+                org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+                org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+                org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+                org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+                org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+                org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+                java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+                java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+                java.lang.Thread.run(Thread.java:745)
+                Illegal pattern character 'n'
+                java.text.SimpleDateFormat.compile(SimpleDateFormat.java:826)
+                java.text.SimpleDateFormat.initialize(SimpleDateFormat.java:634)
+                java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:605)
+                java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:580)
+                apoc.date.Date.getFormat(Date.java:161)
+                apoc.date.Date.parse(Date.java:129)
+                java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
+                org.neo4j.kernel.impl.api.OperationsFacade.callFunction(OperationsFacade.java:1641)
+                org.neo4j.kernel.impl.api.OperationsFacade.functionCall(OperationsFacade.java:1621)
+                apoc.date.DateTest.testToUnixtimeWithIncorrectPatternFormat(DateTest.java:101)
+                org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+                org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+                org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+                org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+                org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+                org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+                org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+                org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+                com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+                org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
+                org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+                org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+                org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:377)
+                org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:54)
+                org.gradle.internal.concurrent.StoppableExecutorImpl$1.run(StoppableExecutorImpl.java:40)
+                java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+                java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+                java.lang.Thread.run(Thread.java:745)
+]]></system-err>
+</testsuite>

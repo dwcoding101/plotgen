@@ -1,0 +1,11 @@
+"type"¦"qualified name"¦"description"
+"procedure"¦"apoc.load.driver"¦"apoc.load.driver('org.apache.derby.jdbc.EmbeddedDriver') register JDBC driver of source database"
+"procedure"¦"apoc.load.jdbc"¦"apoc.load.jdbc('key or url','table or statement') YIELD row - load from relational database, from a full table or a sql statement"
+"procedure"¦"apoc.load.jdbcParams"¦"apoc.load.jdbcParams('key or url','statement',[params]) YIELD row - load from relational database, from a sql statement with parameters"
+"procedure"¦"apoc.load.csv"¦"apoc.load.csv('url',{config}) YIELD lineNo, list, map - load CSV fom URL as stream of values,
+ config contains any of: {skip:1,limit:5,header:false,sep:'TAB',ignore:['tmp'],arraySep:';',mapping:{years:{type:'int',arraySep:'-',array:false,name:'age',ignore:false}}"
+"procedure"¦"apoc.load.jsonArray"¦"apoc.load.jsonArray('url') YIELD value - load array from JSON URL (e.g. web-api) to import JSON as stream of values"
+"procedure"¦"apoc.load.json"¦"apoc.load.json('url') YIELD value -  import JSON as stream of values if the JSON was an array or a single value if it was a map"
+"procedure"¦"apoc.load.jsonParams"¦"apoc.load.jsonParams('url',{header:value},payload) YIELD value - load from JSON URL (e.g. web-api) while sending headers / payload to import JSON as stream of values if the JSON was an array or a single value if it was a map"
+"procedure"¦"apoc.load.xml"¦"apoc.load.xml('http://example.com/test.xml', false) YIELD value as doc CREATE (p:Person) SET p.name = doc.name load from XML URL (e.g. web-api) to import XML as single nested map with attributes and _type, _text and _childrenx fields."
+"procedure"¦"apoc.load.xmlSimple"¦"apoc.load.xmlSimple('http://example.com/test.xml') YIELD value as doc CREATE (p:Person) SET p.name = doc.name load from XML URL (e.g. web-api) to import XML as single nested map with attributes and _type, _text and _children fields. This method does intentionally not work with XML mixed content."

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="apoc.mongodb.MongoDBTest" tests="9" skipped="9" failures="0" errors="0" timestamp="2017-04-18T13:13:30" hostname="Pc" time="0.001">
+  <properties/>
+  <testcase name="testGet" classname="apoc.mongodb.MongoDBTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCount" classname="apoc.mongodb.MongoDBTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testFirst" classname="apoc.mongodb.MongoDBTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testFind" classname="apoc.mongodb.MongoDBTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testFindSort" classname="apoc.mongodb.MongoDBTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCountAll" classname="apoc.mongodb.MongoDBTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testDelete" classname="apoc.mongodb.MongoDBTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testInsert" classname="apoc.mongodb.MongoDBTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <testcase name="testUpdate" classname="apoc.mongodb.MongoDBTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[Ignoring Exception com.mongodb.MongoTimeoutException: Timed out after 100 ms while waiting for a server that matches WritableServerSelector. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}]: Timed out after 100 ms while waiting for a server that matches WritableServerSelector. Client view of cluster state is {type=UNKNOWN, servers=[{address=localhost:27017, type=UNKNOWN, state=CONNECTING, exception={com.mongodb.MongoSocketOpenException: Exception opening socket}, caused by {java.net.SocketTimeoutException: connect timed out}}] due to causes [class com.mongodb.MongoTimeoutException]
+]]></system-err>
+</testsuite>
