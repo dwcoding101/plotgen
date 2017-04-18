@@ -17,7 +17,7 @@ import java.util.Random;
 public class NameGenerator {
 
 
-    @UserFunction(name = "apoc.plotgen.names.humanMale()")
+    @UserFunction(name = "apoc.plotgen.names.humanMale")
     @Description("apoc.plotgen.names.humanMale()")
     public String humanMale() {
         String ret;

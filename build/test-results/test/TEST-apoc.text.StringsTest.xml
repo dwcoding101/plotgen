@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.text.StringsTest" tests="20" skipped="0" failures="1" errors="0" timestamp="2017-04-18T13:14:08" hostname="Pc" time="0.113">
+<testsuite name="apoc.text.StringsTest" tests="20" skipped="0" failures="1" errors="0" timestamp="2017-04-18T13:40:32" hostname="Pc" time="0.132">
   <properties/>
-  <testcase name="testReplaceAllWithNull" classname="apoc.text.StringsTest" time="0.005"/>
+  <testcase name="testReplaceAllWithNull" classname="apoc.text.StringsTest" time="0.006"/>
   <testcase name="testDocCompareCleaned" classname="apoc.text.StringsTest" time="0.004"/>
-  <testcase name="testJoinWithNull" classname="apoc.text.StringsTest" time="0.007"/>
-  <testcase name="testJoin" classname="apoc.text.StringsTest" time="0.001"/>
-  <testcase name="testLPad" classname="apoc.text.StringsTest" time="0.013"/>
+  <testcase name="testJoinWithNull" classname="apoc.text.StringsTest" time="0.006"/>
+  <testcase name="testJoin" classname="apoc.text.StringsTest" time="0.0"/>
+  <testcase name="testLPad" classname="apoc.text.StringsTest" time="0.012"/>
   <testcase name="testRPad" classname="apoc.text.StringsTest" time="0.012"/>
   <testcase name="testCleanWithNull" classname="apoc.text.StringsTest" time="0.004"/>
-  <testcase name="testUrlDecode" classname="apoc.text.StringsTest" time="0.004"/>
+  <testcase name="testUrlDecode" classname="apoc.text.StringsTest" time="0.005"/>
   <testcase name="testUrlEncode" classname="apoc.text.StringsTest" time="0.004"/>
   <testcase name="testCompareCleaned" classname="apoc.text.StringsTest" time="0.002"/>
   <testcase name="testUrlDecodeFailure" classname="apoc.text.StringsTest" time="0.003"/>
   <testcase name="testReplace" classname="apoc.text.StringsTest" time="0.0"/>
-  <testcase name="testRegexGroupsForNPE" classname="apoc.text.StringsTest" time="0.009"/>
-  <testcase name="testFormat" classname="apoc.text.StringsTest" time="0.015">
+  <testcase name="testRegexGroupsForNPE" classname="apoc.text.StringsTest" time="0.008"/>
+  <testcase name="testFormat" classname="apoc.text.StringsTest" time="0.016">
     <failure message="org.junit.ComparisonFailure: expected:&lt;abcd 42 3.1 true[]&#10;&gt; but was:&lt;abcd 42 3.1 true[&#13;]&#10;&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;abcd 42 3.1 true[]
 &gt; but was:&lt;abcd 42 3.1 true[]
 &gt;
@@ -73,12 +73,12 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testDocJoin" classname="apoc.text.StringsTest" time="0.005"/>
-  <testcase name="testDocClean" classname="apoc.text.StringsTest" time="0.005"/>
-  <testcase name="testDocReplace" classname="apoc.text.StringsTest" time="0.005"/>
+  <testcase name="testDocJoin" classname="apoc.text.StringsTest" time="0.006"/>
+  <testcase name="testDocClean" classname="apoc.text.StringsTest" time="0.006"/>
+  <testcase name="testDocReplace" classname="apoc.text.StringsTest" time="0.004"/>
   <testcase name="testCompareCleanedWithNull" classname="apoc.text.StringsTest" time="0.0"/>
   <testcase name="testCompareCleanedInQuery" classname="apoc.text.StringsTest" time="0.007"/>
-  <testcase name="testRegexGroups" classname="apoc.text.StringsTest" time="0.005"/>
+  <testcase name="testRegexGroups" classname="apoc.text.StringsTest" time="0.007"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[                URLDecoder: Incomplete trailing escape (%) pattern
                 apoc.text.Strings.urldecode(Strings.java:100)
