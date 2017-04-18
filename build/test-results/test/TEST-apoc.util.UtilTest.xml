@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.util.UtilTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-18T15:11:09" hostname="Pc" time="0.003">
+<testsuite name="apoc.util.UtilTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-18T22:42:48" hostname="Pc" time="0.003">
   <properties/>
   <testcase name="cleanPassword" classname="apoc.util.UtilTest" time="0.0"/>
   <testcase name="testPartitionList" classname="apoc.util.UtilTest" time="0.003"/>

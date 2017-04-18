@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.mongodb.MongoDBTest" tests="9" skipped="9" failures="0" errors="0" timestamp="2017-04-18T15:10:20" hostname="Pc" time="0.0">
+<testsuite name="apoc.mongodb.MongoDBTest" tests="9" skipped="9" failures="0" errors="0" timestamp="2017-04-18T22:42:00" hostname="Pc" time="0.001">
   <properties/>
-  <testcase name="testGet" classname="apoc.mongodb.MongoDBTest" time="0.0">
+  <testcase name="testGet" classname="apoc.mongodb.MongoDBTest" time="0.001">
     <skipped/>
   </testcase>
   <testcase name="testCount" classname="apoc.mongodb.MongoDBTest" time="0.0">
