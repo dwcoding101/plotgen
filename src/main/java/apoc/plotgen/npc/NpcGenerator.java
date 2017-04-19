@@ -35,7 +35,7 @@ public class NpcGenerator {
             }
             String surname = new NameGenerator().humanSurnameP1() + new NameGenerator().humanSurnameP2();
 
-            String query = "CALL apoc.create.node(['NPC'], {uuid:" + uuid +
+            String query = "CALL apoc.create.node(['NPC'], {uuid:'" + uuid + "'" +
                     ", firstName:'" + firstName + "'" +
                     ", surname:'" + surname + "'" +
                     ", gender:'" + gender + "'" +

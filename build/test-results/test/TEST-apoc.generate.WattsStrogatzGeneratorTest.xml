@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.generate.WattsStrogatzGeneratorTest" tests="2" skipped="1" failures="0" errors="0" timestamp="2017-04-19T18:14:51" hostname="Pc" time="0.944">
+<testsuite name="apoc.generate.WattsStrogatzGeneratorTest" tests="2" skipped="1" failures="0" errors="0" timestamp="2017-04-19T18:25:55" hostname="Pc" time="0.911">
   <properties/>
-  <testcase name="shouldGenerateCorrectNumberOfNodesAndRelationships" classname="apoc.generate.WattsStrogatzGeneratorTest" time="0.944"/>
+  <testcase name="shouldGenerateCorrectNumberOfNodesAndRelationships" classname="apoc.generate.WattsStrogatzGeneratorTest" time="0.911"/>
   <testcase name="shouldGenerateRelationshipsForLargeGraphInAReasonableAmountOfTime" classname="apoc.generate.WattsStrogatzGeneratorTest" time="0.0">
     <skipped/>
   </testcase>
