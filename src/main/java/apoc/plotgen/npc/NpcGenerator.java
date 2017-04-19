@@ -18,10 +18,12 @@ public class NpcGenerator {
     @Context
     public GraphDatabaseService db;
 
-    @Procedure(name = "apoc.plotgen.npc.CreateNPC")
+    @Procedure(name = "apoc.plotgen.npc.CreateNPC(Count)")
     @Description( "apoc.plotgen.npc.CreateNPC - create a new NPC" )
-    public void CreateNPC(@Name("Count") String countString) {
-        int count= Integer.parseInt(countString);
+    public void CreateNPC(@Name("Count") long count) {
+
+
+
         for(int i = 0; i < count; i++) {
             String uuid = uuid();
             String gender = new GenderGenerator().gender();

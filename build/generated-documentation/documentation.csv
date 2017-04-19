@@ -176,7 +176,7 @@
 "procedure"¦"apoc.periodic.rock_n_roll_while"¦"apoc.periodic.rock_n_roll_while('some cypher for knowing when to stop', 'some cypher for iteration', 'some cypher as action on each iteration', 10000) YIELD batches, total - run the action statement in batches over the iterator statement's results in a separate thread. Returns number of batches and total processed rows"
 "procedure"¦"apoc.periodic.iterate"¦"apoc.periodic.iterate('statement returning items', 'statement per item', {batchSize:1000,iterateList:false,parallel:true}) YIELD batches, total - run the second statement for each item returned by the first statement. Returns number of batches and total processed rows"
 "procedure"¦"apoc.periodic.rock_n_roll"¦"apoc.periodic.rock_n_roll('some cypher for iteration', 'some cypher as action on each iteration', 10000) YIELD batches, total - run the action statement in batches over the iterator statement's results in a separate thread. Returns number of batches and total processed rows"
-"procedure"¦"apoc.plotgen.npc.CreateNPC"¦"apoc.plotgen.npc.CreateNPC - create a new NPC"
+"procedure"¦"apoc.plotgen.npc.CreateNPC(Count)"¦"apoc.plotgen.npc.CreateNPC - create a new NPC"
 "procedure"¦"apoc.refactor.extractNode"¦"apoc.refactor.extractNode([rel1,rel2,...], [labels],'OUT','IN') extract node from relationships"
 "procedure"¦"apoc.refactor.collapseNode"¦"apoc.refactor.collapseNode([node1,node2],'TYPE') collapse node to relationship, node with one rel becomes self-relationship"
 "procedure"¦"apoc.refactor.cloneNodes"¦"apoc.refactor.cloneNodes([node1,node2,...]) clone nodes with their labels and properties"
