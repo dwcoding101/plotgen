@@ -1,3 +1,3 @@
 "type"¦"qualified name"¦"description"
-"procedure"¦"apoc.plotgen.npc.CreateNPC(Count)"¦"apoc.plotgen.npc.CreateNPC - create a new NPC"
+"procedure"¦"apoc.plotgen.npc.CreateNPC"¦"apoc.plotgen.npc.CreateNPC - create a new NPC"
 "function"¦"apoc.plotgen.npc.uuid"¦"apoc.create.uuid() - creates an UUID"
