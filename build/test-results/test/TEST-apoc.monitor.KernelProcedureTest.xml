@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.monitor.KernelProcedureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-19T12:34:32" hostname="Pc" time="0.105">
+<testsuite name="apoc.monitor.KernelProcedureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-19T15:06:12" hostname="Pc" time="0.119">
   <properties/>
-  <testcase name="testGetKernelInfo" classname="apoc.monitor.KernelProcedureTest" time="0.105"/>
+  <testcase name="testGetKernelInfo" classname="apoc.monitor.KernelProcedureTest" time="0.119"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
