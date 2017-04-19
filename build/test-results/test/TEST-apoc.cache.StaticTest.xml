@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.cache.StaticTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-19T17:27:09" hostname="Pc" time="0.453">
+<testsuite name="apoc.cache.StaticTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-19T17:36:37" hostname="Pc" time="0.452">
   <properties/>
-  <testcase name="testListFromConfig" classname="apoc.cache.StaticTest" time="0.128"/>
-  <testcase name="testSet" classname="apoc.cache.StaticTest" time="0.1"/>
-  <testcase name="testGetAllFromConfig" classname="apoc.cache.StaticTest" time="0.116"/>
-  <testcase name="testOverrideConfig" classname="apoc.cache.StaticTest" time="0.109"/>
+  <testcase name="testListFromConfig" classname="apoc.cache.StaticTest" time="0.135"/>
+  <testcase name="testSet" classname="apoc.cache.StaticTest" time="0.114"/>
+  <testcase name="testGetAllFromConfig" classname="apoc.cache.StaticTest" time="0.102"/>
+  <testcase name="testOverrideConfig" classname="apoc.cache.StaticTest" time="0.101"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

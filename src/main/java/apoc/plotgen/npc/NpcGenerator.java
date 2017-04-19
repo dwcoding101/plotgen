@@ -35,8 +35,8 @@ public class NpcGenerator {
 
             String query = "CALL apoc.create.node(['NPC'], {uuid:" + uuid +
                     ", firstName:'" + firstName + "'" +
-                    ", surname:" + surname + "'" +
-                    ", gender:" + gender + "'" +
+                    ", surname:'" + surname + "'" +
+                    ", gender:'" + gender + "'" +
                     "})";
 
             Result execute = db.execute(query);
