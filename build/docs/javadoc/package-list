@@ -47,6 +47,7 @@ apoc.path
 apoc.periodic
 apoc.plotgen.gender
 apoc.plotgen.names
+apoc.plotgen.npc
 apoc.refactor
 apoc.result
 apoc.schema
