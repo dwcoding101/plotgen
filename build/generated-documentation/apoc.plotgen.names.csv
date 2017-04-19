@@ -1,3 +1,5 @@
 "type"¦"qualified name"¦"description"
-"function"¦"apoc.plotgen.names.humanSurname"¦"apoc.plotgen.names.humanSurmane()"
+"function"¦"apoc.plotgen.names.humanSurnameP1"¦"apoc.plotgen.names.humanSurmaneP1()"
+"function"¦"apoc.plotgen.names.humanSurnameP2"¦"apoc.plotgen.names.humanSurmaneP2()"
 "function"¦"apoc.plotgen.names.humanMale"¦"apoc.plotgen.names.humanMale()"
+"function"¦"apoc.plotgen.names.humanFemale"¦"apoc.plotgen.names.humanFemale()"

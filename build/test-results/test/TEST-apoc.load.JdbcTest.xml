@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.load.JdbcTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-18T22:41:53" hostname="Pc" time="0.037">
+<testsuite name="apoc.load.JdbcTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-19T12:34:25" hostname="Pc" time="0.043">
   <properties/>
-  <testcase name="testLoadJdbc" classname="apoc.load.JdbcTest" time="0.012"/>
-  <testcase name="testLoadJdbcParams" classname="apoc.load.JdbcTest" time="0.019"/>
-  <testcase name="testLoadJdbcSelect" classname="apoc.load.JdbcTest" time="0.003"/>
-  <testcase name="testLoadJdbcKey" classname="apoc.load.JdbcTest" time="0.003"/>
+  <testcase name="testLoadJdbc" classname="apoc.load.JdbcTest" time="0.015"/>
+  <testcase name="testLoadJdbcParams" classname="apoc.load.JdbcTest" time="0.02"/>
+  <testcase name="testLoadJdbcSelect" classname="apoc.load.JdbcTest" time="0.004"/>
+  <testcase name="testLoadJdbcKey" classname="apoc.load.JdbcTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
