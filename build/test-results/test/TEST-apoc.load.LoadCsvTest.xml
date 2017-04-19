@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.load.LoadCsvTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-04-19T16:35:29" hostname="Pc" time="1.928">
+<testsuite name="apoc.load.LoadCsvTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-04-19T17:29:03" hostname="Pc" time="2.025">
   <properties/>
-  <testcase name="testLoadCsvTabSeparator" classname="apoc.load.LoadCsvTest" time="0.154"/>
-  <testcase name="testLoadCsvColonSeparator" classname="apoc.load.LoadCsvTest" time="0.084"/>
-  <testcase name="testLoadCsvByUrlRedirect" classname="apoc.load.LoadCsvTest" time="1.08"/>
-  <testcase name="testLoadCsvSkip" classname="apoc.load.LoadCsvTest" time="0.108"/>
-  <testcase name="testLoadCsv" classname="apoc.load.LoadCsvTest" time="0.102"/>
+  <testcase name="testLoadCsvTabSeparator" classname="apoc.load.LoadCsvTest" time="0.176"/>
+  <testcase name="testLoadCsvColonSeparator" classname="apoc.load.LoadCsvTest" time="0.109"/>
+  <testcase name="testLoadCsvByUrlRedirect" classname="apoc.load.LoadCsvTest" time="1.119"/>
+  <testcase name="testLoadCsvSkip" classname="apoc.load.LoadCsvTest" time="0.112"/>
+  <testcase name="testLoadCsv" classname="apoc.load.LoadCsvTest" time="0.106"/>
   <testcase name="testMapping" classname="apoc.load.LoadCsvTest" time="0.102"/>
   <testcase name="testLoadCsvIgnoreFields" classname="apoc.load.LoadCsvTest" time="0.103"/>
   <testcase name="testLoadCsvByUrl" classname="apoc.load.LoadCsvTest" time="0.104"/>
-  <testcase name="testLoadCsvNoHeader" classname="apoc.load.LoadCsvTest" time="0.088"/>
+  <testcase name="testLoadCsvNoHeader" classname="apoc.load.LoadCsvTest" time="0.094"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

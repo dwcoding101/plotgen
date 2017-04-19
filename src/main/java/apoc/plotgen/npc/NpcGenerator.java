@@ -5,10 +5,7 @@ import apoc.plotgen.names.NameGenerator;
 import apoc.result.GraphResult;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Result;
-import org.neo4j.procedure.Context;
-import org.neo4j.procedure.Description;
-import org.neo4j.procedure.Procedure;
-import org.neo4j.procedure.UserFunction;
+import org.neo4j.procedure.*;
 
 import java.util.UUID;
 import java.util.stream.Stream;
@@ -23,26 +20,27 @@ public class NpcGenerator {
 
     @Procedure(name = "apoc.plotgen.npc.CreateNPC")
     @Description( "apoc.plotgen.npc.CreateNPC - create a new NPC" )
-    public void CreateNPC() {
+    public void CreateNPC(@Name("Count") String countString) {
+        int count= Integer.parseInt(countString);
+        for(int i = 0; i < count; i++) {
+            String uuid = uuid();
+            String gender = new GenderGenerator().gender();
+            String firstName = "";
+            if (gender.equals("Female")) {
+                firstName = new NameGenerator().humanFemale();
+            } else {
+                firstName = new NameGenerator().humanMale();
+            }
+            String surname = new NameGenerator().humanSurnameP1() + new NameGenerator().humanSurnameP2();
 
-        String uuid = uuid();
-        String gender = new GenderGenerator().gender();
-        String firstName = "";
-        if(gender.equals("Female")){
-            firstName = new NameGenerator().humanFemale();
+            String query = "CALL apoc.create.node(['NPC'], {uuid:" + uuid +
+                    ", firstName:'" + firstName + "'" +
+                    ", surname:" + surname + "'" +
+                    ", gender:" + gender + "'" +
+                    "})";
+
+            Result execute = db.execute(query);
         }
-        else {
-            firstName = new NameGenerator().humanMale();
-        }
-        String surname = new NameGenerator().humanSurnameP1()+new NameGenerator().humanSurnameP2();
-
-        String query = "CALL apoc.create.node(['NPC'], {uuid:"+ uuid +
-                                                     ", firstName:'" + firstName +"'"+
-                                                     ", surname:" + surname +"'"+
-                                                     ", gender:" + gender +"'"+
-                                                     "})";
-
-        Result execute = db.execute(query);
     }
 
 
