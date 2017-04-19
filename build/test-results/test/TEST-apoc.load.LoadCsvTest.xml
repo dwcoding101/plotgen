@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.load.LoadCsvTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-04-19T18:26:43" hostname="Pc" time="1.791">
+<testsuite name="apoc.load.LoadCsvTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-04-19T18:40:30" hostname="Pc" time="2.069">
   <properties/>
-  <testcase name="testLoadCsvTabSeparator" classname="apoc.load.LoadCsvTest" time="0.144"/>
-  <testcase name="testLoadCsvColonSeparator" classname="apoc.load.LoadCsvTest" time="0.107"/>
-  <testcase name="testLoadCsvByUrlRedirect" classname="apoc.load.LoadCsvTest" time="0.966"/>
-  <testcase name="testLoadCsvSkip" classname="apoc.load.LoadCsvTest" time="0.091"/>
-  <testcase name="testLoadCsv" classname="apoc.load.LoadCsvTest" time="0.092"/>
-  <testcase name="testMapping" classname="apoc.load.LoadCsvTest" time="0.098"/>
-  <testcase name="testLoadCsvIgnoreFields" classname="apoc.load.LoadCsvTest" time="0.094"/>
-  <testcase name="testLoadCsvByUrl" classname="apoc.load.LoadCsvTest" time="0.091"/>
-  <testcase name="testLoadCsvNoHeader" classname="apoc.load.LoadCsvTest" time="0.105"/>
+  <testcase name="testLoadCsvTabSeparator" classname="apoc.load.LoadCsvTest" time="0.222"/>
+  <testcase name="testLoadCsvColonSeparator" classname="apoc.load.LoadCsvTest" time="0.087"/>
+  <testcase name="testLoadCsvByUrlRedirect" classname="apoc.load.LoadCsvTest" time="1.149"/>
+  <testcase name="testLoadCsvSkip" classname="apoc.load.LoadCsvTest" time="0.111"/>
+  <testcase name="testLoadCsv" classname="apoc.load.LoadCsvTest" time="0.093"/>
+  <testcase name="testMapping" classname="apoc.load.LoadCsvTest" time="0.108"/>
+  <testcase name="testLoadCsvIgnoreFields" classname="apoc.load.LoadCsvTest" time="0.092"/>
+  <testcase name="testLoadCsvByUrl" classname="apoc.load.LoadCsvTest" time="0.108"/>
+  <testcase name="testLoadCsvNoHeader" classname="apoc.load.LoadCsvTest" time="0.096"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -18,7 +18,7 @@ public class NpcGenerator {
     @Context
     public GraphDatabaseService db;
 
-    @Procedure(name = "apoc.plotgen.npc.CreateNPC")
+    @Procedure(name = "apoc.plotgen.npc.CreateNPC", mode = Mode.WRITE)
     @Description( "apoc.plotgen.npc.CreateNPC - create a new NPC" )
     public void CreateNPC(@Name("Count") long count) {
 
