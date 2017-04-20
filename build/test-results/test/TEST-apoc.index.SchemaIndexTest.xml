@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.index.SchemaIndexTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-20T18:36:57" hostname="Pc" time="0.107">
+<testsuite name="apoc.index.SchemaIndexTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:28:22" hostname="Pc" time="0.098">
   <properties/>
   <testcase name="testOrderedRangeNumbers" classname="apoc.index.SchemaIndexTest" time="0.029"/>
-  <testcase name="testOrderedRangeText" classname="apoc.index.SchemaIndexTest" time="0.008"/>
-  <testcase name="testOrderedRangeNumbersLowerBound" classname="apoc.index.SchemaIndexTest" time="0.007"/>
+  <testcase name="testOrderedRangeText" classname="apoc.index.SchemaIndexTest" time="0.005"/>
+  <testcase name="testOrderedRangeNumbersLowerBound" classname="apoc.index.SchemaIndexTest" time="0.004"/>
   <testcase name="testOrderByText" classname="apoc.index.SchemaIndexTest" time="0.007"/>
-  <testcase name="testRelated" classname="apoc.index.SchemaIndexTest" time="0.02"/>
-  <testcase name="testDistinctProperties" classname="apoc.index.SchemaIndexTest" time="0.027"/>
+  <testcase name="testRelated" classname="apoc.index.SchemaIndexTest" time="0.018"/>
+  <testcase name="testDistinctProperties" classname="apoc.index.SchemaIndexTest" time="0.026"/>
   <testcase name="testOrderedRangeNumbersUpperBound" classname="apoc.index.SchemaIndexTest" time="0.005"/>
   <testcase name="testOrderedRangeNumbersRangeSmallerSize" classname="apoc.index.SchemaIndexTest" time="0.004"/>
   <system-out><![CDATA[[]

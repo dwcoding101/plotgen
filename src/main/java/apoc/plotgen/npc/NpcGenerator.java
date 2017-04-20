@@ -75,7 +75,7 @@ public class NpcGenerator {
 
         //Get the current time
         String query = "MATCH (a:TIME) RETURN a.current AS dayLength";
-        double current = 0;
+        long current = 0;
         try ( Result result = db.execute( query ) )
         {
             while ( result.hasNext() )
@@ -83,7 +83,7 @@ public class NpcGenerator {
                 Map<String, Object> row = result.next();
                 for ( String key : result.columns() )
                 {
-                    current = Double.parseDouble((String) row.get(key));
+                    current = Long.parseLong((String) row.get(key));
 
                 }
             }
@@ -98,8 +98,8 @@ public class NpcGenerator {
             {
                 Map<String, Object> row = result.next();
             //    String uuid = (String) row.get("uuid");
-                long number = min+((long)(r.nextDouble()*(max-min)));
-                double dob = current - number;
+                long number = min+((long)(r.nextLong()*(max-min)));
+                long dob = current - number;
                 String uuid ="Not Set";
                 for ( String key : result.columns() )
                 {

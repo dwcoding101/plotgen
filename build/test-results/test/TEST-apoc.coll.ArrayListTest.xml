@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.coll.ArrayListTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T18:35:41" hostname="Pc" time="0.003">
+<testsuite name="apoc.coll.ArrayListTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:27:10" hostname="Pc" time="0.003">
   <properties/>
   <testcase name="testListIterator" classname="apoc.coll.ArrayListTest" time="0.0"/>
   <testcase name="testEmptyList" classname="apoc.coll.ArrayListTest" time="0.002"/>
