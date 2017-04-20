@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.scoring.ScoringTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T12:24:13" hostname="Pc" time="0.017">
+<testsuite name="apoc.scoring.ScoringTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T12:34:15" hostname="Pc" time="0.015">
   <properties/>
-  <testcase name="existence" classname="apoc.scoring.ScoringTest" time="0.008"/>
+  <testcase name="existence" classname="apoc.scoring.ScoringTest" time="0.007"/>
   <testcase name="pareto" classname="apoc.scoring.ScoringTest" time="0.008"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

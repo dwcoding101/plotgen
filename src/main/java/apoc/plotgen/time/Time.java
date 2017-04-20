@@ -90,7 +90,7 @@ public class Time {
 
         current =current + seconds;
         //Set new current time
-        query = "MATCH (a:TIME) SET a.current ='"+ current +"'  AS current";
+        query = "MATCH (a:TIME) SET a.current ='"+ current +"'";
         try ( Result result = db.execute( query ) ){
 
         }
