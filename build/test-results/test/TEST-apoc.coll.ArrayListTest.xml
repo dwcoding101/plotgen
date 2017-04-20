@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.coll.ArrayListTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T17:42:40" hostname="Pc" time="0.003">
+<testsuite name="apoc.coll.ArrayListTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T18:13:40" hostname="Pc" time="0.003">
   <properties/>
   <testcase name="testListIterator" classname="apoc.coll.ArrayListTest" time="0.0"/>
   <testcase name="testEmptyList" classname="apoc.coll.ArrayListTest" time="0.002"/>
   <testcase name="testDoubleList" classname="apoc.coll.ArrayListTest" time="0.0"/>
   <testcase name="testContains" classname="apoc.coll.ArrayListTest" time="0.0"/>
-  <testcase name="testSingleList" classname="apoc.coll.ArrayListTest" time="0.001"/>
-  <testcase name="testReverse" classname="apoc.coll.ArrayListTest" time="0.0"/>
+  <testcase name="testSingleList" classname="apoc.coll.ArrayListTest" time="0.0"/>
+  <testcase name="testReverse" classname="apoc.coll.ArrayListTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

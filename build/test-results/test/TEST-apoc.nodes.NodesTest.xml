@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.nodes.NodesTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-20T17:44:26" hostname="Pc" time="0.786">
+<testsuite name="apoc.nodes.NodesTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-20T18:15:22" hostname="Pc" time="0.822">
   <properties/>
-  <testcase name="delete" classname="apoc.nodes.NodesTest" time="0.364"/>
-  <testcase name="link" classname="apoc.nodes.NodesTest" time="0.139"/>
-  <testcase name="hasRelationhip" classname="apoc.nodes.NodesTest" time="0.153"/>
+  <testcase name="delete" classname="apoc.nodes.NodesTest" time="0.403"/>
+  <testcase name="link" classname="apoc.nodes.NodesTest" time="0.118"/>
+  <testcase name="hasRelationhip" classname="apoc.nodes.NodesTest" time="0.172"/>
   <testcase name="isDense" classname="apoc.nodes.NodesTest" time="0.129"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

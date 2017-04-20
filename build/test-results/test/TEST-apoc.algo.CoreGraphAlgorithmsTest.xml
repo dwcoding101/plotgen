@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.CoreGraphAlgorithmsTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-20T17:41:41" hostname="Pc" time="0.006">
+<testsuite name="apoc.algo.CoreGraphAlgorithmsTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-20T18:12:44" hostname="Pc" time="0.005">
   <properties/>
   <testcase name="testLoadDegreesBoth" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.002"/>
   <testcase name="labelPropagation" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.001"/>
   <testcase name="unionFind" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.0"/>
   <testcase name="testLoadDegreesOutgoingType" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.0"/>
   <testcase name="testInitLabel" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.001"/>
-  <testcase name="pageRank" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.001"/>
+  <testcase name="pageRank" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.0"/>
   <testcase name="testLoadDegreesIncomingType" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.0"/>
-  <testcase name="testInitLabelRel" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.001"/>
+  <testcase name="testInitLabelRel" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.0"/>
   <testcase name="testInitAll" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.0"/>
   <testcase name="testLoadDegreesOutgoing" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.0"/>
   <testcase name="testLoadDegreesIncoming" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.0"/>

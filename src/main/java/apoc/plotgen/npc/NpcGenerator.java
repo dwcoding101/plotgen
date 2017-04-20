@@ -102,8 +102,8 @@ public class NpcGenerator {
                 String uuid ="Not Set";
                 for ( String key : result.columns() )
                 {
-                    if (key.equals("uuid"))
-                    uuid = (String) row.get(key);
+
+                    log.info(row.get(key).toString());
                 }
 
                 log.info("DOB := " + dob + " uuid := " +uuid );
