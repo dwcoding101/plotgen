@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.path.RelationshipTypeAndDirectionsTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:28:57" hostname="Pc" time="0.001">
+<testsuite name="apoc.path.RelationshipTypeAndDirectionsTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:51:03" hostname="Pc" time="0.001">
   <properties/>
-  <testcase name="parse[0: null -&gt; [(null, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
+  <testcase name="parse[0: null -&gt; [(null, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.001"/>
   <testcase name="parse[1:  -&gt; [(null, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[2: &gt; -&gt; [(null, OUTGOING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[3: &lt; -&gt; [(null, INCOMING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
@@ -12,7 +12,7 @@
   <testcase name="parse[8: &gt;SIMPLE -&gt; [(SIMPLE, OUTGOING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[9: SIMPLE -&gt; [(SIMPLE, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[10: TYPE1|TYPE2 -&gt; [(TYPE1, BOTH), (TYPE2, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
-  <testcase name="parse[11: TYPE1&gt;|TYPE2&lt; -&gt; [(TYPE1, OUTGOING), (TYPE2, INCOMING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.001"/>
+  <testcase name="parse[11: TYPE1&gt;|TYPE2&lt; -&gt; [(TYPE1, OUTGOING), (TYPE2, INCOMING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

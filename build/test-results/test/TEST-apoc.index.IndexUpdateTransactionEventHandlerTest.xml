@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.index.IndexUpdateTransactionEventHandlerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:28:22" hostname="Pc" time="0.298">
+<testsuite name="apoc.index.IndexUpdateTransactionEventHandlerTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:50:29" hostname="Pc" time="0.355">
   <properties/>
-  <testcase name="shouldDeletingIndexedNodesSucceed" classname="apoc.index.IndexUpdateTransactionEventHandlerTest" time="0.181"/>
-  <testcase name="shouldIndexFieldsBeUsedConsistently" classname="apoc.index.IndexUpdateTransactionEventHandlerTest" time="0.117"/>
+  <testcase name="shouldDeletingIndexedNodesSucceed" classname="apoc.index.IndexUpdateTransactionEventHandlerTest" time="0.225"/>
+  <testcase name="shouldIndexFieldsBeUsedConsistently" classname="apoc.index.IndexUpdateTransactionEventHandlerTest" time="0.13"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

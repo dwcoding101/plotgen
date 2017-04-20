@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.load.JdbcTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:28:47" hostname="Pc" time="0.043">
+<testsuite name="apoc.load.JdbcTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:50:54" hostname="Pc" time="0.044">
   <properties/>
   <testcase name="testLoadJdbc" classname="apoc.load.JdbcTest" time="0.013"/>
   <testcase name="testLoadJdbcParams" classname="apoc.load.JdbcTest" time="0.022"/>

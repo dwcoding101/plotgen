@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.text.StringsTest" tests="20" skipped="0" failures="1" errors="0" timestamp="2017-04-20T19:29:32" hostname="Pc" time="0.116">
+<testsuite name="apoc.text.StringsTest" tests="20" skipped="0" failures="1" errors="0" timestamp="2017-04-20T19:51:39" hostname="Pc" time="0.13">
   <properties/>
   <testcase name="testReplaceAllWithNull" classname="apoc.text.StringsTest" time="0.007"/>
   <testcase name="testDocCompareCleaned" classname="apoc.text.StringsTest" time="0.005"/>
   <testcase name="testJoinWithNull" classname="apoc.text.StringsTest" time="0.005"/>
   <testcase name="testJoin" classname="apoc.text.StringsTest" time="0.0"/>
-  <testcase name="testLPad" classname="apoc.text.StringsTest" time="0.014"/>
-  <testcase name="testRPad" classname="apoc.text.StringsTest" time="0.012"/>
+  <testcase name="testLPad" classname="apoc.text.StringsTest" time="0.017"/>
+  <testcase name="testRPad" classname="apoc.text.StringsTest" time="0.014"/>
   <testcase name="testCleanWithNull" classname="apoc.text.StringsTest" time="0.004"/>
-  <testcase name="testUrlDecode" classname="apoc.text.StringsTest" time="0.005"/>
+  <testcase name="testUrlDecode" classname="apoc.text.StringsTest" time="0.008"/>
   <testcase name="testUrlEncode" classname="apoc.text.StringsTest" time="0.004"/>
-  <testcase name="testCompareCleaned" classname="apoc.text.StringsTest" time="0.004"/>
-  <testcase name="testUrlDecodeFailure" classname="apoc.text.StringsTest" time="0.003"/>
-  <testcase name="testReplace" classname="apoc.text.StringsTest" time="0.0"/>
+  <testcase name="testCompareCleaned" classname="apoc.text.StringsTest" time="0.003"/>
+  <testcase name="testUrlDecodeFailure" classname="apoc.text.StringsTest" time="0.004"/>
+  <testcase name="testReplace" classname="apoc.text.StringsTest" time="0.001"/>
   <testcase name="testRegexGroupsForNPE" classname="apoc.text.StringsTest" time="0.009"/>
   <testcase name="testFormat" classname="apoc.text.StringsTest" time="0.016">
     <failure message="org.junit.ComparisonFailure: expected:&lt;abcd 42 3.1 true[]&#10;&gt; but was:&lt;abcd 42 3.1 true[&#13;]&#10;&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;abcd 42 3.1 true[]
@@ -51,7 +51,7 @@
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -60,7 +60,7 @@
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
 	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.GeneratedMethodAccessor89.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -73,9 +73,9 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testDocJoin" classname="apoc.text.StringsTest" time="0.005"/>
-  <testcase name="testDocClean" classname="apoc.text.StringsTest" time="0.004"/>
-  <testcase name="testDocReplace" classname="apoc.text.StringsTest" time="0.004"/>
+  <testcase name="testDocJoin" classname="apoc.text.StringsTest" time="0.006"/>
+  <testcase name="testDocClean" classname="apoc.text.StringsTest" time="0.006"/>
+  <testcase name="testDocReplace" classname="apoc.text.StringsTest" time="0.007"/>
   <testcase name="testCompareCleanedWithNull" classname="apoc.text.StringsTest" time="0.001"/>
   <testcase name="testCompareCleanedInQuery" classname="apoc.text.StringsTest" time="0.007"/>
   <testcase name="testRegexGroups" classname="apoc.text.StringsTest" time="0.005"/>

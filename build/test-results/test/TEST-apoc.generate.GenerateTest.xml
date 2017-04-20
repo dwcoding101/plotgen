@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.generate.GenerateTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:27:55" hostname="Pc" time="1.762">
+<testsuite name="apoc.generate.GenerateTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:50:03" hostname="Pc" time="1.743">
   <properties/>
-  <testcase name="shouldGenerateWattsStrogatz1" classname="apoc.generate.GenerateTest" time="0.145"/>
-  <testcase name="shouldGenerateWattsStrogatz2" classname="apoc.generate.GenerateTest" time="0.204"/>
-  <testcase name="shouldGenerateWattsStrogatz3" classname="apoc.generate.GenerateTest" time="0.132"/>
-  <testcase name="shouldGenerateComplete1" classname="apoc.generate.GenerateTest" time="0.11"/>
-  <testcase name="shouldGenerateComplete2" classname="apoc.generate.GenerateTest" time="0.131"/>
-  <testcase name="shouldGenerateBarabasiAlbert1" classname="apoc.generate.GenerateTest" time="0.13"/>
-  <testcase name="shouldGenerateBarabasiAlbert2" classname="apoc.generate.GenerateTest" time="0.111"/>
-  <testcase name="shouldGenerateBarabasiAlbert3" classname="apoc.generate.GenerateTest" time="0.113"/>
+  <testcase name="shouldGenerateWattsStrogatz1" classname="apoc.generate.GenerateTest" time="0.136"/>
+  <testcase name="shouldGenerateWattsStrogatz2" classname="apoc.generate.GenerateTest" time="0.175"/>
+  <testcase name="shouldGenerateWattsStrogatz3" classname="apoc.generate.GenerateTest" time="0.127"/>
+  <testcase name="shouldGenerateComplete1" classname="apoc.generate.GenerateTest" time="0.096"/>
+  <testcase name="shouldGenerateComplete2" classname="apoc.generate.GenerateTest" time="0.145"/>
+  <testcase name="shouldGenerateBarabasiAlbert1" classname="apoc.generate.GenerateTest" time="0.11"/>
+  <testcase name="shouldGenerateBarabasiAlbert2" classname="apoc.generate.GenerateTest" time="0.09"/>
+  <testcase name="shouldGenerateBarabasiAlbert3" classname="apoc.generate.GenerateTest" time="0.133"/>
   <testcase name="shouldGenerateErdosRenyi1" classname="apoc.generate.GenerateTest" time="0.139"/>
-  <testcase name="shouldGenerateErdosRenyi2" classname="apoc.generate.GenerateTest" time="0.21"/>
-  <testcase name="shouldGenerateErdosRenyi3" classname="apoc.generate.GenerateTest" time="0.105"/>
-  <testcase name="shouldGenerateSimple1" classname="apoc.generate.GenerateTest" time="0.109"/>
-  <testcase name="shouldGenerateSimple2" classname="apoc.generate.GenerateTest" time="0.122"/>
+  <testcase name="shouldGenerateErdosRenyi2" classname="apoc.generate.GenerateTest" time="0.222"/>
+  <testcase name="shouldGenerateErdosRenyi3" classname="apoc.generate.GenerateTest" time="0.104"/>
+  <testcase name="shouldGenerateSimple1" classname="apoc.generate.GenerateTest" time="0.143"/>
+  <testcase name="shouldGenerateSimple2" classname="apoc.generate.GenerateTest" time="0.121"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

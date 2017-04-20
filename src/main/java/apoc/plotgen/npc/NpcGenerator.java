@@ -12,6 +12,7 @@ import org.neo4j.procedure.*;
 import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
+import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Stream;
 
 /**
@@ -68,6 +69,8 @@ public class NpcGenerator {
         long min = 503198344L;
         long max = 1132196274L;
         Random r = new Random();
+
+        ThreadLocalRandom.current().nextLong(min,max);
       //  long number = min+((long)(r.nextDouble()*(max-min)));
 
         //Get all NPC
@@ -98,7 +101,7 @@ public class NpcGenerator {
             {
                 Map<String, Object> row = result.next();
             //    String uuid = (String) row.get("uuid");
-                long number = min+((long)(r.nextLong()*(max-min)));
+                long number = ThreadLocalRandom.current().nextLong(min,max);
                 long dob = current - number;
                 String uuid ="Not Set";
                 for ( String key : result.columns() )

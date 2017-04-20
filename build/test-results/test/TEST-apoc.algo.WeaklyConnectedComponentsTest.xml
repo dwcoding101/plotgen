@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.WeaklyConnectedComponentsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:26:52" hostname="Pc" time="0.294">
+<testsuite name="apoc.algo.WeaklyConnectedComponentsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:48:58" hostname="Pc" time="0.297">
   <properties/>
-  <testcase name="shouldReturnExpectedResultWhenUsingWeaklyConnected" classname="apoc.algo.WeaklyConnectedComponentsTest" time="0.153"/>
-  <testcase name="shouldReturnExpectedResultCountWhenUsingWeaklyConnected" classname="apoc.algo.WeaklyConnectedComponentsTest" time="0.141"/>
+  <testcase name="shouldReturnExpectedResultWhenUsingWeaklyConnected" classname="apoc.algo.WeaklyConnectedComponentsTest" time="0.157"/>
+  <testcase name="shouldReturnExpectedResultCountWhenUsingWeaklyConnected" classname="apoc.algo.WeaklyConnectedComponentsTest" time="0.14"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
