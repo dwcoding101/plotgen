@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.load.LoadJsonTest" tests="6" skipped="1" failures="0" errors="0" timestamp="2017-04-20T11:21:59" hostname="Pc" time="0.493">
+<testsuite name="apoc.load.LoadJsonTest" tests="6" skipped="1" failures="0" errors="0" timestamp="2017-04-20T11:36:30" hostname="Pc" time="0.472">
   <properties/>
-  <testcase name="testLoadJson" classname="apoc.load.LoadJsonTest" time="0.095"/>
-  <testcase name="testLoadJsonArrayPath" classname="apoc.load.LoadJsonTest" time="0.102"/>
-  <testcase name="testLoadJsonPathRoot" classname="apoc.load.LoadJsonTest" time="0.098"/>
-  <testcase name="testLoadJsonPath" classname="apoc.load.LoadJsonTest" time="0.105"/>
+  <testcase name="testLoadJson" classname="apoc.load.LoadJsonTest" time="0.096"/>
+  <testcase name="testLoadJsonArrayPath" classname="apoc.load.LoadJsonTest" time="0.105"/>
+  <testcase name="testLoadJsonPathRoot" classname="apoc.load.LoadJsonTest" time="0.094"/>
+  <testcase name="testLoadJsonPath" classname="apoc.load.LoadJsonTest" time="0.083"/>
   <testcase name="testLoadJsonGraphCommons" classname="apoc.load.LoadJsonTest" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="testLoadJsonArrayPathRoot" classname="apoc.load.LoadJsonTest" time="0.092"/>
+  <testcase name="testLoadJsonArrayPathRoot" classname="apoc.load.LoadJsonTest" time="0.093"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

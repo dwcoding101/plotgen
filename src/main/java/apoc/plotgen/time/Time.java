@@ -56,7 +56,7 @@ public class Time {
     public void AdvanceADay() {
 
         // Get day length in seconds
-        String query = "MMATCH (a:TIME) RETURN a.dayLength AS dayLength";
+        String query = "MATCH (a:TIME) RETURN a.dayLength AS dayLength";
 
         Result execute = db.execute(query);
 

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.export.graphml.ExportGraphMLTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-20T11:21:06" hostname="Pc" time="0.12">
+<testsuite name="apoc.export.graphml.ExportGraphMLTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-20T11:35:35" hostname="Pc" time="0.125">
   <properties/>
-  <testcase name="testExportGraphGraphML" classname="apoc.export.graphml.ExportGraphMLTest" time="0.039"/>
-  <testcase name="testExportAllGraphML" classname="apoc.export.graphml.ExportGraphMLTest" time="0.026"/>
-  <testcase name="testExportGraphGraphMLTypes" classname="apoc.export.graphml.ExportGraphMLTest" time="0.019"/>
-  <testcase name="testImportGraphML" classname="apoc.export.graphml.ExportGraphMLTest" time="0.036"/>
+  <testcase name="testExportGraphGraphML" classname="apoc.export.graphml.ExportGraphMLTest" time="0.03"/>
+  <testcase name="testExportAllGraphML" classname="apoc.export.graphml.ExportGraphMLTest" time="0.015"/>
+  <testcase name="testExportGraphGraphMLTypes" classname="apoc.export.graphml.ExportGraphMLTest" time="0.015"/>
+  <testcase name="testImportGraphML" classname="apoc.export.graphml.ExportGraphMLTest" time="0.065"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

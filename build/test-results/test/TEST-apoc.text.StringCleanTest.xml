@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.text.StringCleanTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2017-04-20T11:22:41" hostname="Pc" time="0.01">
+<testsuite name="apoc.text.StringCleanTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2017-04-20T11:37:11" hostname="Pc" time="0.008">
   <properties/>
-  <testcase name="testClean[&amp;N[]eo  4 #J-(3.0)  ]" classname="apoc.text.StringCleanTest" time="0.009"/>
+  <testcase name="testClean[&amp;N[]eo  4 #J-(3.0)  ]" classname="apoc.text.StringCleanTest" time="0.006"/>
   <testcase name="testClean[German umlaut Ã„ Ã– Ãœ Ã¤ Ã¶ Ã¼ ÃŸ ]" classname="apoc.text.StringCleanTest" time="0.0"/>
   <testcase name="testClean[French Ã§Ã‡Ã©Ã¨ÃªÃ«Ã¯Ã®Ã´Å“Ã Ã¢Ã¦Ã¹Ã»Ã¼]" classname="apoc.text.StringCleanTest" time="0.001">
     <failure message="org.junit.ComparisonFailure: expected:&lt;french[cceeeeiioaauu]ue&gt; but was:&lt;french[aaaaaaaaaaaaaaa]ue&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;french[cceeeeiioaauu]ue&gt; but was:&lt;french[aaaaaaaaaaaaaaa]ue&gt;
