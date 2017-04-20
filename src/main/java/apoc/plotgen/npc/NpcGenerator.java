@@ -4,6 +4,7 @@ import apoc.plotgen.gender.GenderGenerator;
 import apoc.plotgen.names.NameGenerator;
 import apoc.result.GraphResult;
 import org.neo4j.graphdb.GraphDatabaseService;
+import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Result;
 import org.neo4j.logging.Log;
 import org.neo4j.procedure.*;
@@ -103,7 +104,9 @@ public class NpcGenerator {
                 for ( String key : result.columns() )
                 {
 
-                    log.info(row.get(key).toString());
+                    Node node = (Node)row.get(key);
+                    uuid = node.getProperty(key="uuid").toString();
+                    log.info(uuid);
                 }
 
                 log.info("DOB := " + dob + " uuid := " +uuid );

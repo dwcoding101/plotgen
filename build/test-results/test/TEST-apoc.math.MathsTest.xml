@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.math.MathsTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-20T18:15:20" hostname="Pc" time="0.05">
+<testsuite name="apoc.math.MathsTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-20T18:37:26" hostname="Pc" time="0.051">
   <properties/>
   <testcase name="testRoundSimple" classname="apoc.math.MathsTest" time="0.007"/>
-  <testcase name="testRoundPrecision" classname="apoc.math.MathsTest" time="0.005"/>
-  <testcase name="testMaxDouble" classname="apoc.math.MathsTest" time="0.004"/>
-  <testcase name="testMinDouble" classname="apoc.math.MathsTest" time="0.004"/>
-  <testcase name="testMaxByte" classname="apoc.math.MathsTest" time="0.004"/>
+  <testcase name="testRoundPrecision" classname="apoc.math.MathsTest" time="0.008"/>
+  <testcase name="testMaxDouble" classname="apoc.math.MathsTest" time="0.003"/>
+  <testcase name="testMinDouble" classname="apoc.math.MathsTest" time="0.003"/>
+  <testcase name="testMaxByte" classname="apoc.math.MathsTest" time="0.003"/>
   <testcase name="testMaxLong" classname="apoc.math.MathsTest" time="0.004"/>
-  <testcase name="testRoundMode" classname="apoc.math.MathsTest" time="0.006"/>
-  <testcase name="testMinByte" classname="apoc.math.MathsTest" time="0.004"/>
-  <testcase name="testMinLong" classname="apoc.math.MathsTest" time="0.003"/>
+  <testcase name="testRoundMode" classname="apoc.math.MathsTest" time="0.005"/>
+  <testcase name="testMinByte" classname="apoc.math.MathsTest" time="0.003"/>
+  <testcase name="testMinLong" classname="apoc.math.MathsTest" time="0.004"/>
   <testcase name="testMaxInt" classname="apoc.math.MathsTest" time="0.004"/>
   <testcase name="testMinInt" classname="apoc.math.MathsTest" time="0.004"/>
   <system-out><![CDATA[]]></system-out>
