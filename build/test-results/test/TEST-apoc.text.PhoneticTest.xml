@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.text.PhoneticTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-20T15:40:58" hostname="Pc" time="0.646">
+<testsuite name="apoc.text.PhoneticTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-20T16:02:30" hostname="Pc" time="0.7">
   <properties/>
-  <testcase name="shouldComputeSoundexDifference" classname="apoc.text.PhoneticTest" time="0.105"/>
-  <testcase name="shouldComputeSoundexEncodingOfManyWords" classname="apoc.text.PhoneticTest" time="0.081"/>
-  <testcase name="shouldComputeEmptySoundexEncodingForTheEmptyString" classname="apoc.text.PhoneticTest" time="0.101"/>
-  <testcase name="shouldComputeWordSoundexEncodingOfNull" classname="apoc.text.PhoneticTest" time="0.09"/>
-  <testcase name="shouldComputeSoundexEncodingOfManyWordsEvenIfTheStringContainsSomeExtraChars" classname="apoc.text.PhoneticTest" time="0.09"/>
-  <testcase name="shouldComputeSimpleSoundexEncodingOfNull" classname="apoc.text.PhoneticTest" time="0.078"/>
-  <testcase name="shouldComputeSimpleSoundexEncoding" classname="apoc.text.PhoneticTest" time="0.1"/>
+  <testcase name="shouldComputeSoundexDifference" classname="apoc.text.PhoneticTest" time="0.108"/>
+  <testcase name="shouldComputeSoundexEncodingOfManyWords" classname="apoc.text.PhoneticTest" time="0.101"/>
+  <testcase name="shouldComputeEmptySoundexEncodingForTheEmptyString" classname="apoc.text.PhoneticTest" time="0.102"/>
+  <testcase name="shouldComputeWordSoundexEncodingOfNull" classname="apoc.text.PhoneticTest" time="0.105"/>
+  <testcase name="shouldComputeSoundexEncodingOfManyWordsEvenIfTheStringContainsSomeExtraChars" classname="apoc.text.PhoneticTest" time="0.083"/>
+  <testcase name="shouldComputeSimpleSoundexEncodingOfNull" classname="apoc.text.PhoneticTest" time="0.093"/>
+  <testcase name="shouldComputeSimpleSoundexEncoding" classname="apoc.text.PhoneticTest" time="0.108"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

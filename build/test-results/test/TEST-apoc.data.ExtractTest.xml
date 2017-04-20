@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.data.ExtractTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-20T15:38:52" hostname="Pc" time="0.826">
+<testsuite name="apoc.data.ExtractTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-20T16:00:24" hostname="Pc" time="0.811">
   <properties/>
-  <testcase name="testBadString" classname="apoc.data.ExtractTest" time="0.117"/>
-  <testcase name="testUrl" classname="apoc.data.ExtractTest" time="0.113"/>
-  <testcase name="testEmail" classname="apoc.data.ExtractTest" time="0.105"/>
-  <testcase name="testNull" classname="apoc.data.ExtractTest" time="0.108"/>
-  <testcase name="testEmptyString" classname="apoc.data.ExtractTest" time="0.107"/>
-  <testcase name="testQuotedEmail" classname="apoc.data.ExtractTest" time="0.085"/>
-  <testcase name="testQueryParameter" classname="apoc.data.ExtractTest" time="0.096"/>
-  <testcase name="testEmailWithDotsBeforeAt" classname="apoc.data.ExtractTest" time="0.095"/>
+  <testcase name="testBadString" classname="apoc.data.ExtractTest" time="0.115"/>
+  <testcase name="testUrl" classname="apoc.data.ExtractTest" time="0.099"/>
+  <testcase name="testEmail" classname="apoc.data.ExtractTest" time="0.11"/>
+  <testcase name="testNull" classname="apoc.data.ExtractTest" time="0.114"/>
+  <testcase name="testEmptyString" classname="apoc.data.ExtractTest" time="0.087"/>
+  <testcase name="testQuotedEmail" classname="apoc.data.ExtractTest" time="0.099"/>
+  <testcase name="testQueryParameter" classname="apoc.data.ExtractTest" time="0.097"/>
+  <testcase name="testEmailWithDotsBeforeAt" classname="apoc.data.ExtractTest" time="0.089"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

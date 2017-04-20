@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.gephi.GephiTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-20T15:39:25" hostname="Pc" time="3.066">
+<testsuite name="apoc.gephi.GephiTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-20T16:00:57" hostname="Pc" time="3.063">
   <properties/>
-  <testcase name="testAdd" classname="apoc.gephi.GephiTest" time="1.026"/>
-  <testcase name="testWeightParameter" classname="apoc.gephi.GephiTest" time="1.019"/>
+  <testcase name="testAdd" classname="apoc.gephi.GephiTest" time="1.024"/>
+  <testcase name="testWeightParameter" classname="apoc.gephi.GephiTest" time="1.018"/>
   <testcase name="testWrongWeightParameter" classname="apoc.gephi.GephiTest" time="1.021"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[                    Connection refused: connect

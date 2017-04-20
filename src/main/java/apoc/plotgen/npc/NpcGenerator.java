@@ -5,6 +5,7 @@ import apoc.plotgen.names.NameGenerator;
 import apoc.result.GraphResult;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Result;
+import org.neo4j.logging.Log;
 import org.neo4j.procedure.*;
 
 import java.util.Map;
@@ -19,6 +20,10 @@ public class NpcGenerator {
 
     @Context
     public GraphDatabaseService db;
+
+    @Context
+    public Log log;
+
 
     @Procedure(name = "apoc.plotgen.npc.CreateNPC", mode = Mode.WRITE)
     @Description( "apoc.plotgen.npc.CreateNPC - create a new NPC" )
@@ -92,13 +97,14 @@ public class NpcGenerator {
             {
                 Map<String, Object> row = result.next();
                 String uuid = (String)row.get("uuid");
-                for ( String key : result.columns() )
-                {
-                    long number = min+((long)(r.nextDouble()*(max-min)));
-                    double dob = current - number;
-                    String querry2 = "MATCH (a:NPC) WHERE a.uuid='"+uuid+"' SET a.dob='"+dob+"'";
-                    db.execute(querry2);
-                }
+
+                long number = min+((long)(r.nextDouble()*(max-min)));
+                double dob = current - number;
+
+                log.info("DOB := " + dob + " uuid := " +uuid );
+                String querry2 = "MATCH (a:NPC) WHERE a.uuid='"+uuid+"' SET a.dob='"+dob+"'";
+                db.execute(querry2);
+
             }
         }
     }
