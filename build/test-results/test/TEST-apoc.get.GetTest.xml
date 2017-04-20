@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.get.GetTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T15:29:27" hostname="Pc" time="0.205">
+<testsuite name="apoc.get.GetTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T15:39:28" hostname="Pc" time="0.21">
   <properties/>
-  <testcase name="testNodes" classname="apoc.get.GetTest" time="0.102"/>
+  <testcase name="testNodes" classname="apoc.get.GetTest" time="0.107"/>
   <testcase name="testRels" classname="apoc.get.GetTest" time="0.103"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

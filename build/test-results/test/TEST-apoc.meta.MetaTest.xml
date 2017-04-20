@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.meta.MetaTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-04-20T15:30:17" hostname="Pc" time="1.352">
+<testsuite name="apoc.meta.MetaTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-04-20T15:40:18" hostname="Pc" time="1.25">
   <properties/>
-  <testcase name="testSubGraphNoLimits" classname="apoc.meta.MetaTest" time="0.114"/>
-  <testcase name="testSubGraphLimitRelTypes" classname="apoc.meta.MetaTest" time="0.114"/>
-  <testcase name="testMetaGraph" classname="apoc.meta.MetaTest" time="0.125"/>
-  <testcase name="testMetaStats" classname="apoc.meta.MetaTest" time="0.109"/>
-  <testcase name="testMetaTypes" classname="apoc.meta.MetaTest" time="0.092"/>
-  <testcase name="testMetaGraphExtraRels" classname="apoc.meta.MetaTest" time="0.091"/>
-  <testcase name="testMetaGraph2" classname="apoc.meta.MetaTest" time="0.107"/>
+  <testcase name="testSubGraphNoLimits" classname="apoc.meta.MetaTest" time="0.118"/>
+  <testcase name="testSubGraphLimitRelTypes" classname="apoc.meta.MetaTest" time="0.102"/>
+  <testcase name="testMetaGraph" classname="apoc.meta.MetaTest" time="0.102"/>
+  <testcase name="testMetaStats" classname="apoc.meta.MetaTest" time="0.118"/>
+  <testcase name="testMetaTypes" classname="apoc.meta.MetaTest" time="0.083"/>
+  <testcase name="testMetaGraphExtraRels" classname="apoc.meta.MetaTest" time="0.092"/>
+  <testcase name="testMetaGraph2" classname="apoc.meta.MetaTest" time="0.085"/>
   <testcase name="testMetaIsType" classname="apoc.meta.MetaTest" time="0.114"/>
-  <testcase name="testSubGraphLimitLabels" classname="apoc.meta.MetaTest" time="0.114"/>
-  <testcase name="testMetaData" classname="apoc.meta.MetaTest" time="0.129"/>
-  <testcase name="testMetaType" classname="apoc.meta.MetaTest" time="0.129"/>
-  <testcase name="testSubGraphExcludes" classname="apoc.meta.MetaTest" time="0.111"/>
+  <testcase name="testSubGraphLimitLabels" classname="apoc.meta.MetaTest" time="0.099"/>
+  <testcase name="testMetaData" classname="apoc.meta.MetaTest" time="0.114"/>
+  <testcase name="testMetaType" classname="apoc.meta.MetaTest" time="0.112"/>
+  <testcase name="testSubGraphExcludes" classname="apoc.meta.MetaTest" time="0.108"/>
   <system-out><![CDATA[{other=[Movie], count=1, existence=false, index=false, label=ACTED_IN, right=1, type=RELATIONSHIP, sample=null, rightCount=1, leftCount=1, array=false, left=1, unique=false, property=Actor}
 {other=[], count=0, existence=false, index=false, label=ACTED_IN, right=0, type=STRING, sample=null, rightCount=0, leftCount=0, array=false, left=0, unique=false, property=roles}
 {other=[], count=0, existence=false, index=true, label=Movie, right=0, type=STRING, sample=null, rightCount=0, leftCount=0, array=false, left=0, unique=false, property=title}

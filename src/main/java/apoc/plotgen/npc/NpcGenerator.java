@@ -52,7 +52,7 @@ public class NpcGenerator {
 
     @Procedure(name = "apoc.plotgen.npc.SetStartingDOB", mode = Mode.WRITE)
     @Description( "apoc.plotgen.npc.SetStartingDOB - Set Character Date of Birth" )
-    public void SetStartingDOB(@Name("Count") long count) {
+    public void SetStartingDOB() {
         //Set all characters Date of Birth
 
         NameGenerator nameGenerator = new NameGenerator();
