@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.text.PhoneticTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-20T11:09:48" hostname="Pc" time="0.701">
+<testsuite name="apoc.text.PhoneticTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-20T11:22:40" hostname="Pc" time="0.661">
   <properties/>
-  <testcase name="shouldComputeSoundexDifference" classname="apoc.text.PhoneticTest" time="0.107"/>
-  <testcase name="shouldComputeSoundexEncodingOfManyWords" classname="apoc.text.PhoneticTest" time="0.104"/>
-  <testcase name="shouldComputeEmptySoundexEncodingForTheEmptyString" classname="apoc.text.PhoneticTest" time="0.095"/>
-  <testcase name="shouldComputeWordSoundexEncodingOfNull" classname="apoc.text.PhoneticTest" time="0.094"/>
-  <testcase name="shouldComputeSoundexEncodingOfManyWordsEvenIfTheStringContainsSomeExtraChars" classname="apoc.text.PhoneticTest" time="0.096"/>
-  <testcase name="shouldComputeSimpleSoundexEncodingOfNull" classname="apoc.text.PhoneticTest" time="0.113"/>
-  <testcase name="shouldComputeSimpleSoundexEncoding" classname="apoc.text.PhoneticTest" time="0.091"/>
+  <testcase name="shouldComputeSoundexDifference" classname="apoc.text.PhoneticTest" time="0.106"/>
+  <testcase name="shouldComputeSoundexEncodingOfManyWords" classname="apoc.text.PhoneticTest" time="0.101"/>
+  <testcase name="shouldComputeEmptySoundexEncodingForTheEmptyString" classname="apoc.text.PhoneticTest" time="0.081"/>
+  <testcase name="shouldComputeWordSoundexEncodingOfNull" classname="apoc.text.PhoneticTest" time="0.092"/>
+  <testcase name="shouldComputeSoundexEncodingOfManyWordsEvenIfTheStringContainsSomeExtraChars" classname="apoc.text.PhoneticTest" time="0.101"/>
+  <testcase name="shouldComputeSimpleSoundexEncodingOfNull" classname="apoc.text.PhoneticTest" time="0.091"/>
+  <testcase name="shouldComputeSimpleSoundexEncoding" classname="apoc.text.PhoneticTest" time="0.089"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.trigger.TriggerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-20T11:09:49" hostname="Pc" time="0.939">
+<testsuite name="apoc.trigger.TriggerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-20T11:22:41" hostname="Pc" time="0.966">
   <properties/>
-  <testcase name="testTimeStampTriggerForUpdatedProperties" classname="apoc.trigger.TriggerTest" time="0.128"/>
-  <testcase name="testTxId" classname="apoc.trigger.TriggerTest" time="0.103"/>
-  <testcase name="testListTriggers" classname="apoc.trigger.TriggerTest" time="0.103"/>
-  <testcase name="testLowerCaseName" classname="apoc.trigger.TriggerTest" time="0.112"/>
-  <testcase name="testRemoveNode" classname="apoc.trigger.TriggerTest" time="0.133"/>
-  <testcase name="testRemoveRelationship" classname="apoc.trigger.TriggerTest" time="0.122"/>
-  <testcase name="testSetLabels" classname="apoc.trigger.TriggerTest" time="0.121"/>
-  <testcase name="testTimeStampTrigger" classname="apoc.trigger.TriggerTest" time="0.117"/>
+  <testcase name="testTimeStampTriggerForUpdatedProperties" classname="apoc.trigger.TriggerTest" time="0.12"/>
+  <testcase name="testTxId" classname="apoc.trigger.TriggerTest" time="0.137"/>
+  <testcase name="testListTriggers" classname="apoc.trigger.TriggerTest" time="0.106"/>
+  <testcase name="testLowerCaseName" classname="apoc.trigger.TriggerTest" time="0.119"/>
+  <testcase name="testRemoveNode" classname="apoc.trigger.TriggerTest" time="0.132"/>
+  <testcase name="testRemoveRelationship" classname="apoc.trigger.TriggerTest" time="0.14"/>
+  <testcase name="testSetLabels" classname="apoc.trigger.TriggerTest" time="0.107"/>
+  <testcase name="testTimeStampTrigger" classname="apoc.trigger.TriggerTest" time="0.104"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
