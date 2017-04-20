@@ -7,6 +7,7 @@ import org.neo4j.graphdb.Result;
 import org.neo4j.logging.Log;
 import org.neo4j.procedure.*;
 
+import java.util.Map;
 import java.util.UUID;
 
 /**
@@ -57,10 +58,45 @@ public class Time {
 
         // Get day length in seconds
         String query = "MATCH (a:TIME) RETURN a.dayLength AS dayLength";
+        double seconds = 0;
+        try ( Result result = db.execute( query ) )
+        {
+            while ( result.hasNext() )
+            {
+                Map<String, Object> row = result.next();
+                for ( String key : result.columns() )
+                {
+                    seconds = Double.parseDouble((String) row.get(key));
 
-        Result execute = db.execute(query);
+                }
+            }
+        }
 
-        log.info(execute.resultAsString());
+        //Get the current time
+        query = "MATCH (a:TIME) RETURN a.current AS dayLength";
+        double current = 0;
+        try ( Result result = db.execute( query ) )
+        {
+            while ( result.hasNext() )
+            {
+                Map<String, Object> row = result.next();
+                for ( String key : result.columns() )
+                {
+                    current = Double.parseDouble((String) row.get(key));
+
+                }
+            }
+        }
+
+        current =current + seconds;
+        //Set new current time
+        query = "MATCH (a:TIME) SET a.current ='"+ current +"'  AS current";
+        try ( Result result = db.execute( query ) ){
+
+        }
+
+
+        log.info("Current Time  := "+ current);
     }
 
 

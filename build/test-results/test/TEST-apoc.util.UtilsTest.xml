@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.util.UtilsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T11:37:12" hostname="Pc" time="0.344">
+<testsuite name="apoc.util.UtilsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T12:24:43" hostname="Pc" time="0.338">
   <properties/>
   <testcase name="testMd5" classname="apoc.util.UtilsTest" time="0.011"/>
-  <testcase name="testSleep" classname="apoc.util.UtilsTest" time="0.311"/>
+  <testcase name="testSleep" classname="apoc.util.UtilsTest" time="0.305"/>
   <testcase name="testSha1" classname="apoc.util.UtilsTest" time="0.005"/>
   <testcase name="testSleepWithTerminate" classname="apoc.util.UtilsTest" time="0.011"/>
   <testcase name="testValidateFalse" classname="apoc.util.UtilsTest" time="0.004"/>
