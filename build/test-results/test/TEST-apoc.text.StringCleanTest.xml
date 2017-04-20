@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.text.StringCleanTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2017-04-19T18:41:15" hostname="Pc" time="0.008">
+<testsuite name="apoc.text.StringCleanTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2017-04-20T10:13:37" hostname="Pc" time="0.008">
   <properties/>
   <testcase name="testClean[&amp;N[]eo  4 #J-(3.0)  ]" classname="apoc.text.StringCleanTest" time="0.007"/>
   <testcase name="testClean[German umlaut Ã„ Ã– Ãœ Ã¤ Ã¶ Ã¼ ÃŸ ]" classname="apoc.text.StringCleanTest" time="0.0"/>

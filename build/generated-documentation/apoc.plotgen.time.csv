@@ -1,0 +1,6 @@
+"type"¦"qualified name"¦"description"
+"procedure"¦"apoc.plotgen.npc.CreateTime"¦"apoc.plotgen.npc.CreateNPC - create a new NPC"
+"procedure"¦"apoc.plotgen.npc.SetDayLength"¦"apoc.plotgen.npc.SetDayLength - sets the length of the world day in seconds"
+"procedure"¦"apoc.plotgen.npc.SetDayInYear"¦"apoc.plotgen.npc.SetDayInYear - sets the number of the world days in the worlds"
+"procedure"¦"apoc.plotgen.npc.AdvanceADay"¦"apoc.plotgen.npc.AdvanceADay - Advance Time one day"
+"function"¦"apoc.plotgen.time.uuid"¦"apoc.create.uuid() - creates an UUID"

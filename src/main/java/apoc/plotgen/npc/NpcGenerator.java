@@ -22,18 +22,19 @@ public class NpcGenerator {
     @Description( "apoc.plotgen.npc.CreateNPC - create a new NPC" )
     public void CreateNPC(@Name("Count") long count) {
 
-
+        NameGenerator nameGenerator = new NameGenerator();
+        GenderGenerator genderGenerator = new GenderGenerator();
 
         for(int i = 0; i < count; i++) {
             String uuid = uuid();
-            String gender = new GenderGenerator().gender();
+            String gender = genderGenerator.gender();
             String firstName = "";
             if (gender.equals("Female")) {
-                firstName = new NameGenerator().humanFemale();
+                firstName = nameGenerator.humanFemale();
             } else {
-                firstName = new NameGenerator().humanMale();
+                firstName = nameGenerator.humanMale();
             }
-            String surname = new NameGenerator().humanSurnameP1() + new NameGenerator().humanSurnameP2();
+            String surname = nameGenerator.humanSurnameP1() + nameGenerator.humanSurnameP2();
 
             String query = "CALL apoc.create.node(['NPC'], {uuid:'" + uuid + "'" +
                     ", firstName:'" + firstName + "'" +
