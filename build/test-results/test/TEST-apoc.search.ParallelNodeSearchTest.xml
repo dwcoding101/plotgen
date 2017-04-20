@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.search.ParallelNodeSearchTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:57:41" hostname="Pc" time="0.371">
+<testsuite name="apoc.search.ParallelNodeSearchTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-20T11:09:23" hostname="Pc" time="0.349">
   <properties/>
-  <testcase name="testMultiSearchNodeReduced" classname="apoc.search.ParallelNodeSearchTest" time="0.126"/>
-  <testcase name="testMultiSearchNodeAll" classname="apoc.search.ParallelNodeSearchTest" time="0.097"/>
-  <testcase name="testMultiSearchNode" classname="apoc.search.ParallelNodeSearchTest" time="0.022"/>
-  <testcase name="testMultiSearchNodeAllReduced" classname="apoc.search.ParallelNodeSearchTest" time="0.027"/>
-  <testcase name="testMultiSearchNodeNumberComparison" classname="apoc.search.ParallelNodeSearchTest" time="0.037"/>
-  <testcase name="testMultiSearchNodeAllReducedMapParam" classname="apoc.search.ParallelNodeSearchTest" time="0.029"/>
-  <testcase name="testMultiSearchNodeNumberExactComparison" classname="apoc.search.ParallelNodeSearchTest" time="0.032"/>
+  <testcase name="testMultiSearchNodeReduced" classname="apoc.search.ParallelNodeSearchTest" time="0.106"/>
+  <testcase name="testMultiSearchNodeAll" classname="apoc.search.ParallelNodeSearchTest" time="0.106"/>
+  <testcase name="testMultiSearchNode" classname="apoc.search.ParallelNodeSearchTest" time="0.021"/>
+  <testcase name="testMultiSearchNodeAllReduced" classname="apoc.search.ParallelNodeSearchTest" time="0.028"/>
+  <testcase name="testMultiSearchNodeNumberComparison" classname="apoc.search.ParallelNodeSearchTest" time="0.035"/>
+  <testcase name="testMultiSearchNodeAllReducedMapParam" classname="apoc.search.ParallelNodeSearchTest" time="0.026"/>
+  <testcase name="testMultiSearchNodeNumberExactComparison" classname="apoc.search.ParallelNodeSearchTest" time="0.026"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

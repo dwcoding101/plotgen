@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.date.DateTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:56:04" hostname="Pc" time="0.232">
+<testsuite name="apoc.date.DateTest" tests="24" skipped="0" failures="0" errors="0" timestamp="2017-04-20T11:07:45" hostname="Pc" time="0.223">
   <properties/>
-  <testcase name="testFromUnixtimeWithCorrectFormat" classname="apoc.date.DateTest" time="0.011"/>
-  <testcase name="testfields" classname="apoc.date.DateTest" time="0.026"/>
+  <testcase name="testFromUnixtimeWithCorrectFormat" classname="apoc.date.DateTest" time="0.01"/>
+  <testcase name="testfields" classname="apoc.date.DateTest" time="0.03"/>
   <testcase name="testFromUnixtimeWithNegativeInput" classname="apoc.date.DateTest" time="0.007"/>
-  <testcase name="testfieldsNullInput" classname="apoc.date.DateTest" time="0.008"/>
-  <testcase name="testFromUnixtime" classname="apoc.date.DateTest" time="0.003"/>
+  <testcase name="testfieldsNullInput" classname="apoc.date.DateTest" time="0.005"/>
+  <testcase name="testFromUnixtime" classname="apoc.date.DateTest" time="0.004"/>
   <testcase name="testToHours" classname="apoc.date.DateTest" time="0.005"/>
-  <testcase name="testAdd" classname="apoc.date.DateTest" time="0.008"/>
-  <testcase name="testToMillis" classname="apoc.date.DateTest" time="0.006"/>
+  <testcase name="testAdd" classname="apoc.date.DateTest" time="0.007"/>
+  <testcase name="testToMillis" classname="apoc.date.DateTest" time="0.005"/>
   <testcase name="toYears" classname="apoc.date.DateTest" time="0.015"/>
-  <testcase name="testToUnixtime" classname="apoc.date.DateTest" time="0.005"/>
-  <testcase name="testAddNegative" classname="apoc.date.DateTest" time="0.007"/>
-  <testcase name="testGetTimezone" classname="apoc.date.DateTest" time="0.003"/>
+  <testcase name="testToUnixtime" classname="apoc.date.DateTest" time="0.006"/>
+  <testcase name="testAddNegative" classname="apoc.date.DateTest" time="0.005"/>
+  <testcase name="testGetTimezone" classname="apoc.date.DateTest" time="0.004"/>
   <testcase name="testFromUnixtimeWithIncorrectPatternFormat" classname="apoc.date.DateTest" time="0.007"/>
-  <testcase name="testfieldsCustomFormat" classname="apoc.date.DateTest" time="0.029"/>
-  <testcase name="testToUnixtimeWithCorrectFormat" classname="apoc.date.DateTest" time="0.005"/>
-  <testcase name="testFromUnixtimeWithIncorrectPatternFormatAndTimeZone" classname="apoc.date.DateTest" time="0.004"/>
+  <testcase name="testfieldsCustomFormat" classname="apoc.date.DateTest" time="0.034"/>
+  <testcase name="testToUnixtimeWithCorrectFormat" classname="apoc.date.DateTest" time="0.006"/>
+  <testcase name="testFromUnixtimeWithIncorrectPatternFormatAndTimeZone" classname="apoc.date.DateTest" time="0.005"/>
   <testcase name="testToMinutes" classname="apoc.date.DateTest" time="0.006"/>
-  <testcase name="testFromUnixtimeWithCorrectFormatAndTimeZone" classname="apoc.date.DateTest" time="0.009"/>
-  <testcase name="testOrderByDate" classname="apoc.date.DateTest" time="0.023"/>
-  <testcase name="testConvert" classname="apoc.date.DateTest" time="0.008"/>
-  <testcase name="testToUnixtimeWithNullInput" classname="apoc.date.DateTest" time="0.007"/>
-  <testcase name="testToUnixtimeWithIncorrectPatternFormat" classname="apoc.date.DateTest" time="0.008"/>
+  <testcase name="testFromUnixtimeWithCorrectFormatAndTimeZone" classname="apoc.date.DateTest" time="0.006"/>
+  <testcase name="testOrderByDate" classname="apoc.date.DateTest" time="0.021"/>
+  <testcase name="testConvert" classname="apoc.date.DateTest" time="0.006"/>
+  <testcase name="testToUnixtimeWithNullInput" classname="apoc.date.DateTest" time="0.005"/>
+  <testcase name="testToUnixtimeWithIncorrectPatternFormat" classname="apoc.date.DateTest" time="0.007"/>
   <testcase name="testToDays" classname="apoc.date.DateTest" time="0.008"/>
   <testcase name="testDateParserDifference" classname="apoc.date.DateTest" time="0.008"/>
   <system-out><![CDATA[]]></system-out>

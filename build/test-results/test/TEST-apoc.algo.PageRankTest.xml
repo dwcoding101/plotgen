@@ -1,50 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.PageRankTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:54:49" hostname="Pc" time="1.853">
+<testsuite name="apoc.algo.PageRankTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-20T11:06:32" hostname="Pc" time="1.822">
   <properties/>
-  <testcase name="shouldGetPageRankWithCypherExpectedResultWithoutNodes" classname="apoc.algo.PageRankTest" time="0.19"/>
-  <testcase name="shouldGetPageRankWithCypherExpectedResultWithoutNodesParallel" classname="apoc.algo.PageRankTest" time="0.211"/>
-  <testcase name="shouldGetPageRankWithCypherExpectedResultWithLables" classname="apoc.algo.PageRankTest" time="0.192"/>
-  <testcase name="shouldGetPageRankStats" classname="apoc.algo.PageRankTest" time="0.159"/>
-  <testcase name="shouldGetPageRankWithCypherExpectedResult" classname="apoc.algo.PageRankTest" time="0.188"/>
-  <testcase name="shouldHandleNullIterations" classname="apoc.algo.PageRankTest" time="0.139"/>
-  <testcase name="shouldGetPageRankWithSubCypherExpectedResult" classname="apoc.algo.PageRankTest" time="0.188"/>
-  <testcase name="shouldGetPageRankExpectedResult" classname="apoc.algo.PageRankTest" time="0.161"/>
-  <testcase name="shouldHandleNullNodes" classname="apoc.algo.PageRankTest" time="0.12"/>
-  <testcase name="shouldHandleEmptyNodeSet" classname="apoc.algo.PageRankTest" time="0.137"/>
-  <testcase name="shouldGetPageRankExpectedResultWithTypes" classname="apoc.algo.PageRankTest" time="0.165"/>
+  <testcase name="shouldGetPageRankWithCypherExpectedResultWithoutNodes" classname="apoc.algo.PageRankTest" time="0.192"/>
+  <testcase name="shouldGetPageRankWithCypherExpectedResultWithoutNodesParallel" classname="apoc.algo.PageRankTest" time="0.195"/>
+  <testcase name="shouldGetPageRankWithCypherExpectedResultWithLables" classname="apoc.algo.PageRankTest" time="0.212"/>
+  <testcase name="shouldGetPageRankStats" classname="apoc.algo.PageRankTest" time="0.157"/>
+  <testcase name="shouldGetPageRankWithCypherExpectedResult" classname="apoc.algo.PageRankTest" time="0.174"/>
+  <testcase name="shouldHandleNullIterations" classname="apoc.algo.PageRankTest" time="0.148"/>
+  <testcase name="shouldGetPageRankWithSubCypherExpectedResult" classname="apoc.algo.PageRankTest" time="0.186"/>
+  <testcase name="shouldGetPageRankExpectedResult" classname="apoc.algo.PageRankTest" time="0.158"/>
+  <testcase name="shouldHandleNullNodes" classname="apoc.algo.PageRankTest" time="0.124"/>
+  <testcase name="shouldHandleEmptyNodeSet" classname="apoc.algo.PageRankTest" time="0.121"/>
+  <testcase name="shouldGetPageRankExpectedResultWithTypes" classname="apoc.algo.PageRankTest" time="0.154"/>
   <system-out><![CDATA[+---------------------------------------------------------------------------------------------------------------------------------+
 | nodes | relationships | iterations | readNodeMillis | readRelationshipMillis | computeMillis | writeMillis | write | property   |
 +---------------------------------------------------------------------------------------------------------------------------------+
-| 11    | 16            | 20         | 0              | 19                     | 1             | 2           | true  | "pagerank" |
+| 11    | 16            | 20         | 0              | 19                     | 1             | 3           | true  | "pagerank" |
 +---------------------------------------------------------------------------------------------------------------------------------+
 1 row
 
 +---------------------------------------------------------------------------------------------------------------------------------+
 | nodes | relationships | iterations | readNodeMillis | readRelationshipMillis | computeMillis | writeMillis | write | property   |
 +---------------------------------------------------------------------------------------------------------------------------------+
-| 11    | 16            | 20         | 0              | 46                     | 1             | 2           | true  | "pagerank" |
+| 11    | 16            | 20         | 0              | 42                     | 1             | 2           | true  | "pagerank" |
 +---------------------------------------------------------------------------------------------------------------------------------+
 1 row
 
 +---------------------------------------------------------------------------------------------------------------------------------+
 | nodes | relationships | iterations | readNodeMillis | readRelationshipMillis | computeMillis | writeMillis | write | property   |
 +---------------------------------------------------------------------------------------------------------------------------------+
-| 11    | 16            | 20         | 11             | 14                     | 1             | 2           | true  | "pagerank" |
+| 11    | 16            | 20         | 11             | 13                     | 0             | 2           | true  | "pagerank" |
 +---------------------------------------------------------------------------------------------------------------------------------+
 1 row
 
-row = {relationships=16, nodes=11, writeMillis=0, property=null, computeMillis=1, write=false, iterations=20, readRelationshipMillis=0, readNodeMillis=0}
+row = {relationships=16, nodes=11, writeMillis=0, property=null, computeMillis=1, write=false, iterations=20, readRelationshipMillis=1, readNodeMillis=0}
 +---------------------------------------------------------------------------------------------------------------------------------+
 | nodes | relationships | iterations | readNodeMillis | readRelationshipMillis | computeMillis | writeMillis | write | property   |
 +---------------------------------------------------------------------------------------------------------------------------------+
-| 11    | 16            | 20         | 10             | 15                     | 0             | 3           | true  | "pagerank" |
+| 11    | 16            | 20         | 9              | 14                     | 0             | 2           | true  | "pagerank" |
 +---------------------------------------------------------------------------------------------------------------------------------+
 1 row
 
 +---------------------------------------------------------------------------------------------------------------------------------+
 | nodes | relationships | iterations | readNodeMillis | readRelationshipMillis | computeMillis | writeMillis | write | property   |
 +---------------------------------------------------------------------------------------------------------------------------------+
-| 5     | 0             | 5          | 14             | 19                     | 0             | 2           | true  | "pagerank" |
+| 5     | 0             | 5          | 13             | 19                     | 0             | 2           | true  | "pagerank" |
 +---------------------------------------------------------------------------------------------------------------------------------+
 1 row
 
