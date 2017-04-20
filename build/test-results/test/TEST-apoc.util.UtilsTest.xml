@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.util.UtilsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:35:08" hostname="Pc" time="0.354">
+<testsuite name="apoc.util.UtilsTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:58:08" hostname="Pc" time="0.332">
   <properties/>
-  <testcase name="testMd5" classname="apoc.util.UtilsTest" time="0.01"/>
-  <testcase name="testSleep" classname="apoc.util.UtilsTest" time="0.309"/>
+  <testcase name="testMd5" classname="apoc.util.UtilsTest" time="0.011"/>
+  <testcase name="testSleep" classname="apoc.util.UtilsTest" time="0.31"/>
   <testcase name="testSha1" classname="apoc.util.UtilsTest" time="0.005"/>
-  <testcase name="testSleepWithTerminate" classname="apoc.util.UtilsTest" time="0.023"/>
+  <testcase name="testSleepWithTerminate" classname="apoc.util.UtilsTest" time="0.001"/>
   <testcase name="testValidateFalse" classname="apoc.util.UtilsTest" time="0.004"/>
-  <testcase name="testValidateTrue" classname="apoc.util.UtilsTest" time="0.003"/>
+  <testcase name="testValidateTrue" classname="apoc.util.UtilsTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

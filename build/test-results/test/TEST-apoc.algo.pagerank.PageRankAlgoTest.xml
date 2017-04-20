@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.pagerank.PageRankAlgoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:31:49" hostname="Pc" time="0.363">
+<testsuite name="apoc.algo.pagerank.PageRankAlgoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:54:48" hostname="Pc" time="0.387">
   <properties/>
-  <testcase name="shouldGetPageRankArrayStorageSPI" classname="apoc.algo.pagerank.PageRankAlgoTest" time="0.196"/>
+  <testcase name="shouldGetPageRankArrayStorageSPI" classname="apoc.algo.pagerank.PageRankAlgoTest" time="0.22"/>
   <testcase name="shouldGetPageRankArrayStorageSPIWithTypes" classname="apoc.algo.pagerank.PageRankAlgoTest" time="0.167"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

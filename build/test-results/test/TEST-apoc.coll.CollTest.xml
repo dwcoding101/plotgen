@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.coll.CollTest" tests="40" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:32:46" hostname="Pc" time="5.362">
+<testsuite name="apoc.coll.CollTest" tests="40" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:55:43" hostname="Pc" time="5.008">
   <properties/>
   <testcase name="testDuplicates" classname="apoc.coll.CollTest" time="0.007"/>
-  <testcase name="testRandomItemsOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.028"/>
-  <testcase name="testRandomItemsLargerThanOriginalAllowingRepick" classname="apoc.coll.CollTest" time="2.381"/>
+  <testcase name="testRandomItemsOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.026"/>
+  <testcase name="testRandomItemsLargerThanOriginalAllowingRepick" classname="apoc.coll.CollTest" time="2.265"/>
   <testcase name="testSortMaps" classname="apoc.coll.CollTest" time="0.008"/>
-  <testcase name="testSetOperations" classname="apoc.coll.CollTest" time="0.045"/>
-  <testcase name="testPairsMinListResult" classname="apoc.coll.CollTest" time="0.012"/>
-  <testcase name="testContainsSorted" classname="apoc.coll.CollTest" time="0.351"/>
-  <testcase name="testOccurrencesOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.017"/>
-  <testcase name="testRandomItemOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.012"/>
-  <testcase name="testAvg" classname="apoc.coll.CollTest" time="0.008"/>
-  <testcase name="testIN2" classname="apoc.coll.CollTest" time="0.521"/>
+  <testcase name="testSetOperations" classname="apoc.coll.CollTest" time="0.039"/>
+  <testcase name="testPairsMinListResult" classname="apoc.coll.CollTest" time="0.011"/>
+  <testcase name="testContainsSorted" classname="apoc.coll.CollTest" time="0.354"/>
+  <testcase name="testOccurrencesOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.014"/>
+  <testcase name="testRandomItemOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.015"/>
+  <testcase name="testAvg" classname="apoc.coll.CollTest" time="0.011"/>
+  <testcase name="testIN2" classname="apoc.coll.CollTest" time="0.419"/>
   <testcase name="testMax" classname="apoc.coll.CollTest" time="0.006"/>
   <testcase name="testMin" classname="apoc.coll.CollTest" time="0.006"/>
-  <testcase name="testSum" classname="apoc.coll.CollTest" time="0.007"/>
+  <testcase name="testSum" classname="apoc.coll.CollTest" time="0.005"/>
   <testcase name="testZip" classname="apoc.coll.CollTest" time="0.006"/>
   <testcase name="testReverseOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.011"/>
-  <testcase name="testRandomItems" classname="apoc.coll.CollTest" time="1.271"/>
+  <testcase name="testRandomItems" classname="apoc.coll.CollTest" time="1.139"/>
   <testcase name="testPairs" classname="apoc.coll.CollTest" time="0.006"/>
-  <testcase name="testSplit" classname="apoc.coll.CollTest" time="0.013"/>
+  <testcase name="testSplit" classname="apoc.coll.CollTest" time="0.016"/>
   <testcase name="testToSet" classname="apoc.coll.CollTest" time="0.006"/>
   <testcase name="testSort" classname="apoc.coll.CollTest" time="0.005"/>
-  <testcase name="testPartition" classname="apoc.coll.CollTest" time="0.008"/>
+  <testcase name="testPartition" classname="apoc.coll.CollTest" time="0.009"/>
   <testcase name="testDuplicatesOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.008"/>
-  <testcase name="testSumLongs" classname="apoc.coll.CollTest" time="0.006"/>
-  <testcase name="testIN" classname="apoc.coll.CollTest" time="0.007"/>
-  <testcase name="testDuplicatesWithCountOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.009"/>
-  <testcase name="testRandomItem" classname="apoc.coll.CollTest" time="0.004"/>
-  <testcase name="testContainsAll" classname="apoc.coll.CollTest" time="0.02"/>
-  <testcase name="testContainsDuplicates" classname="apoc.coll.CollTest" time="0.009"/>
-  <testcase name="testOccurrences" classname="apoc.coll.CollTest" time="0.016"/>
-  <testcase name="testContainsAllSorted" classname="apoc.coll.CollTest" time="0.017"/>
+  <testcase name="testSumLongs" classname="apoc.coll.CollTest" time="0.007"/>
+  <testcase name="testIN" classname="apoc.coll.CollTest" time="0.006"/>
+  <testcase name="testDuplicatesWithCountOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.014"/>
+  <testcase name="testRandomItem" classname="apoc.coll.CollTest" time="0.005"/>
+  <testcase name="testContainsAll" classname="apoc.coll.CollTest" time="0.022"/>
+  <testcase name="testContainsDuplicates" classname="apoc.coll.CollTest" time="0.008"/>
+  <testcase name="testOccurrences" classname="apoc.coll.CollTest" time="0.017"/>
+  <testcase name="testContainsAllSorted" classname="apoc.coll.CollTest" time="0.018"/>
   <testcase name="testSortNodes" classname="apoc.coll.CollTest" time="0.012"/>
   <testcase name="testReverse" classname="apoc.coll.CollTest" time="0.003"/>
-  <testcase name="testIndexOf" classname="apoc.coll.CollTest" time="0.024"/>
-  <testcase name="testPairsMin" classname="apoc.coll.CollTest" time="0.006"/>
-  <testcase name="testShuffle" classname="apoc.coll.CollTest" time="0.225"/>
-  <testcase name="testDuplicatesWithCount" classname="apoc.coll.CollTest" time="0.006"/>
+  <testcase name="testIndexOf" classname="apoc.coll.CollTest" time="0.021"/>
+  <testcase name="testPairsMin" classname="apoc.coll.CollTest" time="0.008"/>
+  <testcase name="testShuffle" classname="apoc.coll.CollTest" time="0.224"/>
+  <testcase name="testDuplicatesWithCount" classname="apoc.coll.CollTest" time="0.004"/>
   <testcase name="testShuffleOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.011"/>
-  <testcase name="testRandomItemsLargerThanOriginal" classname="apoc.coll.CollTest" time="0.228"/>
-  <testcase name="testContainsDuplicatesOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.01"/>
-  <system-out><![CDATA[contains sorted test on 1000000 elements took 336 ms
-contains test on 1000000 elements took 507 ms
+  <testcase name="testRandomItemsLargerThanOriginal" classname="apoc.coll.CollTest" time="0.221"/>
+  <testcase name="testContainsDuplicatesOnNullAndEmptyList" classname="apoc.coll.CollTest" time="0.008"/>
+  <system-out><![CDATA[contains sorted test on 1000000 elements took 339 ms
+contains test on 1000000 elements took 404 ms
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
