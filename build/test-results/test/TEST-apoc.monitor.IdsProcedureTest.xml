@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.monitor.IdsProcedureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:12:59" hostname="Pc" time="0.121">
+<testsuite name="apoc.monitor.IdsProcedureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:34:29" hostname="Pc" time="0.137">
   <properties/>
-  <testcase name="testGetNodeIdsInUse" classname="apoc.monitor.IdsProcedureTest" time="0.121"/>
+  <testcase name="testGetNodeIdsInUse" classname="apoc.monitor.IdsProcedureTest" time="0.137"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

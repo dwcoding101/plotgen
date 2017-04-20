@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.util.UtilTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:13:49" hostname="Pc" time="0.003">
+<testsuite name="apoc.util.UtilTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-20T10:35:18" hostname="Pc" time="0.002">
   <properties/>
-  <testcase name="cleanPassword" classname="apoc.util.UtilTest" time="0.001"/>
+  <testcase name="cleanPassword" classname="apoc.util.UtilTest" time="0.0"/>
   <testcase name="testPartitionList" classname="apoc.util.UtilTest" time="0.002"/>
   <testcase name="testSubMap" classname="apoc.util.UtilTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
