@@ -48,6 +48,7 @@ apoc.periodic
 apoc.plotgen.gender
 apoc.plotgen.names
 apoc.plotgen.npc
+apoc.plotgen.random
 apoc.plotgen.time
 apoc.refactor
 apoc.result

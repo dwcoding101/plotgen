@@ -1,3 +1,4 @@
 "type"¦"qualified name"¦"description"
 "procedure"¦"apoc.plotgen.npc.CreateNPC"¦"apoc.plotgen.npc.CreateNPC - create a new NPC"
+"procedure"¦"apoc.plotgen.npc.SetStartingDOB"¦"apoc.plotgen.npc.SetStartingDOB - Set Character Date of Birth"
 "function"¦"apoc.plotgen.npc.uuid"¦"apoc.create.uuid() - creates an UUID"

@@ -177,6 +177,7 @@
 "procedure"¦"apoc.periodic.iterate"¦"apoc.periodic.iterate('statement returning items', 'statement per item', {batchSize:1000,iterateList:false,parallel:true}) YIELD batches, total - run the second statement for each item returned by the first statement. Returns number of batches and total processed rows"
 "procedure"¦"apoc.periodic.rock_n_roll"¦"apoc.periodic.rock_n_roll('some cypher for iteration', 'some cypher as action on each iteration', 10000) YIELD batches, total - run the action statement in batches over the iterator statement's results in a separate thread. Returns number of batches and total processed rows"
 "procedure"¦"apoc.plotgen.npc.CreateNPC"¦"apoc.plotgen.npc.CreateNPC - create a new NPC"
+"procedure"¦"apoc.plotgen.npc.SetStartingDOB"¦"apoc.plotgen.npc.SetStartingDOB - Set Character Date of Birth"
 "procedure"¦"apoc.plotgen.time.CreateTime"¦"apoc.plotgen.npc.CreateNPC - create a new NPC"
 "procedure"¦"apoc.plotgen.time.SetDayLength"¦"apoc.plotgen.time.SetDayLength - sets the length of the world day in seconds"
 "procedure"¦"apoc.plotgen.time.SetDayInYear"¦"apoc.plotgen.time.SetDayInYear - sets the number of the world days in the worlds"
