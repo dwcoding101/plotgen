@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.convert.ConvertTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-20T16:00:16" hostname="Pc" time="0.112">
+<testsuite name="apoc.convert.ConvertTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-20T17:42:47" hostname="Pc" time="0.109">
   <properties/>
   <testcase name="testToMap" classname="apoc.convert.ConvertTest" time="0.006"/>
-  <testcase name="testToSet" classname="apoc.convert.ConvertTest" time="0.006"/>
-  <testcase name="testToString" classname="apoc.convert.ConvertTest" time="0.027"/>
-  <testcase name="testToBoolean" classname="apoc.convert.ConvertTest" time="0.032"/>
-  <testcase name="testToList" classname="apoc.convert.ConvertTest" time="0.008"/>
-  <testcase name="testToNode" classname="apoc.convert.ConvertTest" time="0.015"/>
-  <testcase name="testToRelationship" classname="apoc.convert.ConvertTest" time="0.017"/>
+  <testcase name="testToSet" classname="apoc.convert.ConvertTest" time="0.005"/>
+  <testcase name="testToString" classname="apoc.convert.ConvertTest" time="0.026"/>
+  <testcase name="testToBoolean" classname="apoc.convert.ConvertTest" time="0.031"/>
+  <testcase name="testToList" classname="apoc.convert.ConvertTest" time="0.007"/>
+  <testcase name="testToNode" classname="apoc.convert.ConvertTest" time="0.016"/>
+  <testcase name="testToRelationship" classname="apoc.convert.ConvertTest" time="0.016"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

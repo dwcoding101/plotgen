@@ -96,10 +96,15 @@ public class NpcGenerator {
             while ( result.hasNext() )
             {
                 Map<String, Object> row = result.next();
-                String uuid = (String)row.get("uuid");
-
+            //    String uuid = (String) row.get("uuid");
                 long number = min+((long)(r.nextDouble()*(max-min)));
                 double dob = current - number;
+                String uuid ="Not Set";
+                for ( String key : result.columns() )
+                {
+                    if (key.equals("uuid"))
+                    uuid = (String) row.get(key);
+                }
 
                 log.info("DOB := " + dob + " uuid := " +uuid );
                 String querry2 = "MATCH (a:NPC) WHERE a.uuid='"+uuid+"' SET a.dob='"+dob+"'";

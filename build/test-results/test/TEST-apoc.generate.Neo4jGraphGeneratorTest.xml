@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.generate.Neo4jGraphGeneratorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T16:00:55" hostname="Pc" time="0.256">
+<testsuite name="apoc.generate.Neo4jGraphGeneratorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T17:43:29" hostname="Pc" time="0.266">
   <properties/>
-  <testcase name="validDistributionShouldGenerateGraph" classname="apoc.generate.Neo4jGraphGeneratorTest" time="0.116"/>
+  <testcase name="validDistributionShouldGenerateGraph" classname="apoc.generate.Neo4jGraphGeneratorTest" time="0.126"/>
   <testcase name="invalidDistributionShouldThrowException" classname="apoc.generate.Neo4jGraphGeneratorTest" time="0.14"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

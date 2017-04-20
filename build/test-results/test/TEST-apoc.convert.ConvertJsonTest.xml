@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.convert.ConvertJsonTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-04-20T16:00:15" hostname="Pc" time="1.433">
+<testsuite name="apoc.convert.ConvertJsonTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-04-20T17:42:46" hostname="Pc" time="1.374">
   <properties/>
-  <testcase name="testFromJsonMap" classname="apoc.convert.ConvertJsonTest" time="0.328"/>
-  <testcase name="testGetJsonPropertyMap" classname="apoc.convert.ConvertJsonTest" time="0.147"/>
-  <testcase name="testGetJsonProperty" classname="apoc.convert.ConvertJsonTest" time="0.122"/>
-  <testcase name="testSetJsonProperty" classname="apoc.convert.ConvertJsonTest" time="0.139"/>
-  <testcase name="testToTreeLeafNodes" classname="apoc.convert.ConvertJsonTest" time="0.216"/>
-  <testcase name="testFromJsonList" classname="apoc.convert.ConvertJsonTest" time="0.107"/>
-  <testcase name="testToJsonList" classname="apoc.convert.ConvertJsonTest" time="0.111"/>
-  <testcase name="testToTree" classname="apoc.convert.ConvertJsonTest" time="0.141"/>
-  <testcase name="testToJsonMap" classname="apoc.convert.ConvertJsonTest" time="0.122"/>
+  <testcase name="testFromJsonMap" classname="apoc.convert.ConvertJsonTest" time="0.3"/>
+  <testcase name="testGetJsonPropertyMap" classname="apoc.convert.ConvertJsonTest" time="0.139"/>
+  <testcase name="testGetJsonProperty" classname="apoc.convert.ConvertJsonTest" time="0.12"/>
+  <testcase name="testSetJsonProperty" classname="apoc.convert.ConvertJsonTest" time="0.146"/>
+  <testcase name="testToTreeLeafNodes" classname="apoc.convert.ConvertJsonTest" time="0.223"/>
+  <testcase name="testFromJsonList" classname="apoc.convert.ConvertJsonTest" time="0.106"/>
+  <testcase name="testToJsonList" classname="apoc.convert.ConvertJsonTest" time="0.1"/>
+  <testcase name="testToTree" classname="apoc.convert.ConvertJsonTest" time="0.119"/>
+  <testcase name="testToJsonMap" classname="apoc.convert.ConvertJsonTest" time="0.12"/>
   <system-out><![CDATA[root = {_id=0, _type=Category, name=PC, subcategory=[{_id=1, _type=Category, name=Parts, subcategory.id=1, subcategory=[{_id=2, _type=Category, name=CPU, subcategory.id=2}]}]}
 root = {_id=0, _type=Movie, title=M, acted_in=[{_id=1, _type=Actor, name=A1, acted_in.role=R1}, {_id=2, _type=Actor, name=A2, acted_in.role=R2}]}
 ]]></system-out>

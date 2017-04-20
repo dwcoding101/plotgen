@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.PathFindingTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T15:59:16" hostname="Pc" time="0.996">
+<testsuite name="apoc.algo.PathFindingTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T17:41:44" hostname="Pc" time="0.974">
   <properties/>
-  <testcase name="testAllSimplePathResults" classname="apoc.algo.PathFindingTest" time="0.197"/>
-  <testcase name="testAStar" classname="apoc.algo.PathFindingTest" time="0.156"/>
-  <testcase name="testAStarConfig" classname="apoc.algo.PathFindingTest" time="0.169"/>
-  <testcase name="testDijkstra" classname="apoc.algo.PathFindingTest" time="0.165"/>
-  <testcase name="testAllSimplePaths" classname="apoc.algo.PathFindingTest" time="0.154"/>
-  <testcase name="testDijkstraWithDefaultWeight" classname="apoc.algo.PathFindingTest" time="0.152"/>
+  <testcase name="testAllSimplePathResults" classname="apoc.algo.PathFindingTest" time="0.192"/>
+  <testcase name="testAStar" classname="apoc.algo.PathFindingTest" time="0.17"/>
+  <testcase name="testAStarConfig" classname="apoc.algo.PathFindingTest" time="0.146"/>
+  <testcase name="testDijkstra" classname="apoc.algo.PathFindingTest" time="0.167"/>
+  <testcase name="testAllSimplePaths" classname="apoc.algo.PathFindingTest" time="0.149"/>
+  <testcase name="testDijkstraWithDefaultWeight" classname="apoc.algo.PathFindingTest" time="0.149"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.example.ExamplesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-20T16:00:50" hostname="Pc" time="0.996">
+<testsuite name="apoc.example.ExamplesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-20T17:43:24" hostname="Pc" time="1.062">
   <properties/>
-  <testcase name="testMovies" classname="apoc.example.ExamplesTest" time="0.996"/>
-  <system-out><![CDATA[{relationships=250, file=movies.cypher, nodes=169, format=cypher, source=example movie database from themoviedb.org, time=831, rows=0, properties=558}
+  <testcase name="testMovies" classname="apoc.example.ExamplesTest" time="1.062"/>
+  <system-out><![CDATA[{relationships=250, file=movies.cypher, nodes=169, format=cypher, source=example movie database from themoviedb.org, time=877, rows=0, properties=558}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

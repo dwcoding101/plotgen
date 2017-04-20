@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.generate.ErdosRenyiGeneratorTest" tests="3" skipped="2" failures="0" errors="0" timestamp="2017-04-20T16:00:53" hostname="Pc" time="0.84">
+<testsuite name="apoc.generate.ErdosRenyiGeneratorTest" tests="3" skipped="2" failures="0" errors="0" timestamp="2017-04-20T17:43:27" hostname="Pc" time="0.888">
   <properties/>
-  <testcase name="shouldGenerateCorrectNumberOfNodesAndRelationships" classname="apoc.generate.ErdosRenyiGeneratorTest" time="0.839"/>
+  <testcase name="shouldGenerateCorrectNumberOfNodesAndRelationships" classname="apoc.generate.ErdosRenyiGeneratorTest" time="0.887"/>
   <testcase name="shouldGenerateRelationshipsForLargeGraphInAReasonableAmountOfTime2" classname="apoc.generate.ErdosRenyiGeneratorTest" time="0.0">
     <skipped/>
   </testcase>
