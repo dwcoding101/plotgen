@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.index.FulltextIndexTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2017-04-21T14:43:25" hostname="Pc" time="1.626">
+<testsuite name="apoc.index.FulltextIndexTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2017-04-21T15:02:55" hostname="Pc" time="1.604">
   <properties/>
-  <testcase name="testRelationships" classname="apoc.index.FulltextIndexTest" time="0.129"/>
-  <testcase name="testAddNode" classname="apoc.index.FulltextIndexTest" time="0.118"/>
-  <testcase name="testOut" classname="apoc.index.FulltextIndexTest" time="0.139"/>
-  <testcase name="testNodes" classname="apoc.index.FulltextIndexTest" time="0.111"/>
-  <testcase name="testRemoveRelationshipByName" classname="apoc.index.FulltextIndexTest" time="0.15"/>
-  <testcase name="testIn" classname="apoc.index.FulltextIndexTest" time="0.137"/>
-  <testcase name="testBetween" classname="apoc.index.FulltextIndexTest" time="0.147"/>
-  <testcase name="testAddRelationshipToExistingIndex" classname="apoc.index.FulltextIndexTest" time="0.113"/>
-  <testcase name="testAddNodeByLabel" classname="apoc.index.FulltextIndexTest" time="0.104"/>
-  <testcase name="testAddNodeToExistingIndex" classname="apoc.index.FulltextIndexTest" time="0.161"/>
-  <testcase name="testAddNodeByLabelMultipleProperties" classname="apoc.index.FulltextIndexTest" time="0.094"/>
-  <testcase name="testRemoveNodeByName" classname="apoc.index.FulltextIndexTest" time="0.117"/>
-  <testcase name="testAddRelationship" classname="apoc.index.FulltextIndexTest" time="0.105"/>
+  <testcase name="testRelationships" classname="apoc.index.FulltextIndexTest" time="0.115"/>
+  <testcase name="testAddNode" classname="apoc.index.FulltextIndexTest" time="0.096"/>
+  <testcase name="testOut" classname="apoc.index.FulltextIndexTest" time="0.12"/>
+  <testcase name="testNodes" classname="apoc.index.FulltextIndexTest" time="0.115"/>
+  <testcase name="testRemoveRelationshipByName" classname="apoc.index.FulltextIndexTest" time="0.144"/>
+  <testcase name="testIn" classname="apoc.index.FulltextIndexTest" time="0.124"/>
+  <testcase name="testBetween" classname="apoc.index.FulltextIndexTest" time="0.182"/>
+  <testcase name="testAddRelationshipToExistingIndex" classname="apoc.index.FulltextIndexTest" time="0.117"/>
+  <testcase name="testAddNodeByLabel" classname="apoc.index.FulltextIndexTest" time="0.111"/>
+  <testcase name="testAddNodeToExistingIndex" classname="apoc.index.FulltextIndexTest" time="0.136"/>
+  <testcase name="testAddNodeByLabelMultipleProperties" classname="apoc.index.FulltextIndexTest" time="0.114"/>
+  <testcase name="testRemoveNodeByName" classname="apoc.index.FulltextIndexTest" time="0.125"/>
+  <testcase name="testAddRelationship" classname="apoc.index.FulltextIndexTest" time="0.104"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

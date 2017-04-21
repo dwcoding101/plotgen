@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.periodic.PeriodicTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-04-21T14:44:02" hostname="Pc" time="3.749">
+<testsuite name="apoc.periodic.PeriodicTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-04-21T15:03:31" hostname="Pc" time="3.698">
   <properties/>
-  <testcase name="testIterateBatchPrefix" classname="apoc.periodic.PeriodicTest" time="0.145"/>
-  <testcase name="testSubmitStatement" classname="apoc.periodic.PeriodicTest" time="2.11"/>
-  <testcase name="testIterateErrors" classname="apoc.periodic.PeriodicTest" time="0.112"/>
-  <testcase name="testIteratePrefix" classname="apoc.periodic.PeriodicTest" time="0.14"/>
-  <testcase name="testIterateRetries" classname="apoc.periodic.PeriodicTest" time="0.215"/>
-  <testcase name="testIterateFail" classname="apoc.periodic.PeriodicTest" time="0.167"/>
-  <testcase name="testIterateJDBC" classname="apoc.periodic.PeriodicTest" time="0.104"/>
-  <testcase name="testRock_n_roll" classname="apoc.periodic.PeriodicTest" time="0.139"/>
-  <testcase name="testRunDown" classname="apoc.periodic.PeriodicTest" time="0.168"/>
-  <testcase name="testIterateBatch" classname="apoc.periodic.PeriodicTest" time="0.136"/>
-  <testcase name="testRock_n_roll_while" classname="apoc.periodic.PeriodicTest" time="0.173"/>
-  <testcase name="testIterate" classname="apoc.periodic.PeriodicTest" time="0.139"/>
+  <testcase name="testIterateBatchPrefix" classname="apoc.periodic.PeriodicTest" time="0.156"/>
+  <testcase name="testSubmitStatement" classname="apoc.periodic.PeriodicTest" time="2.109"/>
+  <testcase name="testIterateErrors" classname="apoc.periodic.PeriodicTest" time="0.123"/>
+  <testcase name="testIteratePrefix" classname="apoc.periodic.PeriodicTest" time="0.113"/>
+  <testcase name="testIterateRetries" classname="apoc.periodic.PeriodicTest" time="0.198"/>
+  <testcase name="testIterateFail" classname="apoc.periodic.PeriodicTest" time="0.159"/>
+  <testcase name="testIterateJDBC" classname="apoc.periodic.PeriodicTest" time="0.091"/>
+  <testcase name="testRock_n_roll" classname="apoc.periodic.PeriodicTest" time="0.143"/>
+  <testcase name="testRunDown" classname="apoc.periodic.PeriodicTest" time="0.177"/>
+  <testcase name="testIterateBatch" classname="apoc.periodic.PeriodicTest" time="0.133"/>
+  <testcase name="testRock_n_roll_while" classname="apoc.periodic.PeriodicTest" time="0.15"/>
+  <testcase name="testIterate" classname="apoc.periodic.PeriodicTest" time="0.145"/>
   <system-out><![CDATA[empty iterator
 empty iterator
 row = {batches=10, timeTaken=0, retries=0, errorMessages={Variable `x` not defined (line 1, column 46 (offset: 45))

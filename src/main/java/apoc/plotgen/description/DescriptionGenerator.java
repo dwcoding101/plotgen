@@ -27,7 +27,10 @@ public class DescriptionGenerator {
         // Create NPCDescription Node.
         String uuid = uuid();
 
-        String query = "MERGE(a:NPC)-[l:LOOKS_LIKE]->(b:DESCRIPTION{uuid:'"+ uuid +"'}) WHERE a.uuid='"+ NPCuuid +"' RETURN a,l,b";
+        String query = "MATCH (a:NPC)\n" +
+                "WHERE a.uuid='" + NPCuuid +"'\n" +
+                "WITH a\n" +
+                "MERGE (a)-[l:LOOKS_LIKE]->(b:DESCRIPTION{uuid:'"+ uuid +"'}) RETURN a,l,bMERGE(a:NPC)-[l:LOOKS_LIKE]->(b:DESCRIPTION{uuid:'"+ uuid +"'}) WHERE a.uuid='"+ NPCuuid +"' RETURN a,l,b";
 
         try ( Result result = db.execute( query ) ) {
 
