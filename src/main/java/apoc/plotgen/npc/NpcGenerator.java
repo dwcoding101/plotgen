@@ -56,7 +56,10 @@ public class NpcGenerator {
 
             Result execute = db.execute(query);
 
-            descriptionGenerator.CreateDescription(uuid);
+            query = "CALL apoc.plotgen.description.CreateDescription('" + uuid + "')";
+
+            execute = db.execute(query);
+
 
         }
     }
