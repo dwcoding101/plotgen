@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.CentralityTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2017-04-21T15:51:38" hostname="Pc" time="9.331">
+<testsuite name="apoc.algo.CentralityTest" tests="23" skipped="0" failures="0" errors="0" timestamp="2017-04-21T16:35:08" hostname="Pc" time="11.311">
   <properties/>
-  <testcase name="shouldHandleNullDirectionWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="4.267"/>
-  <testcase name="shouldHandleEmptyRelationshipTypeUsingCloseness" classname="apoc.algo.CentralityTest" time="0.338"/>
-  <testcase name="shouldHandleNullNodesWhenUsingCentrality" classname="apoc.algo.CentralityTest" time="0.221"/>
-  <testcase name="shouldProvideSameResultUsingEmptyRelationshipTypeOrSpecifyAllTypesWhenUsingCloseness" classname="apoc.algo.CentralityTest" time="0.257"/>
-  <testcase name="shouldReturnExpectedResultCountWhenUsingBetweennessAllDirections" classname="apoc.algo.CentralityTest" time="0.295"/>
-  <testcase name="shouldHandleInvalidDirectionWhenUsingCentrality" classname="apoc.algo.CentralityTest" time="0.202"/>
-  <testcase name="shouldHaveExpectedBetweennessResultsForCypher" classname="apoc.algo.CentralityTest" time="0.653"/>
-  <testcase name="shouldBeCaseInsensitiveForDirectionCloseness" classname="apoc.algo.CentralityTest" time="0.208"/>
-  <testcase name="shouldHandleRelationshipTypesThatDoesNotExistWhenUsingCentrality" classname="apoc.algo.CentralityTest" time="0.185"/>
-  <testcase name="shouldHandleNullDirectionWhenUsingCentrality" classname="apoc.algo.CentralityTest" time="0.199"/>
-  <testcase name="shouldHandleEmptyNodeSetWhenUsingCloseness" classname="apoc.algo.CentralityTest" time="0.159"/>
-  <testcase name="shouldHandleNullNodesWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.171"/>
-  <testcase name="shouldHaveExpectedBetweennessNodeRemappingForCypher" classname="apoc.algo.CentralityTest" time="0.274"/>
-  <testcase name="shouldReturnExpectedResultCountWhenUsingClosenessOutgoingAllDirections" classname="apoc.algo.CentralityTest" time="0.229"/>
-  <testcase name="shouldHandleEmptyRelationshipTypeWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.187"/>
-  <testcase name="shouldProvideSameResultUsingEmptyRelationshipTypeOrSpecifyAllTypesWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.229"/>
-  <testcase name="shouldBeCaseInsensitiveForDirectionBetweenness" classname="apoc.algo.CentralityTest" time="0.207"/>
-  <testcase name="shouldHandleEmptyNodeSetWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.157"/>
-  <testcase name="shouldHandleNullRelationshipTypesWhenUsingCentrality" classname="apoc.algo.CentralityTest" time="0.175"/>
-  <testcase name="shouldHandleNullRelationshipTypesWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.163"/>
-  <testcase name="shouldHandleRelationshipTypesThatDoesNotExistWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.186"/>
-  <testcase name="shouldHaveExpectedBetweennessMultipleSPCypher" classname="apoc.algo.CentralityTest" time="0.188"/>
-  <testcase name="shouldHandleInvalidDirectionWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.177"/>
+  <testcase name="shouldHandleNullDirectionWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="5.057"/>
+  <testcase name="shouldHandleEmptyRelationshipTypeUsingCloseness" classname="apoc.algo.CentralityTest" time="0.406"/>
+  <testcase name="shouldHandleNullNodesWhenUsingCentrality" classname="apoc.algo.CentralityTest" time="0.246"/>
+  <testcase name="shouldProvideSameResultUsingEmptyRelationshipTypeOrSpecifyAllTypesWhenUsingCloseness" classname="apoc.algo.CentralityTest" time="0.308"/>
+  <testcase name="shouldReturnExpectedResultCountWhenUsingBetweennessAllDirections" classname="apoc.algo.CentralityTest" time="0.312"/>
+  <testcase name="shouldHandleInvalidDirectionWhenUsingCentrality" classname="apoc.algo.CentralityTest" time="0.231"/>
+  <testcase name="shouldHaveExpectedBetweennessResultsForCypher" classname="apoc.algo.CentralityTest" time="0.82"/>
+  <testcase name="shouldBeCaseInsensitiveForDirectionCloseness" classname="apoc.algo.CentralityTest" time="0.216"/>
+  <testcase name="shouldHandleRelationshipTypesThatDoesNotExistWhenUsingCentrality" classname="apoc.algo.CentralityTest" time="0.293"/>
+  <testcase name="shouldHandleNullDirectionWhenUsingCentrality" classname="apoc.algo.CentralityTest" time="0.311"/>
+  <testcase name="shouldHandleEmptyNodeSetWhenUsingCloseness" classname="apoc.algo.CentralityTest" time="0.191"/>
+  <testcase name="shouldHandleNullNodesWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.18"/>
+  <testcase name="shouldHaveExpectedBetweennessNodeRemappingForCypher" classname="apoc.algo.CentralityTest" time="0.517"/>
+  <testcase name="shouldReturnExpectedResultCountWhenUsingClosenessOutgoingAllDirections" classname="apoc.algo.CentralityTest" time="0.242"/>
+  <testcase name="shouldHandleEmptyRelationshipTypeWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.189"/>
+  <testcase name="shouldProvideSameResultUsingEmptyRelationshipTypeOrSpecifyAllTypesWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.325"/>
+  <testcase name="shouldBeCaseInsensitiveForDirectionBetweenness" classname="apoc.algo.CentralityTest" time="0.239"/>
+  <testcase name="shouldHandleEmptyNodeSetWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.18"/>
+  <testcase name="shouldHandleNullRelationshipTypesWhenUsingCentrality" classname="apoc.algo.CentralityTest" time="0.183"/>
+  <testcase name="shouldHandleNullRelationshipTypesWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.173"/>
+  <testcase name="shouldHandleRelationshipTypesThatDoesNotExistWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.194"/>
+  <testcase name="shouldHaveExpectedBetweennessMultipleSPCypher" classname="apoc.algo.CentralityTest" time="0.29"/>
+  <testcase name="shouldHandleInvalidDirectionWhenUsingBetweenness" classname="apoc.algo.CentralityTest" time="0.202"/>
   <system-out><![CDATA[+----------------------------------------------------------------------------------------------------------------------------------+
 | nodes | relationships | readNodeMillis | readRelationshipMillis | computeMillis | writeMillis | write | property                 |
 +----------------------------------------------------------------------------------------------------------------------------------+
-| 6     | 5             | 180            | 66                     | 2             | 9           | true  | "betweenness_centrality" |
+| 6     | 5             | 187            | 100                    | 11            | 18          | true  | "betweenness_centrality" |
 +----------------------------------------------------------------------------------------------------------------------------------+
 1 row
 
 +----------------------------------------------------------------------------------------------------------------------------------+
 | nodes | relationships | readNodeMillis | readRelationshipMillis | computeMillis | writeMillis | write | property                 |
 +----------------------------------------------------------------------------------------------------------------------------------+
-| 10    | 5             | 17             | 17                     | 1             | 3           | true  | "betweenness_centrality" |
+| 10    | 5             | 16             | 24                     | 1             | 3           | true  | "betweenness_centrality" |
 +----------------------------------------------------------------------------------------------------------------------------------+
 1 row
 
 +----------------------------------------------------------------------------------------------------------------------------------+
 | nodes | relationships | readNodeMillis | readRelationshipMillis | computeMillis | writeMillis | write | property                 |
 +----------------------------------------------------------------------------------------------------------------------------------+
-| 7     | 8             | 12             | 16                     | 1             | 2           | true  | "betweenness_centrality" |
+| 7     | 8             | 26             | 30                     | 0             | 4           | true  | "betweenness_centrality" |
 +----------------------------------------------------------------------------------------------------------------------------------+
 1 row
 

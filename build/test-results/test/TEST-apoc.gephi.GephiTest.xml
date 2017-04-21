@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.gephi.GephiTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-21T15:53:46" hostname="Pc" time="3.055">
+<testsuite name="apoc.gephi.GephiTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-21T16:37:26" hostname="Pc" time="3.076">
   <properties/>
-  <testcase name="testAdd" classname="apoc.gephi.GephiTest" time="1.026"/>
-  <testcase name="testWeightParameter" classname="apoc.gephi.GephiTest" time="1.021"/>
-  <testcase name="testWrongWeightParameter" classname="apoc.gephi.GephiTest" time="1.008"/>
+  <testcase name="testAdd" classname="apoc.gephi.GephiTest" time="1.041"/>
+  <testcase name="testWeightParameter" classname="apoc.gephi.GephiTest" time="1.023"/>
+  <testcase name="testWrongWeightParameter" classname="apoc.gephi.GephiTest" time="1.012"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[                    Connection refused: connect
                     apoc.util.Util.writePayload(Util.java:244)
