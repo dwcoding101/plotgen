@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.index.FreeTextSearchTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2017-04-21T15:27:17" hostname="Pc" time="18.575">
+<testsuite name="apoc.index.FreeTextSearchTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2017-04-21T15:53:50" hostname="Pc" time="18.408">
   <properties/>
-  <testcase name="shouldCreateIndexWithSingleLabel" classname="apoc.index.FreeTextSearchTest" time="0.256"/>
-  <testcase name="shouldReportScoreFromIndex" classname="apoc.index.FreeTextSearchTest" time="0.174"/>
-  <testcase name="shouldEnableSearchingBySpecificField" classname="apoc.index.FreeTextSearchTest" time="0.138"/>
-  <testcase name="addAllNodeExtendedWithDynamicChainAnalyzer" classname="apoc.index.FreeTextSearchTest" time="0.153"/>
-  <testcase name="addAllNodesExtendedOptionsCustomAnalyzer" classname="apoc.index.FreeTextSearchTest" time="0.118"/>
-  <testcase name="shouldLimitNumberOfResults" classname="apoc.index.FreeTextSearchTest" time="1.503"/>
-  <testcase name="addAllNodesDefaultParameters" classname="apoc.index.FreeTextSearchTest" time="0.109"/>
-  <testcase name="shouldHandleRepeatedCalls" classname="apoc.index.FreeTextSearchTest" time="0.157"/>
-  <testcase name="shouldIndexNodesWithMultipleLabels" classname="apoc.index.FreeTextSearchTest" time="0.149"/>
-  <testcase name="addAllNodesExtendedNoOptionsDefaultParameters" classname="apoc.index.FreeTextSearchTest" time="0.128"/>
-  <testcase name="shouldSearchInNumericRange" classname="apoc.index.FreeTextSearchTest" time="1.073"/>
-  <testcase name="shouldFindWithWildcards" classname="apoc.index.FreeTextSearchTest" time="0.216"/>
-  <testcase name="shouldCreateFreeTextIndexWithMultipleLabels" classname="apoc.index.FreeTextSearchTest" time="0.104"/>
-  <testcase name="addAllNodesExtendedOptionsCheck" classname="apoc.index.FreeTextSearchTest" time="0.11"/>
-  <testcase name="shouldQueryFreeTextIndex" classname="apoc.index.FreeTextSearchTest" time="0.151"/>
-  <testcase name="shouldPopulateIndexInBatches" classname="apoc.index.FreeTextSearchTest" time="3.923"/>
-  <testcase name="shouldRefuseToCreateIndexWithNoStructure" classname="apoc.index.FreeTextSearchTest" time="10.111"/>
+  <testcase name="shouldCreateIndexWithSingleLabel" classname="apoc.index.FreeTextSearchTest" time="0.245"/>
+  <testcase name="shouldReportScoreFromIndex" classname="apoc.index.FreeTextSearchTest" time="0.17"/>
+  <testcase name="shouldEnableSearchingBySpecificField" classname="apoc.index.FreeTextSearchTest" time="0.151"/>
+  <testcase name="addAllNodeExtendedWithDynamicChainAnalyzer" classname="apoc.index.FreeTextSearchTest" time="0.136"/>
+  <testcase name="addAllNodesExtendedOptionsCustomAnalyzer" classname="apoc.index.FreeTextSearchTest" time="0.111"/>
+  <testcase name="shouldLimitNumberOfResults" classname="apoc.index.FreeTextSearchTest" time="1.336"/>
+  <testcase name="addAllNodesDefaultParameters" classname="apoc.index.FreeTextSearchTest" time="0.105"/>
+  <testcase name="shouldHandleRepeatedCalls" classname="apoc.index.FreeTextSearchTest" time="0.144"/>
+  <testcase name="shouldIndexNodesWithMultipleLabels" classname="apoc.index.FreeTextSearchTest" time="0.124"/>
+  <testcase name="addAllNodesExtendedNoOptionsDefaultParameters" classname="apoc.index.FreeTextSearchTest" time="0.104"/>
+  <testcase name="shouldSearchInNumericRange" classname="apoc.index.FreeTextSearchTest" time="0.894"/>
+  <testcase name="shouldFindWithWildcards" classname="apoc.index.FreeTextSearchTest" time="0.167"/>
+  <testcase name="shouldCreateFreeTextIndexWithMultipleLabels" classname="apoc.index.FreeTextSearchTest" time="0.124"/>
+  <testcase name="addAllNodesExtendedOptionsCheck" classname="apoc.index.FreeTextSearchTest" time="0.109"/>
+  <testcase name="shouldQueryFreeTextIndex" classname="apoc.index.FreeTextSearchTest" time="0.127"/>
+  <testcase name="shouldPopulateIndexInBatches" classname="apoc.index.FreeTextSearchTest" time="4.235"/>
+  <testcase name="shouldRefuseToCreateIndexWithNoStructure" classname="apoc.index.FreeTextSearchTest" time="10.124"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
