@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.monitor.StoreInfoProcedureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-21T15:03:28" hostname="Pc" time="0.089">
+<testsuite name="apoc.monitor.StoreInfoProcedureTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-21T15:28:12" hostname="Pc" time="0.107">
   <properties/>
-  <testcase name="testGetStoreInfo" classname="apoc.monitor.StoreInfoProcedureTest" time="0.089"/>
+  <testcase name="testGetStoreInfo" classname="apoc.monitor.StoreInfoProcedureTest" time="0.107"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

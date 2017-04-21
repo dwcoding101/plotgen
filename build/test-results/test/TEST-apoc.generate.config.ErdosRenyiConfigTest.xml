@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.generate.config.ErdosRenyiConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-21T15:02:30" hostname="Pc" time="0.001">
+<testsuite name="apoc.generate.config.ErdosRenyiConfigTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-21T15:27:08" hostname="Pc" time="0.002">
   <properties/>
-  <testcase name="shouldCorrectlyEvaluateValidConfig" classname="apoc.generate.config.ErdosRenyiConfigTest" time="0.001"/>
+  <testcase name="shouldCorrectlyEvaluateValidConfig" classname="apoc.generate.config.ErdosRenyiConfigTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
