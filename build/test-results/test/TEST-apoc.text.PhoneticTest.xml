@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.text.PhoneticTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:51:38" hostname="Pc" time="0.668">
+<testsuite name="apoc.text.PhoneticTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-21T11:44:56" hostname="Pc" time="0.675">
   <properties/>
-  <testcase name="shouldComputeSoundexDifference" classname="apoc.text.PhoneticTest" time="0.115"/>
-  <testcase name="shouldComputeSoundexEncodingOfManyWords" classname="apoc.text.PhoneticTest" time="0.082"/>
-  <testcase name="shouldComputeEmptySoundexEncodingForTheEmptyString" classname="apoc.text.PhoneticTest" time="0.099"/>
-  <testcase name="shouldComputeWordSoundexEncodingOfNull" classname="apoc.text.PhoneticTest" time="0.09"/>
-  <testcase name="shouldComputeSoundexEncodingOfManyWordsEvenIfTheStringContainsSomeExtraChars" classname="apoc.text.PhoneticTest" time="0.081"/>
-  <testcase name="shouldComputeSimpleSoundexEncodingOfNull" classname="apoc.text.PhoneticTest" time="0.106"/>
-  <testcase name="shouldComputeSimpleSoundexEncoding" classname="apoc.text.PhoneticTest" time="0.095"/>
+  <testcase name="shouldComputeSoundexDifference" classname="apoc.text.PhoneticTest" time="0.109"/>
+  <testcase name="shouldComputeSoundexEncodingOfManyWords" classname="apoc.text.PhoneticTest" time="0.088"/>
+  <testcase name="shouldComputeEmptySoundexEncodingForTheEmptyString" classname="apoc.text.PhoneticTest" time="0.09"/>
+  <testcase name="shouldComputeWordSoundexEncodingOfNull" classname="apoc.text.PhoneticTest" time="0.091"/>
+  <testcase name="shouldComputeSoundexEncodingOfManyWordsEvenIfTheStringContainsSomeExtraChars" classname="apoc.text.PhoneticTest" time="0.102"/>
+  <testcase name="shouldComputeSimpleSoundexEncodingOfNull" classname="apoc.text.PhoneticTest" time="0.111"/>
+  <testcase name="shouldComputeSimpleSoundexEncoding" classname="apoc.text.PhoneticTest" time="0.083"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

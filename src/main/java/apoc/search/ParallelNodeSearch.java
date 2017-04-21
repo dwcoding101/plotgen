@@ -93,7 +93,7 @@ public class ParallelNodeSearch {
         String operator = operatorNormalized.equals("exact") ? "=" : operatorNormalized;
 
         if (labelPropertiesInput == null || labelPropertiesInput instanceof String && labelPropertiesInput.toString().trim().isEmpty()) {
-            throw new Exception("LabelProperties cannot be empty. example { Person: [\"fullName\",\"lastName\"],Company:\"name\", Event : \"Description\"}");
+            throw new Exception("LabelProperties cannot be empty. example { Person: [\"fullName\",\"lastName\"],Company:\"name\", Event : \"NPCDescription\"}");
         }
         Map<String, Object> labelProperties = labelPropertiesInput instanceof Map ? (Map<String, Object>) labelPropertiesInput : Util.readMap(labelPropertiesInput.toString());
 

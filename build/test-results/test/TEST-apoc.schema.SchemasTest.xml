@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.schema.SchemasTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:51:10" hostname="Pc" time="0.64">
+<testsuite name="apoc.schema.SchemasTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-21T11:44:28" hostname="Pc" time="0.633">
   <properties/>
-  <testcase name="testCreateSchema" classname="apoc.schema.SchemasTest" time="0.105"/>
-  <testcase name="testCreateIndex" classname="apoc.schema.SchemasTest" time="0.096"/>
-  <testcase name="testKeepIndex" classname="apoc.schema.SchemasTest" time="0.107"/>
-  <testcase name="testDropIndex" classname="apoc.schema.SchemasTest" time="0.118"/>
-  <testcase name="testDropSchema" classname="apoc.schema.SchemasTest" time="0.107"/>
-  <testcase name="testKeepSchema" classname="apoc.schema.SchemasTest" time="0.106"/>
+  <testcase name="testCreateSchema" classname="apoc.schema.SchemasTest" time="0.112"/>
+  <testcase name="testCreateIndex" classname="apoc.schema.SchemasTest" time="0.102"/>
+  <testcase name="testKeepIndex" classname="apoc.schema.SchemasTest" time="0.106"/>
+  <testcase name="testDropIndex" classname="apoc.schema.SchemasTest" time="0.107"/>
+  <testcase name="testDropSchema" classname="apoc.schema.SchemasTest" time="0.108"/>
+  <testcase name="testKeepSchema" classname="apoc.schema.SchemasTest" time="0.097"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.SimilarityTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:48:57" hostname="Pc" time="1.046">
+<testsuite name="apoc.algo.SimilarityTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-21T11:42:11" hostname="Pc" time="1.132">
   <properties/>
-  <testcase name="testEuclideanSimilarity" classname="apoc.algo.SimilarityTest" time="0.352"/>
-  <testcase name="testCosineSimilarityWithSomeRelationshipsNull" classname="apoc.algo.SimilarityTest" time="0.224"/>
-  <testcase name="testCosineSimilarityWithSomeWeightPropertiesNull" classname="apoc.algo.SimilarityTest" time="0.269"/>
-  <testcase name="testEuclideanDistance" classname="apoc.algo.SimilarityTest" time="0.2"/>
+  <testcase name="testEuclideanSimilarity" classname="apoc.algo.SimilarityTest" time="0.408"/>
+  <testcase name="testCosineSimilarityWithSomeRelationshipsNull" classname="apoc.algo.SimilarityTest" time="0.251"/>
+  <testcase name="testCosineSimilarityWithSomeWeightPropertiesNull" classname="apoc.algo.SimilarityTest" time="0.233"/>
+  <testcase name="testEuclideanDistance" classname="apoc.algo.SimilarityTest" time="0.24"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

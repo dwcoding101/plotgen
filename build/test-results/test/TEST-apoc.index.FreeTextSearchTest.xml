@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.index.FreeTextSearchTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:50:10" hostname="Pc" time="17.74">
+<testsuite name="apoc.index.FreeTextSearchTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2017-04-21T11:43:28" hostname="Pc" time="17.443">
   <properties/>
-  <testcase name="shouldCreateIndexWithSingleLabel" classname="apoc.index.FreeTextSearchTest" time="0.188"/>
-  <testcase name="shouldReportScoreFromIndex" classname="apoc.index.FreeTextSearchTest" time="0.141"/>
-  <testcase name="shouldEnableSearchingBySpecificField" classname="apoc.index.FreeTextSearchTest" time="0.118"/>
-  <testcase name="addAllNodeExtendedWithDynamicChainAnalyzer" classname="apoc.index.FreeTextSearchTest" time="0.127"/>
-  <testcase name="addAllNodesExtendedOptionsCustomAnalyzer" classname="apoc.index.FreeTextSearchTest" time="0.113"/>
-  <testcase name="shouldLimitNumberOfResults" classname="apoc.index.FreeTextSearchTest" time="1.304"/>
-  <testcase name="addAllNodesDefaultParameters" classname="apoc.index.FreeTextSearchTest" time="0.101"/>
-  <testcase name="shouldHandleRepeatedCalls" classname="apoc.index.FreeTextSearchTest" time="0.137"/>
-  <testcase name="shouldIndexNodesWithMultipleLabels" classname="apoc.index.FreeTextSearchTest" time="0.124"/>
-  <testcase name="addAllNodesExtendedNoOptionsDefaultParameters" classname="apoc.index.FreeTextSearchTest" time="0.131"/>
-  <testcase name="shouldSearchInNumericRange" classname="apoc.index.FreeTextSearchTest" time="0.895"/>
-  <testcase name="shouldFindWithWildcards" classname="apoc.index.FreeTextSearchTest" time="0.165"/>
-  <testcase name="shouldCreateFreeTextIndexWithMultipleLabels" classname="apoc.index.FreeTextSearchTest" time="0.133"/>
-  <testcase name="addAllNodesExtendedOptionsCheck" classname="apoc.index.FreeTextSearchTest" time="0.112"/>
-  <testcase name="shouldQueryFreeTextIndex" classname="apoc.index.FreeTextSearchTest" time="0.129"/>
-  <testcase name="shouldPopulateIndexInBatches" classname="apoc.index.FreeTextSearchTest" time="3.667"/>
+  <testcase name="shouldCreateIndexWithSingleLabel" classname="apoc.index.FreeTextSearchTest" time="0.203"/>
+  <testcase name="shouldReportScoreFromIndex" classname="apoc.index.FreeTextSearchTest" time="0.147"/>
+  <testcase name="shouldEnableSearchingBySpecificField" classname="apoc.index.FreeTextSearchTest" time="0.132"/>
+  <testcase name="addAllNodeExtendedWithDynamicChainAnalyzer" classname="apoc.index.FreeTextSearchTest" time="0.124"/>
+  <testcase name="addAllNodesExtendedOptionsCustomAnalyzer" classname="apoc.index.FreeTextSearchTest" time="0.117"/>
+  <testcase name="shouldLimitNumberOfResults" classname="apoc.index.FreeTextSearchTest" time="1.166"/>
+  <testcase name="addAllNodesDefaultParameters" classname="apoc.index.FreeTextSearchTest" time="0.112"/>
+  <testcase name="shouldHandleRepeatedCalls" classname="apoc.index.FreeTextSearchTest" time="0.123"/>
+  <testcase name="shouldIndexNodesWithMultipleLabels" classname="apoc.index.FreeTextSearchTest" time="0.121"/>
+  <testcase name="addAllNodesExtendedNoOptionsDefaultParameters" classname="apoc.index.FreeTextSearchTest" time="0.1"/>
+  <testcase name="shouldSearchInNumericRange" classname="apoc.index.FreeTextSearchTest" time="0.807"/>
+  <testcase name="shouldFindWithWildcards" classname="apoc.index.FreeTextSearchTest" time="0.139"/>
+  <testcase name="shouldCreateFreeTextIndexWithMultipleLabels" classname="apoc.index.FreeTextSearchTest" time="0.109"/>
+  <testcase name="addAllNodesExtendedOptionsCheck" classname="apoc.index.FreeTextSearchTest" time="0.113"/>
+  <testcase name="shouldQueryFreeTextIndex" classname="apoc.index.FreeTextSearchTest" time="0.148"/>
+  <testcase name="shouldPopulateIndexInBatches" classname="apoc.index.FreeTextSearchTest" time="3.621"/>
   <testcase name="shouldRefuseToCreateIndexWithNoStructure" classname="apoc.index.FreeTextSearchTest" time="10.155"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

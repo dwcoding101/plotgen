@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.refactor.GraphRefactoringTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:51:08" hostname="Pc" time="1.784">
+<testsuite name="apoc.refactor.GraphRefactoringTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-04-21T11:44:27" hostname="Pc" time="1.661">
   <properties/>
-  <testcase name="testMergeNodes" classname="apoc.refactor.GraphRefactoringTest" time="0.104"/>
-  <testcase name="testCategorizeOutgoing" classname="apoc.refactor.GraphRefactoringTest" time="0.166"/>
-  <testcase name="testCategorizeIncoming" classname="apoc.refactor.GraphRefactoringTest" time="0.154"/>
+  <testcase name="testMergeNodes" classname="apoc.refactor.GraphRefactoringTest" time="0.101"/>
+  <testcase name="testCategorizeOutgoing" classname="apoc.refactor.GraphRefactoringTest" time="0.162"/>
+  <testcase name="testCategorizeIncoming" classname="apoc.refactor.GraphRefactoringTest" time="0.149"/>
   <testcase name="testCollapseNode" classname="apoc.refactor.GraphRefactoringTest" time="0.093"/>
-  <testcase name="testMergeNodesEagerAggregation" classname="apoc.refactor.GraphRefactoringTest" time="0.17"/>
-  <testcase name="testInvertRelationship" classname="apoc.refactor.GraphRefactoringTest" time="0.134"/>
-  <testcase name="testDeleteOneNode" classname="apoc.refactor.GraphRefactoringTest" time="0.129"/>
-  <testcase name="testRedirectRelationship" classname="apoc.refactor.GraphRefactoringTest" time="0.099"/>
-  <testcase name="testNormalizeAsBoolean" classname="apoc.refactor.GraphRefactoringTest" time="0.126"/>
-  <testcase name="testMergeNodesEagerIndex" classname="apoc.refactor.GraphRefactoringTest" time="0.155"/>
-  <testcase name="testExtractNode" classname="apoc.refactor.GraphRefactoringTest" time="0.119"/>
-  <testcase name="testCloneNodes" classname="apoc.refactor.GraphRefactoringTest" time="0.102"/>
-  <testcase name="testChangeType" classname="apoc.refactor.GraphRefactoringTest" time="0.101"/>
-  <testcase name="testEagernessMergeNodesFails" classname="apoc.refactor.GraphRefactoringTest" time="0.129"/>
+  <testcase name="testMergeNodesEagerAggregation" classname="apoc.refactor.GraphRefactoringTest" time="0.168"/>
+  <testcase name="testInvertRelationship" classname="apoc.refactor.GraphRefactoringTest" time="0.123"/>
+  <testcase name="testDeleteOneNode" classname="apoc.refactor.GraphRefactoringTest" time="0.128"/>
+  <testcase name="testRedirectRelationship" classname="apoc.refactor.GraphRefactoringTest" time="0.087"/>
+  <testcase name="testNormalizeAsBoolean" classname="apoc.refactor.GraphRefactoringTest" time="0.106"/>
+  <testcase name="testMergeNodesEagerIndex" classname="apoc.refactor.GraphRefactoringTest" time="0.131"/>
+  <testcase name="testExtractNode" classname="apoc.refactor.GraphRefactoringTest" time="0.102"/>
+  <testcase name="testCloneNodes" classname="apoc.refactor.GraphRefactoringTest" time="0.107"/>
+  <testcase name="testChangeType" classname="apoc.refactor.GraphRefactoringTest" time="0.088"/>
+  <testcase name="testEagernessMergeNodesFails" classname="apoc.refactor.GraphRefactoringTest" time="0.116"/>
   <system-out><![CDATA[Compiler CYPHER 3.1
 
 Planner COST

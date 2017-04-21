@@ -67,7 +67,7 @@ public class AssertSchemaProcedure implements CallableProcedure {
     }
 
     //    @Procedure("apoc.schema.assert")
-//    @Description("apoc.schema.assert([{label:[key1,key2]},..],[{label:[key1,key2]},..]) yield label, keys, unique, action - asserts that at the end of the operation the given indexes and unique constraints are there")
+//    @NPCDescription("apoc.schema.assert([{label:[key1,key2]},..],[{label:[key1,key2]},..]) yield label, keys, unique, action - asserts that at the end of the operation the given indexes and unique constraints are there")
     public Stream<SchemaInfo> assertSchema(@Name("indexes") Map<String, List<String>> indexes, @Name("constraints") Map<String, List<String>> constraints) throws ExecutionException, InterruptedException {
         return Stream.concat(
                 assertIndexes(indexes).stream(),

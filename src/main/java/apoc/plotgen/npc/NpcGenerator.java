@@ -1,5 +1,6 @@
 package apoc.plotgen.npc;
 
+import apoc.plotgen.description.DescriptionGenerator;
 import apoc.plotgen.gender.GenderGenerator;
 import apoc.plotgen.names.NameGenerator;
 import apoc.result.GraphResult;
@@ -33,7 +34,7 @@ public class NpcGenerator {
 
         NameGenerator nameGenerator = new NameGenerator();
         GenderGenerator genderGenerator = new GenderGenerator();
-
+        DescriptionGenerator descriptionGenerator = new DescriptionGenerator();
 
 
         for(int i = 0; i < count; i++) {
@@ -54,6 +55,9 @@ public class NpcGenerator {
                     "})";
 
             Result execute = db.execute(query);
+
+           // descriptionGenerator.CreateDescription(uuid);
+
         }
     }
 

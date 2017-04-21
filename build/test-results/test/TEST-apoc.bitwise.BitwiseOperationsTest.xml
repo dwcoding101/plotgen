@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.bitwise.BitwiseOperationsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-20T19:48:58" hostname="Pc" time="0.009">
+<testsuite name="apoc.bitwise.BitwiseOperationsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-21T11:42:13" hostname="Pc" time="0.009">
   <properties/>
   <testcase name="testOperations" classname="apoc.bitwise.BitwiseOperationsTest" time="0.008"/>
   <testcase name="testOperations2" classname="apoc.bitwise.BitwiseOperationsTest" time="0.001"/>

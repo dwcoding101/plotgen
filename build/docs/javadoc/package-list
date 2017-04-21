@@ -45,6 +45,7 @@ apoc.nodes
 apoc.number
 apoc.path
 apoc.periodic
+apoc.plotgen.description
 apoc.plotgen.gender
 apoc.plotgen.names
 apoc.plotgen.npc
