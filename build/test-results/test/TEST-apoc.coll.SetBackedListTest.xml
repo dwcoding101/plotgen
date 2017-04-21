@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.coll.SetBackedListTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-04-21T11:42:36" hostname="Pc" time="0.001">
+<testsuite name="apoc.coll.SetBackedListTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-04-21T14:28:27" hostname="Pc" time="0.0">
   <properties/>
   <testcase name="testEmptyList" classname="apoc.coll.SetBackedListTest" time="0.0"/>
   <testcase name="testDoubleList" classname="apoc.coll.SetBackedListTest" time="0.0"/>
   <testcase name="testContains" classname="apoc.coll.SetBackedListTest" time="0.0"/>
-  <testcase name="testSingleList" classname="apoc.coll.SetBackedListTest" time="0.001"/>
+  <testcase name="testSingleList" classname="apoc.coll.SetBackedListTest" time="0.0"/>
   <testcase name="testReverse" classname="apoc.coll.SetBackedListTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.nodes.NodesTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-21T11:44:20" hostname="Pc" time="0.777">
+<testsuite name="apoc.nodes.NodesTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-21T14:30:03" hostname="Pc" time="0.801">
   <properties/>
-  <testcase name="delete" classname="apoc.nodes.NodesTest" time="0.38"/>
-  <testcase name="link" classname="apoc.nodes.NodesTest" time="0.119"/>
-  <testcase name="hasRelationhip" classname="apoc.nodes.NodesTest" time="0.154"/>
-  <testcase name="isDense" classname="apoc.nodes.NodesTest" time="0.124"/>
+  <testcase name="delete" classname="apoc.nodes.NodesTest" time="0.387"/>
+  <testcase name="link" classname="apoc.nodes.NodesTest" time="0.131"/>
+  <testcase name="hasRelationhip" classname="apoc.nodes.NodesTest" time="0.162"/>
+  <testcase name="isDense" classname="apoc.nodes.NodesTest" time="0.121"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

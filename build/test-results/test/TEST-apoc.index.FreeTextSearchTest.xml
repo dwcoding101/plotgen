@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.index.FreeTextSearchTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2017-04-21T11:43:28" hostname="Pc" time="17.443">
+<testsuite name="apoc.index.FreeTextSearchTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2017-04-21T14:29:14" hostname="Pc" time="16.946">
   <properties/>
-  <testcase name="shouldCreateIndexWithSingleLabel" classname="apoc.index.FreeTextSearchTest" time="0.203"/>
-  <testcase name="shouldReportScoreFromIndex" classname="apoc.index.FreeTextSearchTest" time="0.147"/>
-  <testcase name="shouldEnableSearchingBySpecificField" classname="apoc.index.FreeTextSearchTest" time="0.132"/>
-  <testcase name="addAllNodeExtendedWithDynamicChainAnalyzer" classname="apoc.index.FreeTextSearchTest" time="0.124"/>
-  <testcase name="addAllNodesExtendedOptionsCustomAnalyzer" classname="apoc.index.FreeTextSearchTest" time="0.117"/>
-  <testcase name="shouldLimitNumberOfResults" classname="apoc.index.FreeTextSearchTest" time="1.166"/>
-  <testcase name="addAllNodesDefaultParameters" classname="apoc.index.FreeTextSearchTest" time="0.112"/>
-  <testcase name="shouldHandleRepeatedCalls" classname="apoc.index.FreeTextSearchTest" time="0.123"/>
+  <testcase name="shouldCreateIndexWithSingleLabel" classname="apoc.index.FreeTextSearchTest" time="0.195"/>
+  <testcase name="shouldReportScoreFromIndex" classname="apoc.index.FreeTextSearchTest" time="0.14"/>
+  <testcase name="shouldEnableSearchingBySpecificField" classname="apoc.index.FreeTextSearchTest" time="0.105"/>
+  <testcase name="addAllNodeExtendedWithDynamicChainAnalyzer" classname="apoc.index.FreeTextSearchTest" time="0.144"/>
+  <testcase name="addAllNodesExtendedOptionsCustomAnalyzer" classname="apoc.index.FreeTextSearchTest" time="0.094"/>
+  <testcase name="shouldLimitNumberOfResults" classname="apoc.index.FreeTextSearchTest" time="1.089"/>
+  <testcase name="addAllNodesDefaultParameters" classname="apoc.index.FreeTextSearchTest" time="0.107"/>
+  <testcase name="shouldHandleRepeatedCalls" classname="apoc.index.FreeTextSearchTest" time="0.122"/>
   <testcase name="shouldIndexNodesWithMultipleLabels" classname="apoc.index.FreeTextSearchTest" time="0.121"/>
-  <testcase name="addAllNodesExtendedNoOptionsDefaultParameters" classname="apoc.index.FreeTextSearchTest" time="0.1"/>
-  <testcase name="shouldSearchInNumericRange" classname="apoc.index.FreeTextSearchTest" time="0.807"/>
-  <testcase name="shouldFindWithWildcards" classname="apoc.index.FreeTextSearchTest" time="0.139"/>
-  <testcase name="shouldCreateFreeTextIndexWithMultipleLabels" classname="apoc.index.FreeTextSearchTest" time="0.109"/>
-  <testcase name="addAllNodesExtendedOptionsCheck" classname="apoc.index.FreeTextSearchTest" time="0.113"/>
-  <testcase name="shouldQueryFreeTextIndex" classname="apoc.index.FreeTextSearchTest" time="0.148"/>
-  <testcase name="shouldPopulateIndexInBatches" classname="apoc.index.FreeTextSearchTest" time="3.621"/>
-  <testcase name="shouldRefuseToCreateIndexWithNoStructure" classname="apoc.index.FreeTextSearchTest" time="10.155"/>
+  <testcase name="addAllNodesExtendedNoOptionsDefaultParameters" classname="apoc.index.FreeTextSearchTest" time="0.106"/>
+  <testcase name="shouldSearchInNumericRange" classname="apoc.index.FreeTextSearchTest" time="0.719"/>
+  <testcase name="shouldFindWithWildcards" classname="apoc.index.FreeTextSearchTest" time="0.116"/>
+  <testcase name="shouldCreateFreeTextIndexWithMultipleLabels" classname="apoc.index.FreeTextSearchTest" time="0.115"/>
+  <testcase name="addAllNodesExtendedOptionsCheck" classname="apoc.index.FreeTextSearchTest" time="0.105"/>
+  <testcase name="shouldQueryFreeTextIndex" classname="apoc.index.FreeTextSearchTest" time="0.12"/>
+  <testcase name="shouldPopulateIndexInBatches" classname="apoc.index.FreeTextSearchTest" time="3.437"/>
+  <testcase name="shouldRefuseToCreateIndexWithNoStructure" classname="apoc.index.FreeTextSearchTest" time="10.109"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

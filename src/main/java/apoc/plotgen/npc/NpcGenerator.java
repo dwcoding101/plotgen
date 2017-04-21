@@ -56,7 +56,7 @@ public class NpcGenerator {
 
             Result execute = db.execute(query);
 
-           // descriptionGenerator.CreateDescription(uuid);
+            descriptionGenerator.CreateDescription(uuid);
 
         }
     }

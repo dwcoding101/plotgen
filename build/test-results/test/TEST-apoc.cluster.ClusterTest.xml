@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.cluster.ClusterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-21T11:42:13" hostname="Pc" time="17.007">
+<testsuite name="apoc.cluster.ClusterTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-21T14:28:05" hostname="Pc" time="16.624">
   <properties/>
-  <testcase name="testClusterOverview" classname="apoc.cluster.ClusterTest" time="17.007"/>
+  <testcase name="testClusterOverview" classname="apoc.cluster.ClusterTest" time="16.624"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

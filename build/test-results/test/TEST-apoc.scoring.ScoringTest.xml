@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.scoring.ScoringTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-21T11:44:29" hostname="Pc" time="0.018">
+<testsuite name="apoc.scoring.ScoringTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-21T14:30:13" hostname="Pc" time="0.018">
   <properties/>
   <testcase name="existence" classname="apoc.scoring.ScoringTest" time="0.009"/>
   <testcase name="pareto" classname="apoc.scoring.ScoringTest" time="0.009"/>
