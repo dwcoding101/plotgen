@@ -118,7 +118,7 @@ public class Time {
                 for ( String key : result.columns() )
                 {
 
-                    Node node = (Node)row.get(key);
+             //       Node node = (Node)row.get(key);
 
                     log.info(row.get(key).toString());
                 }

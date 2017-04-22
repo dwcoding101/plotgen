@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.LabelPropagationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-22T09:40:05" hostname="Pc" time="0.144">
+<testsuite name="apoc.algo.LabelPropagationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-22T10:45:57" hostname="Pc" time="0.165">
   <properties/>
-  <testcase name="testCommunity" classname="apoc.algo.LabelPropagationTest" time="0.144"/>
+  <testcase name="testCommunity" classname="apoc.algo.LabelPropagationTest" time="0.165"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.mongodb.MongoDBTest" tests="9" skipped="9" failures="0" errors="0" timestamp="2017-04-22T09:42:59" hostname="Pc" time="0.001">
+<testsuite name="apoc.mongodb.MongoDBTest" tests="9" skipped="9" failures="0" errors="0" timestamp="2017-04-22T10:49:04" hostname="Pc" time="0.001">
   <properties/>
-  <testcase name="testGet" classname="apoc.mongodb.MongoDBTest" time="0.0">
+  <testcase name="testGet" classname="apoc.mongodb.MongoDBTest" time="0.001">
     <skipped/>
   </testcase>
   <testcase name="testCount" classname="apoc.mongodb.MongoDBTest" time="0.0">
@@ -22,7 +22,7 @@
   <testcase name="testDelete" classname="apoc.mongodb.MongoDBTest" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="testInsert" classname="apoc.mongodb.MongoDBTest" time="0.001">
+  <testcase name="testInsert" classname="apoc.mongodb.MongoDBTest" time="0.0">
     <skipped/>
   </testcase>
   <testcase name="testUpdate" classname="apoc.mongodb.MongoDBTest" time="0.0">
