@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.CoreGraphAlgorithmsTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-22T13:57:49" hostname="Pc" time="0.007">
+<testsuite name="apoc.algo.CoreGraphAlgorithmsTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-22T14:37:44" hostname="Pc" time="0.009">
   <properties/>
-  <testcase name="testLoadDegreesBoth" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.002"/>
+  <testcase name="testLoadDegreesBoth" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.004"/>
   <testcase name="labelPropagation" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.001"/>
   <testcase name="unionFind" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.001"/>
   <testcase name="testLoadDegreesOutgoingType" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.0"/>

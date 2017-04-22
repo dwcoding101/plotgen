@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.search.ParallelNodeSearchTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-22T14:01:12" hostname="Pc" time="0.452">
+<testsuite name="apoc.search.ParallelNodeSearchTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-22T14:41:09" hostname="Pc" time="0.41">
   <properties/>
-  <testcase name="testMultiSearchNodeReduced" classname="apoc.search.ParallelNodeSearchTest" time="0.133"/>
-  <testcase name="testMultiSearchNodeAll" classname="apoc.search.ParallelNodeSearchTest" time="0.12"/>
-  <testcase name="testMultiSearchNode" classname="apoc.search.ParallelNodeSearchTest" time="0.025"/>
-  <testcase name="testMultiSearchNodeAllReduced" classname="apoc.search.ParallelNodeSearchTest" time="0.034"/>
-  <testcase name="testMultiSearchNodeNumberComparison" classname="apoc.search.ParallelNodeSearchTest" time="0.05"/>
-  <testcase name="testMultiSearchNodeAllReducedMapParam" classname="apoc.search.ParallelNodeSearchTest" time="0.055"/>
-  <testcase name="testMultiSearchNodeNumberExactComparison" classname="apoc.search.ParallelNodeSearchTest" time="0.035"/>
+  <testcase name="testMultiSearchNodeReduced" classname="apoc.search.ParallelNodeSearchTest" time="0.123"/>
+  <testcase name="testMultiSearchNodeAll" classname="apoc.search.ParallelNodeSearchTest" time="0.132"/>
+  <testcase name="testMultiSearchNode" classname="apoc.search.ParallelNodeSearchTest" time="0.022"/>
+  <testcase name="testMultiSearchNodeAllReduced" classname="apoc.search.ParallelNodeSearchTest" time="0.026"/>
+  <testcase name="testMultiSearchNodeNumberComparison" classname="apoc.search.ParallelNodeSearchTest" time="0.04"/>
+  <testcase name="testMultiSearchNodeAllReducedMapParam" classname="apoc.search.ParallelNodeSearchTest" time="0.03"/>
+  <testcase name="testMultiSearchNodeNumberExactComparison" classname="apoc.search.ParallelNodeSearchTest" time="0.036"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

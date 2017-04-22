@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.pagerank.PageRankAlgoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-22T13:57:49" hostname="Pc" time="0.438">
+<testsuite name="apoc.algo.pagerank.PageRankAlgoTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-22T14:37:45" hostname="Pc" time="0.517">
   <properties/>
-  <testcase name="shouldGetPageRankArrayStorageSPI" classname="apoc.algo.pagerank.PageRankAlgoTest" time="0.238"/>
-  <testcase name="shouldGetPageRankArrayStorageSPIWithTypes" classname="apoc.algo.pagerank.PageRankAlgoTest" time="0.2"/>
+  <testcase name="shouldGetPageRankArrayStorageSPI" classname="apoc.algo.pagerank.PageRankAlgoTest" time="0.315"/>
+  <testcase name="shouldGetPageRankArrayStorageSPIWithTypes" classname="apoc.algo.pagerank.PageRankAlgoTest" time="0.201"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

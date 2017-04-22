@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.load.XmlTest" tests="6" skipped="0" failures="2" errors="0" timestamp="2017-04-22T14:00:55" hostname="Pc" time="0.784">
+<testsuite name="apoc.load.XmlTest" tests="6" skipped="0" failures="2" errors="0" timestamp="2017-04-22T14:40:52" hostname="Pc" time="0.773">
   <properties/>
-  <testcase name="testReturnCollectionElements" classname="apoc.load.XmlTest" time="0.188">
+  <testcase name="testReturnCollectionElements" classname="apoc.load.XmlTest" time="0.177">
     <failure message="org.junit.ComparisonFailure: expected:&lt;...-------------------+[&#10;| id      | author                 | title                                    |&#10;+-----------------------------------------------------------------------------+&#10;| &quot;bk101&quot; | &quot;Gambardella, Matthew&quot; | &quot;Arciniegas, Fabio&quot;                      |&#10;| &quot;bk102&quot; | &quot;Ralls, Kim&quot;           | &quot;Midnight Rain&quot;                          |&#10;| &quot;bk103&quot; | &quot;Corets, Eva&quot;          | &quot;Maeve Ascendant&quot;                        |&#10;| &quot;bk104&quot; | &quot;Corets, Eva&quot;          | &quot;Oberon's Legacy&quot;                        |&#10;| &quot;bk105&quot; | &quot;Corets, Eva&quot;          | &quot;The Sundered Grail&quot;                     |&#10;| &quot;bk106&quot; | &quot;Randall, Cynthia&quot;     | &quot;Lover Birds&quot;                            |&#10;| &quot;bk107&quot; | &quot;Thurman, Paula&quot;       | &quot;Splish Splash&quot;                          |&#10;| &quot;bk108&quot; | &quot;Knorr, Stefan&quot;        | &quot;Creepy Crawlies&quot;                        |&#10;| &quot;bk109&quot; | &quot;Kress, Peter&quot;         | &quot;Paradox Lost&quot;                           |&#10;| &quot;bk110&quot; | &quot;O'Brien, Tim&quot;         | &quot;Microsoft .NET: The Programming Bible&quot;  |&#10;| &quot;bk111&quot; | &quot;O'Brien, Tim&quot;         | &quot;MSXML3: A Comprehensive Guide&quot;          |&#10;| &quot;bk112&quot; | &quot;Galos, Mike&quot;          | &quot;Visual Studio 7: A Comprehensive Guide&quot; |&#10;+-----------------------------------------------------------------------------+&#10;12 rows]&#10;&gt; but was:&lt;...-------------------+[&#13;&#10;| id      | author                 | title                                    |&#13;&#10;+-----------------------------------------------------------------------------+&#13;&#10;| &quot;bk101&quot; | &quot;Gambardella, Matthew&quot; | &quot;Arciniegas, Fabio&quot;                      |&#13;&#10;| &quot;bk102&quot; | &quot;Ralls, Kim&quot;           | &quot;Midnight Rain&quot;                          |&#13;&#10;| &quot;bk103&quot; | &quot;Corets, Eva&quot;          | &quot;Maeve Ascendant&quot;                        |&#13;&#10;| &quot;bk104&quot; | &quot;Corets, Eva&quot;          | &quot;Oberon's Legacy&quot;                        |&#13;&#10;| &quot;bk105&quot; | &quot;Corets, Eva&quot;          | &quot;The Sundered Grail&quot;                     |&#13;&#10;| &quot;bk106&quot; | &quot;Randall, Cynthia&quot;     | &quot;Lover Birds&quot;                            |&#13;&#10;| &quot;bk107&quot; | &quot;Thurman, Paula&quot;       | &quot;Splish Splash&quot;                          |&#13;&#10;| &quot;bk108&quot; | &quot;Knorr, Stefan&quot;        | &quot;Creepy Crawlies&quot;                        |&#13;&#10;| &quot;bk109&quot; | &quot;Kress, Peter&quot;         | &quot;Paradox Lost&quot;                           |&#13;&#10;| &quot;bk110&quot; | &quot;O'Brien, Tim&quot;         | &quot;Microsoft .NET: The Programming Bible&quot;  |&#13;&#10;| &quot;bk111&quot; | &quot;O'Brien, Tim&quot;         | &quot;MSXML3: A Comprehensive Guide&quot;          |&#13;&#10;| &quot;bk112&quot; | &quot;Galos, Mike&quot;          | &quot;Visual Studio 7: A Comprehensive Guide&quot; |&#13;&#10;+-----------------------------------------------------------------------------+&#13;&#10;12 rows&#13;]&#10;&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...-------------------+[
 | id      | author                 | title                                    |
 +-----------------------------------------------------------------------------+
@@ -66,7 +66,7 @@
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.GeneratedMethodAccessor89.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -75,7 +75,7 @@
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
 	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -88,7 +88,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testFilterIntoCollection" classname="apoc.load.XmlTest" time="0.139">
+  <testcase name="testFilterIntoCollection" classname="apoc.load.XmlTest" time="0.135">
     <failure message="org.junit.ComparisonFailure: expected:&lt;...-------------------+[&#10;| book.id | pairs                                                                                                |&#10;+----------------------------------------------------------------------------------------------------------------+&#10;| &quot;bk101&quot; | [[&quot;author&quot;,&quot;Gambardella, Matthew&quot;],[&quot;author&quot;,&quot;Arciniegas, Fabio&quot;],[&quot;title&quot;,&quot;XML Developer's Guide&quot;]] |&#10;| &quot;bk102&quot; | [[&quot;author&quot;,&quot;Ralls, Kim&quot;],[&quot;title&quot;,&quot;Midnight Rain&quot;]]                                                  |&#10;| &quot;bk103&quot; | [[&quot;author&quot;,&quot;Corets, Eva&quot;],[&quot;title&quot;,&quot;Maeve Ascendant&quot;]]                                               |&#10;| &quot;bk104&quot; | [[&quot;author&quot;,&quot;Corets, Eva&quot;],[&quot;title&quot;,&quot;Oberon's Legacy&quot;]]                                               |&#10;| &quot;bk105&quot; | [[&quot;author&quot;,&quot;Corets, Eva&quot;],[&quot;title&quot;,&quot;The Sundered Grail&quot;]]                                            |&#10;| &quot;bk106&quot; | [[&quot;author&quot;,&quot;Randall, Cynthia&quot;],[&quot;title&quot;,&quot;Lover Birds&quot;]]                                              |&#10;| &quot;bk107&quot; | [[&quot;author&quot;,&quot;Thurman, Paula&quot;],[&quot;title&quot;,&quot;Splish Splash&quot;]]                                              |&#10;| &quot;bk108&quot; | [[&quot;author&quot;,&quot;Knorr, Stefan&quot;],[&quot;title&quot;,&quot;Creepy Crawlies&quot;]]                                             |&#10;| &quot;bk109&quot; | [[&quot;author&quot;,&quot;Kress, Peter&quot;],[&quot;title&quot;,&quot;Paradox Lost&quot;]]                                                 |&#10;| &quot;bk110&quot; | [[&quot;author&quot;,&quot;O'Brien, Tim&quot;],[&quot;title&quot;,&quot;Microsoft .NET: The Programming Bible&quot;]]                        |&#10;| &quot;bk111&quot; | [[&quot;author&quot;,&quot;O'Brien, Tim&quot;],[&quot;title&quot;,&quot;MSXML3: A Comprehensive Guide&quot;]]                                |&#10;| &quot;bk112&quot; | [[&quot;author&quot;,&quot;Galos, Mike&quot;],[&quot;title&quot;,&quot;Visual Studio 7: A Comprehensive Guide&quot;]]                        |&#10;+----------------------------------------------------------------------------------------------------------------+&#10;12 rows]&#10;&gt; but was:&lt;...-------------------+[&#13;&#10;| book.id | pairs                                                                                                |&#13;&#10;+----------------------------------------------------------------------------------------------------------------+&#13;&#10;| &quot;bk101&quot; | [[&quot;author&quot;,&quot;Gambardella, Matthew&quot;],[&quot;author&quot;,&quot;Arciniegas, Fabio&quot;],[&quot;title&quot;,&quot;XML Developer's Guide&quot;]] |&#13;&#10;| &quot;bk102&quot; | [[&quot;author&quot;,&quot;Ralls, Kim&quot;],[&quot;title&quot;,&quot;Midnight Rain&quot;]]                                                  |&#13;&#10;| &quot;bk103&quot; | [[&quot;author&quot;,&quot;Corets, Eva&quot;],[&quot;title&quot;,&quot;Maeve Ascendant&quot;]]                                               |&#13;&#10;| &quot;bk104&quot; | [[&quot;author&quot;,&quot;Corets, Eva&quot;],[&quot;title&quot;,&quot;Oberon's Legacy&quot;]]                                               |&#13;&#10;| &quot;bk105&quot; | [[&quot;author&quot;,&quot;Corets, Eva&quot;],[&quot;title&quot;,&quot;The Sundered Grail&quot;]]                                            |&#13;&#10;| &quot;bk106&quot; | [[&quot;author&quot;,&quot;Randall, Cynthia&quot;],[&quot;title&quot;,&quot;Lover Birds&quot;]]                                              |&#13;&#10;| &quot;bk107&quot; | [[&quot;author&quot;,&quot;Thurman, Paula&quot;],[&quot;title&quot;,&quot;Splish Splash&quot;]]                                              |&#13;&#10;| &quot;bk108&quot; | [[&quot;author&quot;,&quot;Knorr, Stefan&quot;],[&quot;title&quot;,&quot;Creepy Crawlies&quot;]]                                             |&#13;&#10;| &quot;bk109&quot; | [[&quot;author&quot;,&quot;Kress, Peter&quot;],[&quot;title&quot;,&quot;Paradox Lost&quot;]]                                                 |&#13;&#10;| &quot;bk110&quot; | [[&quot;author&quot;,&quot;O'Brien, Tim&quot;],[&quot;title&quot;,&quot;Microsoft .NET: The Programming Bible&quot;]]                        |&#13;&#10;| &quot;bk111&quot; | [[&quot;author&quot;,&quot;O'Brien, Tim&quot;],[&quot;title&quot;,&quot;MSXML3: A Comprehensive Guide&quot;]]                                |&#13;&#10;| &quot;bk112&quot; | [[&quot;author&quot;,&quot;Galos, Mike&quot;],[&quot;title&quot;,&quot;Visual Studio 7: A Comprehensive Guide&quot;]]                        |&#13;&#10;+----------------------------------------------------------------------------------------------------------------+&#13;&#10;12 rows&#13;]&#10;&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...-------------------+[
 | book.id | pairs                                                                                                |
 +----------------------------------------------------------------------------------------------------------------+
@@ -153,7 +153,7 @@
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.GeneratedMethodAccessor89.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -162,7 +162,7 @@
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
 	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -175,10 +175,10 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testMixedContent" classname="apoc.load.XmlTest" time="0.11"/>
-  <testcase name="testBookIds" classname="apoc.load.XmlTest" time="0.13"/>
-  <testcase name="testLoadXml" classname="apoc.load.XmlTest" time="0.105"/>
-  <testcase name="testLoadXmlSimple" classname="apoc.load.XmlTest" time="0.112"/>
+  <testcase name="testMixedContent" classname="apoc.load.XmlTest" time="0.118"/>
+  <testcase name="testBookIds" classname="apoc.load.XmlTest" time="0.134"/>
+  <testcase name="testLoadXml" classname="apoc.load.XmlTest" time="0.11"/>
+  <testcase name="testLoadXmlSimple" classname="apoc.load.XmlTest" time="0.096"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
