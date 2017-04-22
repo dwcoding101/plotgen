@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.number.NumbersTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-21T16:38:29" hostname="Pc" time="0.143">
+<testsuite name="apoc.number.NumbersTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-04-22T09:43:01" hostname="Pc" time="0.125">
   <properties/>
-  <testcase name="testParseFloat" classname="apoc.number.NumbersTest" time="0.032"/>
-  <testcase name="testFormat" classname="apoc.number.NumbersTest" time="0.071"/>
-  <testcase name="testParseInt" classname="apoc.number.NumbersTest" time="0.04"/>
+  <testcase name="testParseFloat" classname="apoc.number.NumbersTest" time="0.036"/>
+  <testcase name="testFormat" classname="apoc.number.NumbersTest" time="0.061"/>
+  <testcase name="testParseInt" classname="apoc.number.NumbersTest" time="0.028"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

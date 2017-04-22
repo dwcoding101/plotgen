@@ -183,6 +183,7 @@
 "procedure"¦"apoc.plotgen.time.SetDayLength"¦"apoc.plotgen.time.SetDayLength - sets the length of the world day in seconds"
 "procedure"¦"apoc.plotgen.time.SetDayInYear"¦"apoc.plotgen.time.SetDayInYear - sets the number of the world days in the worlds"
 "procedure"¦"apoc.plotgen.time.AdvanceADay"¦"apoc.plotgen.time.AdvanceADay - Advance Time one day"
+"procedure"¦"apoc.plotgen.time.setAllAges"¦"apoc.plotgen.time.setAllAges - Advance Time one day"
 "procedure"¦"apoc.refactor.extractNode"¦"apoc.refactor.extractNode([rel1,rel2,...], [labels],'OUT','IN') extract node from relationships"
 "procedure"¦"apoc.refactor.collapseNode"¦"apoc.refactor.collapseNode([node1,node2],'TYPE') collapse node to relationship, node with one rel becomes self-relationship"
 "procedure"¦"apoc.refactor.cloneNodes"¦"apoc.refactor.cloneNodes([node1,node2,...]) clone nodes with their labels and properties"

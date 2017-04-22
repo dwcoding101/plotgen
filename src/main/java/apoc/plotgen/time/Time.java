@@ -3,12 +3,14 @@ package apoc.plotgen.time;
 import apoc.plotgen.gender.GenderGenerator;
 import apoc.plotgen.names.NameGenerator;
 import org.neo4j.graphdb.GraphDatabaseService;
+import org.neo4j.graphdb.Node;
 import org.neo4j.graphdb.Result;
 import org.neo4j.logging.Log;
 import org.neo4j.procedure.*;
 
 import java.util.Map;
 import java.util.UUID;
+import java.util.concurrent.ThreadLocalRandom;
 
 /**
  * Created by Daniel on 20/04/2017.
@@ -99,6 +101,30 @@ public class Time {
         log.info("Current Time  := "+ current);
     }
 
+    @Procedure(name = "apoc.plotgen.time.setAllAges", mode = Mode.WRITE)
+    @Description( "apoc.plotgen.time.setAllAges - Advance Time one day")
+    public void setAllAges() {
+
+
+
+        String query = "MATCH (a:NPC)-[l:LOOKS_LIKE]->(b:DESCRIPTION) RETURN a,l,b";
+        try ( Result result = db.execute( query ) )
+        {
+            while ( result.hasNext() )
+            {
+                Map<String, Object> row = result.next();
+                //    String uuid = (String) row.get("uuid");
+
+                for ( String key : result.columns() )
+                {
+
+                    Node node = (Node)row.get(key);
+
+                    log.info(row.get(key).toString());
+                }
+            }
+        }
+    }
 
 
 

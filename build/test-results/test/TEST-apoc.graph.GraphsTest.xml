@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.graph.GraphsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-04-21T16:37:30" hostname="Pc" time="0.07">
+<testsuite name="apoc.graph.GraphsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-04-22T09:41:57" hostname="Pc" time="0.104">
   <properties/>
-  <testcase name="testFromData" classname="apoc.graph.GraphsTest" time="0.013"/>
-  <testcase name="testFromPath" classname="apoc.graph.GraphsTest" time="0.016"/>
-  <testcase name="testFromPaths" classname="apoc.graph.GraphsTest" time="0.018"/>
-  <testcase name="testFromCypher" classname="apoc.graph.GraphsTest" time="0.018"/>
-  <testcase name="testFromDB" classname="apoc.graph.GraphsTest" time="0.003"/>
+  <testcase name="testFromData" classname="apoc.graph.GraphsTest" time="0.02"/>
+  <testcase name="testFromPath" classname="apoc.graph.GraphsTest" time="0.026"/>
+  <testcase name="testFromPaths" classname="apoc.graph.GraphsTest" time="0.028"/>
+  <testcase name="testFromCypher" classname="apoc.graph.GraphsTest" time="0.024"/>
+  <testcase name="testFromDB" classname="apoc.graph.GraphsTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
