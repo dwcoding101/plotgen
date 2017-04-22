@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.get.GetTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-22T10:48:04" hostname="Pc" time="0.244">
+<testsuite name="apoc.get.GetTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-22T13:28:28" hostname="Pc" time="0.232">
   <properties/>
-  <testcase name="testNodes" classname="apoc.get.GetTest" time="0.116"/>
-  <testcase name="testRels" classname="apoc.get.GetTest" time="0.128"/>
+  <testcase name="testNodes" classname="apoc.get.GetTest" time="0.122"/>
+  <testcase name="testRels" classname="apoc.get.GetTest" time="0.11"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

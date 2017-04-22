@@ -4,6 +4,7 @@ import apoc.plotgen.gender.GenderGenerator;
 import apoc.plotgen.names.NameGenerator;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Node;
+import org.neo4j.graphdb.Relationship;
 import org.neo4j.graphdb.Result;
 import org.neo4j.logging.Log;
 import org.neo4j.procedure.*;
@@ -117,10 +118,21 @@ public class Time {
 
                 for ( String key : result.columns() )
                 {
+                    Node node = null;
+                    Relationship relationship = null;
+                    Object obj = row.get(key);
+                    if(obj instanceof Node){
+                        node = (Node) obj;
+                        log.info(node.toString());
+                    }
 
+                    if(obj instanceof Relationship){
+                        relationship = (Relationship) obj;
+                        log.info(relationship.toString());
+                    }
              //       Node node = (Node)row.get(key);
 
-                    log.info(row.get(key).toString());
+
                 }
             }
         }
