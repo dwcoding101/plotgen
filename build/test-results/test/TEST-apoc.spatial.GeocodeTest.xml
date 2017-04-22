@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.spatial.GeocodeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-22T14:41:10" hostname="Pc" time="24.847">
+<testsuite name="apoc.spatial.GeocodeTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-22T14:53:47" hostname="Pc" time="24.875">
   <properties/>
-  <testcase name="testGeocodeGoogle" classname="apoc.spatial.GeocodeTest" time="11.806"/>
-  <testcase name="testGeocodeOSM" classname="apoc.spatial.GeocodeTest" time="13.041"/>
-  <system-out><![CDATA[Fast google test took 2125ms
-Slow google test took 9545ms
-Fast osm test took 934ms
-Slow osm test took 12004ms
+  <testcase name="testGeocodeGoogle" classname="apoc.spatial.GeocodeTest" time="11.62"/>
+  <testcase name="testGeocodeOSM" classname="apoc.spatial.GeocodeTest" time="13.254"/>
+  <system-out><![CDATA[Fast google test took 1463ms
+Slow google test took 9998ms
+Fast osm test took 1146ms
+Slow osm test took 12002ms
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

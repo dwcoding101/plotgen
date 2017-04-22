@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.coll.ArrayListTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-22T14:38:58" hostname="Pc" time="0.003">
+<testsuite name="apoc.coll.ArrayListTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-22T14:51:38" hostname="Pc" time="0.003">
   <properties/>
   <testcase name="testListIterator" classname="apoc.coll.ArrayListTest" time="0.0"/>
-  <testcase name="testEmptyList" classname="apoc.coll.ArrayListTest" time="0.002"/>
+  <testcase name="testEmptyList" classname="apoc.coll.ArrayListTest" time="0.003"/>
   <testcase name="testDoubleList" classname="apoc.coll.ArrayListTest" time="0.0"/>
   <testcase name="testContains" classname="apoc.coll.ArrayListTest" time="0.0"/>
   <testcase name="testSingleList" classname="apoc.coll.ArrayListTest" time="0.0"/>

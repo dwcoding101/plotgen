@@ -107,7 +107,7 @@ public class Time {
     public void setAllAges() {
 
         long dob = 0;
-        long AgeInYears = 0;
+        double AgeInYears = 0;
 
         String query = "MATCH (a:TIME) RETURN a.current AS current";
         long current = 0;
@@ -125,7 +125,7 @@ public class Time {
         }
 
         query = "MATCH (a:TIME) RETURN a.dayLength AS dayLength";
-        long dayLength = 0;
+        double dayLength = 0;
         try ( Result result = db.execute( query ) )
         {
             while ( result.hasNext() )
@@ -133,7 +133,7 @@ public class Time {
                 Map<String, Object> row = result.next();
                 for ( String key : result.columns() )
                 {
-                    dayLength = Long.parseLong((String) row.get(key));
+                    dayLength = Double.parseDouble((String) row.get(key));
 
                 }
             }
@@ -182,7 +182,7 @@ public class Time {
                         // get date of birth
 
                        dob = Long.parseLong(node.getProperty("dob").toString());
-                        AgeInYears = (current - dob) / (dayLength*daysInYear);
+                       AgeInYears = (current - dob) / (dayLength*daysInYear);
 
 
                     }
