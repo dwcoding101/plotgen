@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.mongodb.MongoDBTest" tests="9" skipped="9" failures="0" errors="0" timestamp="2017-04-22T13:29:30" hostname="Pc" time="0.001">
+<testsuite name="apoc.mongodb.MongoDBTest" tests="9" skipped="9" failures="0" errors="0" timestamp="2017-04-22T14:01:00" hostname="Pc" time="0.001">
   <properties/>
   <testcase name="testGet" classname="apoc.mongodb.MongoDBTest" time="0.0">
     <skipped/>
@@ -25,7 +25,7 @@
   <testcase name="testInsert" classname="apoc.mongodb.MongoDBTest" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="testUpdate" classname="apoc.mongodb.MongoDBTest" time="0.0">
+  <testcase name="testUpdate" classname="apoc.mongodb.MongoDBTest" time="0.001">
     <skipped/>
   </testcase>
   <system-out><![CDATA[]]></system-out>

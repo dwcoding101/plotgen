@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.convert.ConvertTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-22T13:27:39" hostname="Pc" time="0.17">
+<testsuite name="apoc.convert.ConvertTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-04-22T13:59:14" hostname="Pc" time="0.137">
   <properties/>
   <testcase name="testToMap" classname="apoc.convert.ConvertTest" time="0.008"/>
-  <testcase name="testToSet" classname="apoc.convert.ConvertTest" time="0.008"/>
-  <testcase name="testToString" classname="apoc.convert.ConvertTest" time="0.034"/>
-  <testcase name="testToBoolean" classname="apoc.convert.ConvertTest" time="0.071"/>
+  <testcase name="testToSet" classname="apoc.convert.ConvertTest" time="0.006"/>
+  <testcase name="testToString" classname="apoc.convert.ConvertTest" time="0.033"/>
+  <testcase name="testToBoolean" classname="apoc.convert.ConvertTest" time="0.04"/>
   <testcase name="testToList" classname="apoc.convert.ConvertTest" time="0.009"/>
   <testcase name="testToNode" classname="apoc.convert.ConvertTest" time="0.02"/>
-  <testcase name="testToRelationship" classname="apoc.convert.ConvertTest" time="0.019"/>
+  <testcase name="testToRelationship" classname="apoc.convert.ConvertTest" time="0.018"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

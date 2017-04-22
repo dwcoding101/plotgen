@@ -106,9 +106,23 @@ public class Time {
     @Description( "apoc.plotgen.time.setAllAges - Advance Time one day")
     public void setAllAges() {
 
+        String query = "MATCH (a:TIME) RETURN a.current AS dayLength";
+        long current = 0;
+        try ( Result result = db.execute( query ) )
+        {
+            while ( result.hasNext() )
+            {
+                Map<String, Object> row = result.next();
+                for ( String key : result.columns() )
+                {
+                    current = Long.parseLong((String) row.get(key));
+
+                }
+            }
+        }
 
 
-        String query = "MATCH (a:NPC)-[l:LOOKS_LIKE]->(b:DESCRIPTION) RETURN a,l,b";
+        query = "MATCH (a:NPC)-[l:LOOKS_LIKE]->(b:DESCRIPTION) RETURN a,l,b";
         try ( Result result = db.execute( query ) )
         {
             while ( result.hasNext() )
@@ -116,6 +130,7 @@ public class Time {
                 Map<String, Object> row = result.next();
                 //    String uuid = (String) row.get("uuid");
 
+                int i =0;
                 for ( String key : result.columns() )
                 {
                     Node node = null;
@@ -123,16 +138,16 @@ public class Time {
                     Object obj = row.get(key);
                     if(obj instanceof Node){
                         node = (Node) obj;
-                        log.info(node.toString());
+                        log.info(node.toString()+ "i:=" + i);
                     }
 
                     if(obj instanceof Relationship){
                         relationship = (Relationship) obj;
-                        log.info(relationship.toString());
+                        log.info(relationship.toString()+ "i:=" + i );
                     }
              //       Node node = (Node)row.get(key);
 
-
+                    i++;
                 }
             }
         }
