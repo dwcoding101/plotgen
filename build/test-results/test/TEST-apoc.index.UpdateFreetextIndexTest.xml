@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.index.UpdateFreetextIndexTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2017-04-24T12:27:55" hostname="Pc" time="25.633">
+<testsuite name="apoc.index.UpdateFreetextIndexTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2017-04-24T13:14:40" hostname="Pc" time="23.751">
   <properties/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {}, autoUpdate.enabled = true, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.807"/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:false}, autoUpdate.enabled = true, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.769"/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = true, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="3.051"/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = false, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="3.025"/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {}, autoUpdate.enabled = true, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.747"/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:false}, autoUpdate.enabled = true, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.612"/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = true, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.371">
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {}, autoUpdate.enabled = true, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.717"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:false}, autoUpdate.enabled = true, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.653"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = true, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.834"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = false, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.665"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {}, autoUpdate.enabled = true, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.32"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:false}, autoUpdate.enabled = true, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.328"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = true, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="2.904">
     <failure message="java.lang.AssertionError: expected:&lt;3&gt; but was:&lt;2&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;3&gt; but was:&lt;2&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -70,7 +70,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = false, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.251"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = false, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.329"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

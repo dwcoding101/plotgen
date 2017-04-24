@@ -64,7 +64,12 @@ public class NpcGenerator {
 
             humanWFRPStats.rollStats();
 
-            query = "MERGE (a:NPC)-[:STATS_OF{type:'wfrp'}]->" + wFRPStat(humanWFRPStats) + "WHERE a.uuid='"+uuid+"'";
+            String statUuid = uuid();
+            query = "MERGE " + wFRPStat(humanWFRPStats, statUuid );
+
+            execute = db.execute(query);
+
+            query = "MATCH (a:NPC),(b:STATS) WHERE a.uuid='"+ uuid + "' AND b.uuid='"+ statUuid +"'" +" WITH a,b CREATE (a)-[STATS_OF{type:'wfrp'}]->(b)";
 
             execute = db.execute(query);
 
@@ -73,10 +78,10 @@ public class NpcGenerator {
         }
     }
 
-    private String wFRPStat(WFRPStats stats) {
+    private String wFRPStat(WFRPStats stats, String uuid) {
         String ret = "";
 
-        ret = "(s:STATS{uuid:'" + uuid()+ "', " +
+        ret = "(s:STATS{uuid:'" + uuid+ "', " +
                         "ws:'" + stats.getWs() + "', " +
                         "bs:'" + stats.getBs() + "', " +
                         "s:'" + stats.getS() + "', " +
