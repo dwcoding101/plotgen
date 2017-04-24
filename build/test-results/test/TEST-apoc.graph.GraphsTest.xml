@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.graph.GraphsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-04-24T14:16:49" hostname="Pc" time="0.051">
+<testsuite name="apoc.graph.GraphsTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-04-24T14:33:32" hostname="Pc" time="0.053">
   <properties/>
-  <testcase name="testFromData" classname="apoc.graph.GraphsTest" time="0.011"/>
-  <testcase name="testFromPath" classname="apoc.graph.GraphsTest" time="0.011"/>
+  <testcase name="testFromData" classname="apoc.graph.GraphsTest" time="0.012"/>
+  <testcase name="testFromPath" classname="apoc.graph.GraphsTest" time="0.012"/>
   <testcase name="testFromPaths" classname="apoc.graph.GraphsTest" time="0.013"/>
   <testcase name="testFromCypher" classname="apoc.graph.GraphsTest" time="0.013"/>
   <testcase name="testFromDB" classname="apoc.graph.GraphsTest" time="0.003"/>

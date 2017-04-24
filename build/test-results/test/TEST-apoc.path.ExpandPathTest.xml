@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.path.ExpandPathTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-04-24T14:17:41" hostname="Pc" time="0.255">
+<testsuite name="apoc.path.ExpandPathTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-04-24T14:34:25" hostname="Pc" time="0.264">
   <properties/>
-  <testcase name="testTerminationListBeforeWhitelist" classname="apoc.path.ExpandPathTest" time="0.053"/>
-  <testcase name="testBlacklistBeforeWhitelist" classname="apoc.path.ExpandPathTest" time="0.026"/>
+  <testcase name="testTerminationListBeforeWhitelist" classname="apoc.path.ExpandPathTest" time="0.092"/>
+  <testcase name="testBlacklistBeforeWhitelist" classname="apoc.path.ExpandPathTest" time="0.023"/>
   <testcase name="testBlacklistBeforeTerminationList" classname="apoc.path.ExpandPathTest" time="0.014"/>
-  <testcase name="testExplorePathWithEndNodeLabelAndLimit" classname="apoc.path.ExpandPathTest" time="0.021"/>
-  <testcase name="testExplorePathRelationshipsTest" classname="apoc.path.ExpandPathTest" time="0.02"/>
-  <testcase name="testExplorePathWithEndNodeLabel" classname="apoc.path.ExpandPathTest" time="0.014"/>
-  <testcase name="testExplorePathWithFilterStartNodeFalseIgnoresLabelFilter" classname="apoc.path.ExpandPathTest" time="0.013"/>
-  <testcase name="testExplorePathWithTerminationLabel" classname="apoc.path.ExpandPathTest" time="0.013"/>
-  <testcase name="testTerminationListBeforeEndNodeList" classname="apoc.path.ExpandPathTest" time="0.016"/>
+  <testcase name="testExplorePathWithEndNodeLabelAndLimit" classname="apoc.path.ExpandPathTest" time="0.018"/>
+  <testcase name="testExplorePathRelationshipsTest" classname="apoc.path.ExpandPathTest" time="0.016"/>
+  <testcase name="testExplorePathWithEndNodeLabel" classname="apoc.path.ExpandPathTest" time="0.011"/>
+  <testcase name="testExplorePathWithFilterStartNodeFalseIgnoresLabelFilter" classname="apoc.path.ExpandPathTest" time="0.012"/>
+  <testcase name="testExplorePathWithTerminationLabel" classname="apoc.path.ExpandPathTest" time="0.012"/>
+  <testcase name="testTerminationListBeforeEndNodeList" classname="apoc.path.ExpandPathTest" time="0.013"/>
   <testcase name="testExplorePathWithLimitReturnsLimitedResults" classname="apoc.path.ExpandPathTest" time="0.015"/>
-  <testcase name="testExplorePathLabelWhiteListTest" classname="apoc.path.ExpandPathTest" time="0.007"/>
-  <testcase name="testBlacklistBeforeEndNodeList" classname="apoc.path.ExpandPathTest" time="0.014"/>
-  <testcase name="testEndNodeListBeforeWhitelist" classname="apoc.path.ExpandPathTest" time="0.014"/>
-  <testcase name="testExplorePathLabelBlackListTest" classname="apoc.path.ExpandPathTest" time="0.013"/>
+  <testcase name="testExplorePathLabelWhiteListTest" classname="apoc.path.ExpandPathTest" time="0.006"/>
+  <testcase name="testBlacklistBeforeEndNodeList" classname="apoc.path.ExpandPathTest" time="0.011"/>
+  <testcase name="testEndNodeListBeforeWhitelist" classname="apoc.path.ExpandPathTest" time="0.01"/>
+  <testcase name="testExplorePathLabelBlackListTest" classname="apoc.path.ExpandPathTest" time="0.011"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

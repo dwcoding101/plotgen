@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.CliquesTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-24T14:15:03" hostname="Pc" time="0.799">
+<testsuite name="apoc.algo.CliquesTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-24T14:31:42" hostname="Pc" time="0.756">
   <properties/>
-  <testcase name="testCliquesFromGraphWithTwoCliquesAndExtraNodes" classname="apoc.algo.CliquesTest" time="0.142"/>
-  <testcase name="testCliquesFromGraphWithOneCliqueAndExtraNodes" classname="apoc.algo.CliquesTest" time="0.117"/>
-  <testcase name="testCliquesFromGraphWithTwoCliques" classname="apoc.algo.CliquesTest" time="0.138"/>
-  <testcase name="testCliquesFromEmptyGraphShouldBeEmpty" classname="apoc.algo.CliquesTest" time="0.11"/>
-  <testcase name="testCliquesFromSpecifcNode" classname="apoc.algo.CliquesTest" time="0.163"/>
-  <testcase name="testCliquesFromGraphWithOneClique" classname="apoc.algo.CliquesTest" time="0.129"/>
+  <testcase name="testCliquesFromGraphWithTwoCliquesAndExtraNodes" classname="apoc.algo.CliquesTest" time="0.132"/>
+  <testcase name="testCliquesFromGraphWithOneCliqueAndExtraNodes" classname="apoc.algo.CliquesTest" time="0.129"/>
+  <testcase name="testCliquesFromGraphWithTwoCliques" classname="apoc.algo.CliquesTest" time="0.122"/>
+  <testcase name="testCliquesFromEmptyGraphShouldBeEmpty" classname="apoc.algo.CliquesTest" time="0.113"/>
+  <testcase name="testCliquesFromSpecifcNode" classname="apoc.algo.CliquesTest" time="0.141"/>
+  <testcase name="testCliquesFromGraphWithOneClique" classname="apoc.algo.CliquesTest" time="0.119"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
