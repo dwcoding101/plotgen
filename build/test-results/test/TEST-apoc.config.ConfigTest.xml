@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.config.ConfigTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-24T10:55:40" hostname="Pc" time="0.788">
+<testsuite name="apoc.config.ConfigTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-04-24T12:20:44" hostname="Pc" time="0.807">
   <properties/>
-  <testcase name="changeSlashUrlWithDirectoryImportContrained" classname="apoc.config.ConfigTest" time="0.105"/>
-  <testcase name="notChangeFileUrlWithdirectoryImportConstrained" classname="apoc.config.ConfigTest" time="0.096"/>
-  <testcase name="changeFileSlashUrlWithDirectoryImportContrained" classname="apoc.config.ConfigTest" time="0.093"/>
-  <testcase name="list" classname="apoc.config.ConfigTest" time="0.107"/>
-  <testcase name="changeFileTripleSlashesUrlWithdirectoryImportConstrained" classname="apoc.config.ConfigTest" time="0.096"/>
-  <testcase name="changeNoSlashesUrlWithDirectoryImportContrained" classname="apoc.config.ConfigTest" time="0.1"/>
-  <testcase name="changeFileDoubleSlashesUrlWithdirectoryImportConstrained" classname="apoc.config.ConfigTest" time="0.092"/>
-  <testcase name="getConfigurationValue" classname="apoc.config.ConfigTest" time="0.099"/>
+  <testcase name="changeSlashUrlWithDirectoryImportContrained" classname="apoc.config.ConfigTest" time="0.109"/>
+  <testcase name="notChangeFileUrlWithdirectoryImportConstrained" classname="apoc.config.ConfigTest" time="0.103"/>
+  <testcase name="changeFileSlashUrlWithDirectoryImportContrained" classname="apoc.config.ConfigTest" time="0.107"/>
+  <testcase name="list" classname="apoc.config.ConfigTest" time="0.12"/>
+  <testcase name="changeFileTripleSlashesUrlWithdirectoryImportConstrained" classname="apoc.config.ConfigTest" time="0.097"/>
+  <testcase name="changeNoSlashesUrlWithDirectoryImportContrained" classname="apoc.config.ConfigTest" time="0.092"/>
+  <testcase name="changeFileDoubleSlashesUrlWithdirectoryImportConstrained" classname="apoc.config.ConfigTest" time="0.09"/>
+  <testcase name="getConfigurationValue" classname="apoc.config.ConfigTest" time="0.089"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

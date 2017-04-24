@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.text.StringCleanTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2017-04-24T10:58:01" hostname="Pc" time="0.008">
+<testsuite name="apoc.text.StringCleanTest" tests="3" skipped="0" failures="1" errors="0" timestamp="2017-04-24T12:22:56" hostname="Pc" time="0.008">
   <properties/>
   <testcase name="testClean[&amp;N[]eo  4 #J-(3.0)  ]" classname="apoc.text.StringCleanTest" time="0.007"/>
   <testcase name="testClean[German umlaut Ã„ Ã– Ãœ Ã¤ Ã¶ Ã¼ ÃŸ ]" classname="apoc.text.StringCleanTest" time="0.0"/>
@@ -43,7 +43,7 @@
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.GeneratedMethodAccessor91.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -52,7 +52,7 @@
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
 	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)

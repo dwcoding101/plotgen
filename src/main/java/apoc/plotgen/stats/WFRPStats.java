@@ -186,4 +186,6 @@ public abstract class WFRPStats {
 
         return ret;
     }
+
+
 }

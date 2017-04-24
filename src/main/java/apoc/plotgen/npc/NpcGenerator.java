@@ -4,6 +4,7 @@ import apoc.plotgen.description.DescriptionGenerator;
 import apoc.plotgen.gender.GenderGenerator;
 import apoc.plotgen.names.NameGenerator;
 import apoc.plotgen.stats.HumanWFRPStats;
+import apoc.plotgen.stats.WFRPStats;
 import apoc.result.GraphResult;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Node;
@@ -63,9 +64,38 @@ public class NpcGenerator {
 
             humanWFRPStats.rollStats();
 
+            query = "MERGE (a:NPC)-[:STATS_OF{type:'wfrp}]->" + wFRPStat(humanWFRPStats) + "WHERE a.uuid='"+uuid+"'";
+
+            execute = db.execute(query);
+
             log.info(humanWFRPStats.toString());
 
         }
+    }
+
+    private String wFRPStat(WFRPStats stats) {
+        String ret = "";
+
+        ret = "(s:STATS{uuid:'" + uuid()+ "', " +
+                        "ws:'" + stats.getWs() + "', " +
+                        "bs:'" + stats.getBs() + "', " +
+                        "s:'" + stats.getS() + "', " +
+                        "t:'" + stats.getT() + "', " +
+                        "ag:'" + stats.getAg() + "', " +
+                        "int:'" + stats.getInt() + "', " +
+                        "wp:'" + stats.getWp() + "', " +
+                        "fel:'" + stats.getFel() + "', " +
+                        "a:'" + stats.getA() + "', " +
+                        "w:'" + stats.getW() + "', " +
+                        "sb:'" + stats.getSb() + "', " +
+                        "tb:'" + stats.getTb() + "', " +
+                        "m:'" + stats.getM() + "', " +
+                        "mag:'" + stats.getM() + "', " +
+                        "ip:'" + stats.getIp() + "', " +
+                        "fp:'" + stats.getFp() + "'}) ";
+
+
+        return ret;
     }
 
     @Procedure(name = "apoc.plotgen.npc.SetStartingDOB", mode = Mode.WRITE)

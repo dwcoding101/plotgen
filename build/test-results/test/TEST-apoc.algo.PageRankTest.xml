@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.PageRankTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-24T10:54:38" hostname="Pc" time="1.959">
+<testsuite name="apoc.algo.PageRankTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-24T12:19:43" hostname="Pc" time="1.974">
   <properties/>
-  <testcase name="shouldGetPageRankWithCypherExpectedResultWithoutNodes" classname="apoc.algo.PageRankTest" time="0.212"/>
-  <testcase name="shouldGetPageRankWithCypherExpectedResultWithoutNodesParallel" classname="apoc.algo.PageRankTest" time="0.238"/>
-  <testcase name="shouldGetPageRankWithCypherExpectedResultWithLables" classname="apoc.algo.PageRankTest" time="0.191"/>
-  <testcase name="shouldGetPageRankStats" classname="apoc.algo.PageRankTest" time="0.135"/>
+  <testcase name="shouldGetPageRankWithCypherExpectedResultWithoutNodes" classname="apoc.algo.PageRankTest" time="0.21"/>
+  <testcase name="shouldGetPageRankWithCypherExpectedResultWithoutNodesParallel" classname="apoc.algo.PageRankTest" time="0.224"/>
+  <testcase name="shouldGetPageRankWithCypherExpectedResultWithLables" classname="apoc.algo.PageRankTest" time="0.205"/>
+  <testcase name="shouldGetPageRankStats" classname="apoc.algo.PageRankTest" time="0.162"/>
   <testcase name="shouldGetPageRankWithCypherExpectedResult" classname="apoc.algo.PageRankTest" time="0.19"/>
-  <testcase name="shouldHandleNullIterations" classname="apoc.algo.PageRankTest" time="0.138"/>
-  <testcase name="shouldGetPageRankWithSubCypherExpectedResult" classname="apoc.algo.PageRankTest" time="0.24"/>
-  <testcase name="shouldGetPageRankExpectedResult" classname="apoc.algo.PageRankTest" time="0.173"/>
-  <testcase name="shouldHandleNullNodes" classname="apoc.algo.PageRankTest" time="0.137"/>
+  <testcase name="shouldHandleNullIterations" classname="apoc.algo.PageRankTest" time="0.141"/>
+  <testcase name="shouldGetPageRankWithSubCypherExpectedResult" classname="apoc.algo.PageRankTest" time="0.202"/>
+  <testcase name="shouldGetPageRankExpectedResult" classname="apoc.algo.PageRankTest" time="0.196"/>
+  <testcase name="shouldHandleNullNodes" classname="apoc.algo.PageRankTest" time="0.129"/>
   <testcase name="shouldHandleEmptyNodeSet" classname="apoc.algo.PageRankTest" time="0.148"/>
-  <testcase name="shouldGetPageRankExpectedResultWithTypes" classname="apoc.algo.PageRankTest" time="0.156"/>
+  <testcase name="shouldGetPageRankExpectedResultWithTypes" classname="apoc.algo.PageRankTest" time="0.167"/>
   <system-out><![CDATA[+---------------------------------------------------------------------------------------------------------------------------------+
 | nodes | relationships | iterations | readNodeMillis | readRelationshipMillis | computeMillis | writeMillis | write | property   |
 +---------------------------------------------------------------------------------------------------------------------------------+
-| 11    | 16            | 20         | 0              | 21                     | 1             | 2           | true  | "pagerank" |
+| 11    | 16            | 20         | 0              | 42                     | 1             | 2           | true  | "pagerank" |
 +---------------------------------------------------------------------------------------------------------------------------------+
 1 row
 
 +---------------------------------------------------------------------------------------------------------------------------------+
 | nodes | relationships | iterations | readNodeMillis | readRelationshipMillis | computeMillis | writeMillis | write | property   |
 +---------------------------------------------------------------------------------------------------------------------------------+
-| 11    | 16            | 20         | 0              | 45                     | 1             | 2           | true  | "pagerank" |
+| 11    | 16            | 20         | 0              | 52                     | 1             | 2           | true  | "pagerank" |
 +---------------------------------------------------------------------------------------------------------------------------------+
 1 row
 
@@ -37,14 +37,14 @@ row = {relationships=16, nodes=11, writeMillis=0, property=null, computeMillis=2
 +---------------------------------------------------------------------------------------------------------------------------------+
 | nodes | relationships | iterations | readNodeMillis | readRelationshipMillis | computeMillis | writeMillis | write | property   |
 +---------------------------------------------------------------------------------------------------------------------------------+
-| 11    | 16            | 20         | 9              | 14                     | 1             | 2           | true  | "pagerank" |
+| 11    | 16            | 20         | 10             | 13                     | 0             | 2           | true  | "pagerank" |
 +---------------------------------------------------------------------------------------------------------------------------------+
 1 row
 
 +---------------------------------------------------------------------------------------------------------------------------------+
 | nodes | relationships | iterations | readNodeMillis | readRelationshipMillis | computeMillis | writeMillis | write | property   |
 +---------------------------------------------------------------------------------------------------------------------------------+
-| 5     | 0             | 5          | 16             | 43                     | 1             | 2           | true  | "pagerank" |
+| 5     | 0             | 5          | 14             | 21                     | 0             | 2           | true  | "pagerank" |
 +---------------------------------------------------------------------------------------------------------------------------------+
 1 row
 
