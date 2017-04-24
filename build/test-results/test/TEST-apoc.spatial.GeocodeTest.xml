@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.spatial.GeocodeTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2017-04-24T13:15:23" hostname="Pc" time="17.645">
+<testsuite name="apoc.spatial.GeocodeTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2017-04-24T13:39:55" hostname="Pc" time="12.277">
   <properties/>
-  <testcase name="testGeocodeGoogle" classname="apoc.spatial.GeocodeTest" time="11.553"/>
-  <testcase name="testGeocodeOSM" classname="apoc.spatial.GeocodeTest" time="6.092">
-    <failure message="org.neo4j.graphdb.QueryExecutionException: Failed to invoke procedure `apoc.spatial.geocode`: Caused by: java.lang.RuntimeException: Can't read url http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE as json: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE" type="org.neo4j.graphdb.QueryExecutionException">org.neo4j.graphdb.QueryExecutionException: Failed to invoke procedure `apoc.spatial.geocode`: Caused by: java.lang.RuntimeException: Can't read url http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE as json: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE
+  <testcase name="testGeocodeGoogle" classname="apoc.spatial.GeocodeTest" time="12.143"/>
+  <testcase name="testGeocodeOSM" classname="apoc.spatial.GeocodeTest" time="0.134">
+    <failure message="org.neo4j.graphdb.QueryExecutionException: Failed to invoke procedure `apoc.spatial.geocodeOnce`: Caused by: java.lang.RuntimeException: Can't read url http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE as json: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE" type="org.neo4j.graphdb.QueryExecutionException">org.neo4j.graphdb.QueryExecutionException: Failed to invoke procedure `apoc.spatial.geocodeOnce`: Caused by: java.lang.RuntimeException: Can't read url http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE as json: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE
 	at org.neo4j.kernel.impl.query.QueryExecutionKernelException.asUserException(QueryExecutionKernelException.java:35)
 	at org.neo4j.kernel.impl.factory.ClassicCoreSPI.executeQuery(ClassicCoreSPI.java:81)
 	at org.neo4j.kernel.impl.factory.GraphDatabaseFacade.execute(GraphDatabaseFacade.java:429)
 	at org.neo4j.kernel.impl.factory.GraphDatabaseFacade.execute(GraphDatabaseFacade.java:412)
 	at apoc.util.TestUtil.testResult(TestUtil.java:86)
-	at apoc.util.TestUtil.testCallCount(TestUtil.java:69)
-	at apoc.spatial.GeocodeTest.testGeocodeAddress(GeocodeTest.java:85)
+	at apoc.util.TestUtil.testCall(TestUtil.java:34)
+	at apoc.spatial.GeocodeTest.testGeocodeAddress(GeocodeTest.java:100)
+	at apoc.spatial.GeocodeTest.testGeocodeAddress(GeocodeTest.java:93)
 	at apoc.spatial.GeocodeTest.testGeocode(GeocodeTest.java:63)
 	at apoc.spatial.GeocodeTest.testGeocodeWithThrottling(GeocodeTest.java:49)
 	at apoc.spatial.GeocodeTest.testGeocodeOSM(GeocodeTest.java:40)
@@ -37,7 +38,7 @@
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.GeneratedMethodAccessor89.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor91.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -46,7 +47,7 @@
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
 	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -57,11 +58,11 @@
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
 	at java.lang.Thread.run(Thread.java:745)
-Caused by: org.neo4j.kernel.impl.query.QueryExecutionKernelException: Failed to invoke procedure `apoc.spatial.geocode`: Caused by: java.lang.RuntimeException: Can't read url http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE as json: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE
+Caused by: org.neo4j.kernel.impl.query.QueryExecutionKernelException: Failed to invoke procedure `apoc.spatial.geocodeOnce`: Caused by: java.lang.RuntimeException: Can't read url http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE as json: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE
 	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:63)
 	at org.neo4j.kernel.impl.factory.ClassicCoreSPI.executeQuery(ClassicCoreSPI.java:77)
-	... 51 more
-Caused by: org.neo4j.cypher.CypherExecutionException: Failed to invoke procedure `apoc.spatial.geocode`: Caused by: java.lang.RuntimeException: Can't read url http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE as json: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE
+	... 52 more
+Caused by: org.neo4j.cypher.CypherExecutionException: Failed to invoke procedure `apoc.spatial.geocodeOnce`: Caused by: java.lang.RuntimeException: Can't read url http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE as json: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE
 	at org.neo4j.cypher.internal.spi.v3_1.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:34)
 	at org.neo4j.cypher.internal.compatibility.ExceptionTranslatingQueryContextFor3_1.translateException(ExceptionTranslatingQueryContextFor3_1.scala:34)
 	at org.neo4j.cypher.internal.spi.v3_1.ExceptionTranslationSupport$class.translateIterator(ExceptionTranslationSupport.scala:45)
@@ -79,8 +80,8 @@ Caused by: org.neo4j.cypher.CypherExecutionException: Failed to invoke procedure
 	at org.neo4j.cypher.internal.PreparedPlanExecution.execute(PreparedPlanExecution.scala:26)
 	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:107)
 	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:59)
-	... 52 more
-Caused by: org.neo4j.kernel.api.exceptions.ProcedureException: Failed to invoke procedure `apoc.spatial.geocode`: Caused by: java.lang.RuntimeException: Can't read url http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE as json: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE
+	... 53 more
+Caused by: org.neo4j.kernel.api.exceptions.ProcedureException: Failed to invoke procedure `apoc.spatial.geocodeOnce`: Caused by: java.lang.RuntimeException: Can't read url http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE as json: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE
 	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:384)
 	at org.neo4j.kernel.impl.proc.ProcedureRegistry.callProcedure(ProcedureRegistry.java:159)
 	at org.neo4j.kernel.impl.proc.Procedures.callProcedure(Procedures.java:192)
@@ -93,16 +94,17 @@ Caused by: org.neo4j.kernel.api.exceptions.ProcedureException: Failed to invoke 
 	at org.neo4j.cypher.internal.compatibility.ExceptionTranslatingQueryContextFor3_1$$anonfun$callReadOnlyProcedure$1.apply(ExceptionTranslatingQueryContextFor3_1.scala:133)
 	at org.neo4j.cypher.internal.compatibility.ExceptionTranslatingQueryContextFor3_1$$anonfun$callReadOnlyProcedure$1.apply(ExceptionTranslatingQueryContextFor3_1.scala:133)
 	at org.neo4j.cypher.internal.spi.v3_1.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:32)
-	... 68 more
-Caused by: java.lang.RuntimeException: Can't read url http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE as json: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE
+	... 69 more
+Caused by: java.lang.RuntimeException: Can't read url http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE as json: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE
 	at apoc.util.JsonUtil.loadJson(JsonUtil.java:47)
 	at apoc.util.JsonUtil.loadJson(JsonUtil.java:52)
 	at apoc.spatial.Geocode$OSMSupplier.geocode(Geocode.java:161)
 	at apoc.spatial.Geocode.geocode(Geocode.java:231)
+	at apoc.spatial.Geocode.geocodeOnce(Geocode.java:225)
 	at java.lang.invoke.MethodHandle.invokeWithArguments(MethodHandle.java:627)
 	at org.neo4j.kernel.impl.proc.ReflectiveProcedureCompiler$ReflectiveProcedure.apply(ReflectiveProcedureCompiler.java:362)
-	... 79 more
-Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE
+	... 80 more
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -115,18 +117,18 @@ Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL:
 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
 	at apoc.util.Util.openInputStream(Util.java:271)
 	at apoc.util.JsonUtil.loadJson(JsonUtil.java:37)
-	... 84 more
-Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=FRANCE
+	... 86 more
+Caused by: java.io.IOException: Server returned HTTP response code: 503 for URL: http://nominatim.openstreetmap.org/search.php?format=json&amp;q=21+rue+Paul+Bellamy+44000+NANTES+FRANCE
 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1840)
 	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1441)
 	at java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:480)
 	at apoc.util.Util.handleRedirect(Util.java:251)
 	at apoc.util.Util.openInputStream(Util.java:262)
-	... 85 more
+	... 87 more
 </failure>
   </testcase>
-  <system-out><![CDATA[Fast google test took 1710ms
-Slow google test took 9728ms
+  <system-out><![CDATA[Fast google test took 2444ms
+Slow google test took 9577ms
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
