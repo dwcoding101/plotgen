@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.warmup.WarmupTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-22T14:54:26" hostname="Pc" time="0.196">
+<testsuite name="apoc.warmup.WarmupTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-24T10:29:26" hostname="Pc" time="0.173">
   <properties/>
-  <testcase name="testWarmup" classname="apoc.warmup.WarmupTest" time="0.196"/>
+  <testcase name="testWarmup" classname="apoc.warmup.WarmupTest" time="0.173"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

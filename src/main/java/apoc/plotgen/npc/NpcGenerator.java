@@ -3,6 +3,7 @@ package apoc.plotgen.npc;
 import apoc.plotgen.description.DescriptionGenerator;
 import apoc.plotgen.gender.GenderGenerator;
 import apoc.plotgen.names.NameGenerator;
+import apoc.plotgen.stats.HumanWFRPStats;
 import apoc.result.GraphResult;
 import org.neo4j.graphdb.GraphDatabaseService;
 import org.neo4j.graphdb.Node;
@@ -35,7 +36,7 @@ public class NpcGenerator {
         NameGenerator nameGenerator = new NameGenerator();
         GenderGenerator genderGenerator = new GenderGenerator();
         DescriptionGenerator descriptionGenerator = new DescriptionGenerator();
-
+        HumanWFRPStats humanWFRPStats = new HumanWFRPStats();
 
         for(int i = 0; i < count; i++) {
             String uuid = uuid();
@@ -60,6 +61,9 @@ public class NpcGenerator {
 
             execute = db.execute(query);
 
+            humanWFRPStats.rollStats();
+
+            log.info(humanWFRPStats.toString());
 
         }
     }
