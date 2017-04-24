@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.path.SubgraphTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-24T10:28:39" hostname="Pc" time="0.228">
+<testsuite name="apoc.path.SubgraphTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2017-04-24T10:57:25" hostname="Pc" time="0.22">
   <properties/>
   <testcase name="testFullSubgraphShouldContainAllNodes" classname="apoc.path.SubgraphTest" time="0.014"/>
-  <testcase name="testSpanningTreeShouldHaveOnlyOnePathToEachNode" classname="apoc.path.SubgraphTest" time="0.062"/>
-  <testcase name="testSugbraphWithRelationshipFilterShouldContainExpectedNodes" classname="apoc.path.SubgraphTest" time="0.026"/>
-  <testcase name="testSugbraphAllShouldContainExpectedNodesAndRels" classname="apoc.path.SubgraphTest" time="0.053"/>
+  <testcase name="testSpanningTreeShouldHaveOnlyOnePathToEachNode" classname="apoc.path.SubgraphTest" time="0.061"/>
+  <testcase name="testSugbraphWithRelationshipFilterShouldContainExpectedNodes" classname="apoc.path.SubgraphTest" time="0.028"/>
+  <testcase name="testSugbraphAllShouldContainExpectedNodesAndRels" classname="apoc.path.SubgraphTest" time="0.05"/>
   <testcase name="testSugbraphWithLabelFilterShouldContainExpectedNodes" classname="apoc.path.SubgraphTest" time="0.04"/>
-  <testcase name="testSugbraphWithMaxDepthShouldContainExpectedNodes" classname="apoc.path.SubgraphTest" time="0.032"/>
+  <testcase name="testSugbraphWithMaxDepthShouldContainExpectedNodes" classname="apoc.path.SubgraphTest" time="0.026"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -106,7 +106,7 @@ public abstract class WFRPStats {
     }
 
     public void setSb() {
-        this.sb = Integer.getInteger(""+Math.floor(s));
+        this.sb = (int) Math.floor((double)(s/10));
     }
 
     public int getTb() {
@@ -114,7 +114,7 @@ public abstract class WFRPStats {
     }
 
     public void setTb() {
-        this.tb = Integer.getInteger(""+Math.floor(t));
+        this.tb =(int) Math.floor((double)(t/10));
     }
 
     public int getM() {

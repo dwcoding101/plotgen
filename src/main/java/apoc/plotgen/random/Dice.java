@@ -13,7 +13,7 @@ public class Dice {
     public static double roll(String DiceString) {
 
         final String regex = "(\\d*)[Dd](\\d*)";
-        final String string = "";
+        final String string = DiceString;
 
         final Pattern pattern = Pattern.compile(regex);
         final Matcher matcher = pattern.matcher(string);
@@ -39,11 +39,11 @@ public class Dice {
             }
 
             int total = 0;
-            for(int i=0; i <= numberOfDice; i++ ) {
+            for(int i=1; i <= numberOfDice; i++ ) {
                 total = total + random.nextInt(sides - 1 + 1) + 1;
             }
 
-            stringResult = stringResult.replaceFirst(diceRoll,Integer.toString(randNumber));
+            stringResult = stringResult.replaceFirst(diceRoll,Integer.toString(total));
         }
 
 
