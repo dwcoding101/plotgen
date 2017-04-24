@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.map.MapsTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2017-04-24T12:22:20" hostname="Pc" time="1.763">
+<testsuite name="apoc.map.MapsTest" tests="17" skipped="0" failures="0" errors="0" timestamp="2017-04-24T12:28:25" hostname="Pc" time="1.726">
   <properties/>
-  <testcase name="testMergeList" classname="apoc.map.MapsTest" time="0.099"/>
-  <testcase name="testClean" classname="apoc.map.MapsTest" time="0.105"/>
-  <testcase name="testMerge" classname="apoc.map.MapsTest" time="0.104"/>
-  <testcase name="testFlatten" classname="apoc.map.MapsTest" time="0.094"/>
-  <testcase name="testGroupBy" classname="apoc.map.MapsTest" time="0.106"/>
-  <testcase name="testRemoveKeys" classname="apoc.map.MapsTest" time="0.102"/>
-  <testcase name="testFromLists" classname="apoc.map.MapsTest" time="0.105"/>
-  <testcase name="testFromNodes" classname="apoc.map.MapsTest" time="0.116"/>
-  <testcase name="testFromPairs" classname="apoc.map.MapsTest" time="0.106"/>
-  <testcase name="testGroupByMulti" classname="apoc.map.MapsTest" time="0.102"/>
-  <testcase name="testSetValues" classname="apoc.map.MapsTest" time="0.108"/>
-  <testcase name="testFromValues" classname="apoc.map.MapsTest" time="0.106"/>
-  <testcase name="testSetKey" classname="apoc.map.MapsTest" time="0.097"/>
-  <testcase name="testRemoveKey" classname="apoc.map.MapsTest" time="0.096"/>
-  <testcase name="testSetEntry" classname="apoc.map.MapsTest" time="0.086"/>
-  <testcase name="testSetLists" classname="apoc.map.MapsTest" time="0.123"/>
-  <testcase name="testSetPairs" classname="apoc.map.MapsTest" time="0.104"/>
+  <testcase name="testMergeList" classname="apoc.map.MapsTest" time="0.088"/>
+  <testcase name="testClean" classname="apoc.map.MapsTest" time="0.104"/>
+  <testcase name="testMerge" classname="apoc.map.MapsTest" time="0.094"/>
+  <testcase name="testFlatten" classname="apoc.map.MapsTest" time="0.097"/>
+  <testcase name="testGroupBy" classname="apoc.map.MapsTest" time="0.104"/>
+  <testcase name="testRemoveKeys" classname="apoc.map.MapsTest" time="0.098"/>
+  <testcase name="testFromLists" classname="apoc.map.MapsTest" time="0.1"/>
+  <testcase name="testFromNodes" classname="apoc.map.MapsTest" time="0.108"/>
+  <testcase name="testFromPairs" classname="apoc.map.MapsTest" time="0.105"/>
+  <testcase name="testGroupByMulti" classname="apoc.map.MapsTest" time="0.09"/>
+  <testcase name="testSetValues" classname="apoc.map.MapsTest" time="0.109"/>
+  <testcase name="testFromValues" classname="apoc.map.MapsTest" time="0.108"/>
+  <testcase name="testSetKey" classname="apoc.map.MapsTest" time="0.099"/>
+  <testcase name="testRemoveKey" classname="apoc.map.MapsTest" time="0.104"/>
+  <testcase name="testSetEntry" classname="apoc.map.MapsTest" time="0.107"/>
+  <testcase name="testSetLists" classname="apoc.map.MapsTest" time="0.114"/>
+  <testcase name="testSetPairs" classname="apoc.map.MapsTest" time="0.095"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

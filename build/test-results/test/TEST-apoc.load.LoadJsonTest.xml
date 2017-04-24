@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.load.LoadJsonTest" tests="6" skipped="1" failures="0" errors="0" timestamp="2017-04-24T12:22:19" hostname="Pc" time="0.508">
+<testsuite name="apoc.load.LoadJsonTest" tests="6" skipped="1" failures="0" errors="0" timestamp="2017-04-24T12:28:24" hostname="Pc" time="0.51">
   <properties/>
-  <testcase name="testLoadJson" classname="apoc.load.LoadJsonTest" time="0.111"/>
-  <testcase name="testLoadJsonArrayPath" classname="apoc.load.LoadJsonTest" time="0.105"/>
-  <testcase name="testLoadJsonPathRoot" classname="apoc.load.LoadJsonTest" time="0.095"/>
-  <testcase name="testLoadJsonPath" classname="apoc.load.LoadJsonTest" time="0.092"/>
+  <testcase name="testLoadJson" classname="apoc.load.LoadJsonTest" time="0.108"/>
+  <testcase name="testLoadJsonArrayPath" classname="apoc.load.LoadJsonTest" time="0.084"/>
+  <testcase name="testLoadJsonPathRoot" classname="apoc.load.LoadJsonTest" time="0.109"/>
+  <testcase name="testLoadJsonPath" classname="apoc.load.LoadJsonTest" time="0.104"/>
   <testcase name="testLoadJsonGraphCommons" classname="apoc.load.LoadJsonTest" time="0.0">
     <skipped/>
   </testcase>

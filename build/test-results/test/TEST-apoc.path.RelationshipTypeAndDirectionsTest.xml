@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.path.RelationshipTypeAndDirectionsTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-04-24T12:22:27" hostname="Pc" time="0.001">
+<testsuite name="apoc.path.RelationshipTypeAndDirectionsTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-04-24T12:28:31" hostname="Pc" time="0.001">
   <properties/>
-  <testcase name="parse[0: null -&gt; [(null, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.001"/>
+  <testcase name="parse[0: null -&gt; [(null, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[1:  -&gt; [(null, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[2: &gt; -&gt; [(null, OUTGOING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[3: &lt; -&gt; [(null, INCOMING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[4: SIMPLE -&gt; [(SIMPLE, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[5: SIMPLE&gt; -&gt; [(SIMPLE, OUTGOING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
-  <testcase name="parse[6: SIMPLE&lt; -&gt; [(SIMPLE, INCOMING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
+  <testcase name="parse[6: SIMPLE&lt; -&gt; [(SIMPLE, INCOMING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.001"/>
   <testcase name="parse[7: &lt;SIMPLE -&gt; [(SIMPLE, INCOMING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[8: &gt;SIMPLE -&gt; [(SIMPLE, OUTGOING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[9: SIMPLE -&gt; [(SIMPLE, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>

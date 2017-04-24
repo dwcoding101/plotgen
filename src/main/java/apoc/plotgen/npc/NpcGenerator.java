@@ -64,7 +64,7 @@ public class NpcGenerator {
 
             humanWFRPStats.rollStats();
 
-            query = "MERGE (a:NPC)-[:STATS_OF{type:'wfrp}]->" + wFRPStat(humanWFRPStats) + "WHERE a.uuid='"+uuid+"'";
+            query = "MERGE (a:NPC)-[:STATS_OF{type:'wfrp'}]->" + wFRPStat(humanWFRPStats) + "WHERE a.uuid='"+uuid+"'";
 
             execute = db.execute(query);
 
