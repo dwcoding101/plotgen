@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.export.util.FormatUtilsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-24T14:33:23" hostname="Pc" time="0.0">
+<testsuite name="apoc.export.util.FormatUtilsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-24T15:36:18" hostname="Pc" time="0.001">
   <properties/>
-  <testcase name="formatString" classname="apoc.export.util.FormatUtilsTest" time="0.0"/>
+  <testcase name="formatString" classname="apoc.export.util.FormatUtilsTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

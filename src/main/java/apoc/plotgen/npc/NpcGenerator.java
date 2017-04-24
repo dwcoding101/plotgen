@@ -69,7 +69,7 @@ public class NpcGenerator {
 
             execute = db.execute(query);
 
-            query = "MATCH (a:NPC),(b:STATS) WHERE b.uuid='"+ statUuid +"' AND a.uuid='"+ uuid +"' WITH a,b MERGE(a:NPC)-[l:STATS_OF{type:'wfrp'}]->(b:STATS)";
+            query = "MATCH (a:NPC),(b:STATS) WHERE b.uuid='"+ statUuid +"' AND a.uuid='"+ uuid +"' WITH a,b CREATE(a)-[l:STATS_OF{type:'wfrp'}]->(b)";
 
             execute = db.execute(query);
 

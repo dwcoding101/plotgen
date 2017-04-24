@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.load.LoadCsvTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-04-24T14:34:16" hostname="Pc" time="2.105">
+<testsuite name="apoc.load.LoadCsvTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2017-04-24T15:37:19" hostname="Pc" time="2.514">
   <properties/>
-  <testcase name="testLoadCsvTabSeparator" classname="apoc.load.LoadCsvTest" time="0.155"/>
-  <testcase name="testLoadCsvColonSeparator" classname="apoc.load.LoadCsvTest" time="0.104"/>
-  <testcase name="testLoadCsvByUrlRedirect" classname="apoc.load.LoadCsvTest" time="1.227"/>
-  <testcase name="testLoadCsvSkip" classname="apoc.load.LoadCsvTest" time="0.112"/>
-  <testcase name="testLoadCsv" classname="apoc.load.LoadCsvTest" time="0.105"/>
-  <testcase name="testMapping" classname="apoc.load.LoadCsvTest" time="0.102"/>
-  <testcase name="testLoadCsvIgnoreFields" classname="apoc.load.LoadCsvTest" time="0.082"/>
-  <testcase name="testLoadCsvByUrl" classname="apoc.load.LoadCsvTest" time="0.115"/>
-  <testcase name="testLoadCsvNoHeader" classname="apoc.load.LoadCsvTest" time="0.103"/>
+  <testcase name="testLoadCsvTabSeparator" classname="apoc.load.LoadCsvTest" time="0.173"/>
+  <testcase name="testLoadCsvColonSeparator" classname="apoc.load.LoadCsvTest" time="0.113"/>
+  <testcase name="testLoadCsvByUrlRedirect" classname="apoc.load.LoadCsvTest" time="1.507"/>
+  <testcase name="testLoadCsvSkip" classname="apoc.load.LoadCsvTest" time="0.128"/>
+  <testcase name="testLoadCsv" classname="apoc.load.LoadCsvTest" time="0.117"/>
+  <testcase name="testMapping" classname="apoc.load.LoadCsvTest" time="0.13"/>
+  <testcase name="testLoadCsvIgnoreFields" classname="apoc.load.LoadCsvTest" time="0.114"/>
+  <testcase name="testLoadCsvByUrl" classname="apoc.load.LoadCsvTest" time="0.122"/>
+  <testcase name="testLoadCsvNoHeader" classname="apoc.load.LoadCsvTest" time="0.108"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
