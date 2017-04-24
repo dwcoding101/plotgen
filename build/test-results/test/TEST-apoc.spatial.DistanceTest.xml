@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.spatial.DistanceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-24T13:39:55" hostname="Pc" time="0.126">
+<testsuite name="apoc.spatial.DistanceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-24T14:17:49" hostname="Pc" time="0.11">
   <properties/>
-  <testcase name="testSortingPathsOnDistance" classname="apoc.spatial.DistanceTest" time="0.126"/>
+  <testcase name="testSortingPathsOnDistance" classname="apoc.spatial.DistanceTest" time="0.11"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.load.JdbcTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-24T13:39:37" hostname="Pc" time="0.04">
+<testsuite name="apoc.load.JdbcTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2017-04-24T14:17:32" hostname="Pc" time="0.034">
   <properties/>
-  <testcase name="testLoadJdbc" classname="apoc.load.JdbcTest" time="0.012"/>
+  <testcase name="testLoadJdbc" classname="apoc.load.JdbcTest" time="0.007"/>
   <testcase name="testLoadJdbcParams" classname="apoc.load.JdbcTest" time="0.02"/>
   <testcase name="testLoadJdbcSelect" classname="apoc.load.JdbcTest" time="0.004"/>
   <testcase name="testLoadJdbcKey" classname="apoc.load.JdbcTest" time="0.003"/>

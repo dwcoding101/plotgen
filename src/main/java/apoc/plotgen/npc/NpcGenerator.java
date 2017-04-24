@@ -69,9 +69,9 @@ public class NpcGenerator {
 
             execute = db.execute(query);
 
-           // query = "MATCH (a:NPC),(b:STATS) WHERE a.uuid='"+ uuid + "' AND b.uuid='"+ statUuid +"'" +" WITH a,b CREATE (a)-[STATS_OF{type:'wfrp'}]->(b)";
+            query = "MATCH (a:NPC),(b:STATS) WHERE b.uuid='"+ statUuid +"' AND a.uuid='"+ uuid +"' RETURN a,b";
 
-          //  execute = db.execute(query);
+            execute = db.execute(query);
 
           //  log.info(humanWFRPStats.toString());
 
@@ -95,7 +95,7 @@ public class NpcGenerator {
                         "sb:'" + stats.getSb() + "', " +
                         "tb:'" + stats.getTb() + "', " +
                         "m:'" + stats.getM() + "', " +
-                        "mag:'" + stats.getM() + "', " +
+                        "mag:'" + stats.getMag() + "', " +
                         "ip:'" + stats.getIp() + "', " +
                         "fp:'" + stats.getFp() + "'}) ";
 

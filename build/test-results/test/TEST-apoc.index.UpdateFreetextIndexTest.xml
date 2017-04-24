@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.index.UpdateFreetextIndexTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2017-04-24T13:39:13" hostname="Pc" time="23.256">
+<testsuite name="apoc.index.UpdateFreetextIndexTest" tests="8" skipped="0" failures="1" errors="0" timestamp="2017-04-24T14:17:08" hostname="Pc" time="23.089">
   <properties/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {}, autoUpdate.enabled = true, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.674"/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:false}, autoUpdate.enabled = true, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.624"/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = true, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.738"/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = false, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.586"/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {}, autoUpdate.enabled = true, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.256"/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:false}, autoUpdate.enabled = true, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.198"/>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = true, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="2.96">
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {}, autoUpdate.enabled = true, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.683"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:false}, autoUpdate.enabled = true, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.575"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = true, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.673"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = false, async = false]" classname="apoc.index.UpdateFreetextIndexTest" time="2.585"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {}, autoUpdate.enabled = true, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.226"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:false}, autoUpdate.enabled = true, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.253"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = true, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="2.868">
     <failure message="java.lang.AssertionError: expected:&lt;3&gt; but was:&lt;2&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;3&gt; but was:&lt;2&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
@@ -48,7 +48,7 @@
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.GeneratedMethodAccessor91.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -57,7 +57,7 @@
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
 	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor89.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -70,7 +70,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = false, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.22"/>
+  <testcase name="shouldIndexGetUpdatedAcrossRestarts[with index config {autoUpdate:true}, autoUpdate.enabled = false, async = true]" classname="apoc.index.UpdateFreetextIndexTest" time="3.226"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
