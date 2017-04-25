@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.math.MathsTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-24T15:37:24" hostname="Pc" time="0.072">
+<testsuite name="apoc.math.MathsTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-25T14:19:19" hostname="Pc" time="0.054">
   <properties/>
-  <testcase name="testRoundSimple" classname="apoc.math.MathsTest" time="0.01"/>
-  <testcase name="testRoundPrecision" classname="apoc.math.MathsTest" time="0.006"/>
-  <testcase name="testMaxDouble" classname="apoc.math.MathsTest" time="0.005"/>
-  <testcase name="testMinDouble" classname="apoc.math.MathsTest" time="0.008"/>
+  <testcase name="testRoundSimple" classname="apoc.math.MathsTest" time="0.007"/>
+  <testcase name="testRoundPrecision" classname="apoc.math.MathsTest" time="0.005"/>
+  <testcase name="testMaxDouble" classname="apoc.math.MathsTest" time="0.004"/>
+  <testcase name="testMinDouble" classname="apoc.math.MathsTest" time="0.004"/>
   <testcase name="testMaxByte" classname="apoc.math.MathsTest" time="0.004"/>
-  <testcase name="testMaxLong" classname="apoc.math.MathsTest" time="0.005"/>
+  <testcase name="testMaxLong" classname="apoc.math.MathsTest" time="0.003"/>
   <testcase name="testRoundMode" classname="apoc.math.MathsTest" time="0.006"/>
-  <testcase name="testMinByte" classname="apoc.math.MathsTest" time="0.005"/>
-  <testcase name="testMinLong" classname="apoc.math.MathsTest" time="0.006"/>
-  <testcase name="testMaxInt" classname="apoc.math.MathsTest" time="0.007"/>
-  <testcase name="testMinInt" classname="apoc.math.MathsTest" time="0.008"/>
+  <testcase name="testMinByte" classname="apoc.math.MathsTest" time="0.004"/>
+  <testcase name="testMinLong" classname="apoc.math.MathsTest" time="0.005"/>
+  <testcase name="testMaxInt" classname="apoc.math.MathsTest" time="0.006"/>
+  <testcase name="testMinInt" classname="apoc.math.MathsTest" time="0.005"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -179,6 +179,7 @@
 "procedure"¦"apoc.plotgen.description.CreateDescription"¦"apoc.plotgen.description.CreateDescription(NPCuuid) - Advance Time one day"
 "procedure"¦"apoc.plotgen.npc.CreateNPC"¦"apoc.plotgen.npc.CreateNPC - create a new NPC"
 "procedure"¦"apoc.plotgen.npc.SetStartingDOB"¦"apoc.plotgen.npc.SetStartingDOB - Set Character Date of Birth"
+"procedure"¦"apoc.plotgen.relationships.KnownRandom"¦"apoc.plotgen.relationships.KnownRandom - create a randon known relationship between NPC"
 "procedure"¦"apoc.plotgen.time.CreateTime"¦"apoc.plotgen.npc.CreateNPC - create a new NPC"
 "procedure"¦"apoc.plotgen.time.SetDayLength"¦"apoc.plotgen.time.SetDayLength - sets the length of the world day in seconds"
 "procedure"¦"apoc.plotgen.time.SetDayInYear"¦"apoc.plotgen.time.SetDayInYear - sets the number of the world days in the worlds"

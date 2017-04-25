@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.generate.relationship.WattsStrogatzRelationshipGeneratorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-24T15:36:23" hostname="Pc" time="0.006">
+<testsuite name="apoc.generate.relationship.WattsStrogatzRelationshipGeneratorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-25T14:18:24" hostname="Pc" time="0.003">
   <properties/>
-  <testcase name="testDoGenerateEdgesPerformance" classname="apoc.generate.relationship.WattsStrogatzRelationshipGeneratorTest" time="0.005"/>
+  <testcase name="testDoGenerateEdgesPerformance" classname="apoc.generate.relationship.WattsStrogatzRelationshipGeneratorTest" time="0.003"/>
   <testcase name="testDoGenerateEdgesValidity" classname="apoc.generate.relationship.WattsStrogatzRelationshipGeneratorTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

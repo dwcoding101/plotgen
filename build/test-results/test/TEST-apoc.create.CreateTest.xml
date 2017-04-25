@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.create.CreateTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-04-24T15:35:46" hostname="Pc" time="1.561">
+<testsuite name="apoc.create.CreateTest" tests="14" skipped="0" failures="0" errors="0" timestamp="2017-04-25T14:17:49" hostname="Pc" time="1.637">
   <properties/>
-  <testcase name="testCreateVirtualRelationship" classname="apoc.create.CreateTest" time="0.136"/>
+  <testcase name="testCreateVirtualRelationship" classname="apoc.create.CreateTest" time="0.117"/>
   <testcase name="testCreateNodeWithArrayProps" classname="apoc.create.CreateTest" time="0.106"/>
-  <testcase name="testVirtualNodeFunction" classname="apoc.create.CreateTest" time="0.102"/>
-  <testcase name="testVirtualNode" classname="apoc.create.CreateTest" time="0.098"/>
-  <testcase name="testCreateNodes" classname="apoc.create.CreateTest" time="0.103"/>
-  <testcase name="testCreatePattern" classname="apoc.create.CreateTest" time="0.109"/>
-  <testcase name="testCreateRelationship" classname="apoc.create.CreateTest" time="0.111"/>
-  <testcase name="testSetProperty" classname="apoc.create.CreateTest" time="0.133"/>
-  <testcase name="testCreateNode" classname="apoc.create.CreateTest" time="0.11"/>
-  <testcase name="testSetRelProperty" classname="apoc.create.CreateTest" time="0.107"/>
-  <testcase name="testCreatePatternFull" classname="apoc.create.CreateTest" time="0.097"/>
-  <testcase name="testSetProperties" classname="apoc.create.CreateTest" time="0.119"/>
-  <testcase name="testSetRelProperties" classname="apoc.create.CreateTest" time="0.115"/>
-  <testcase name="testCreateVirtualRelationshipFunction" classname="apoc.create.CreateTest" time="0.111"/>
+  <testcase name="testVirtualNodeFunction" classname="apoc.create.CreateTest" time="0.111"/>
+  <testcase name="testVirtualNode" classname="apoc.create.CreateTest" time="0.097"/>
+  <testcase name="testCreateNodes" classname="apoc.create.CreateTest" time="0.111"/>
+  <testcase name="testCreatePattern" classname="apoc.create.CreateTest" time="0.099"/>
+  <testcase name="testCreateRelationship" classname="apoc.create.CreateTest" time="0.125"/>
+  <testcase name="testSetProperty" classname="apoc.create.CreateTest" time="0.125"/>
+  <testcase name="testCreateNode" classname="apoc.create.CreateTest" time="0.102"/>
+  <testcase name="testSetRelProperty" classname="apoc.create.CreateTest" time="0.119"/>
+  <testcase name="testCreatePatternFull" classname="apoc.create.CreateTest" time="0.112"/>
+  <testcase name="testSetProperties" classname="apoc.create.CreateTest" time="0.121"/>
+  <testcase name="testSetRelProperties" classname="apoc.create.CreateTest" time="0.176"/>
+  <testcase name="testCreateVirtualRelationshipFunction" classname="apoc.create.CreateTest" time="0.112"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

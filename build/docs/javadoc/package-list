@@ -50,6 +50,7 @@ apoc.plotgen.gender
 apoc.plotgen.names
 apoc.plotgen.npc
 apoc.plotgen.random
+apoc.plotgen.relationships
 apoc.plotgen.stats
 apoc.plotgen.time
 apoc.refactor
