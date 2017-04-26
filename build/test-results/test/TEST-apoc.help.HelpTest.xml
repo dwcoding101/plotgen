@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.help.HelpTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-26T16:57:16" hostname="Pc" time="0.195">
+<testsuite name="apoc.help.HelpTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-26T17:23:43" hostname="Pc" time="0.205">
   <properties/>
-  <testcase name="info" classname="apoc.help.HelpTest" time="0.195"/>
+  <testcase name="info" classname="apoc.help.HelpTest" time="0.205"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

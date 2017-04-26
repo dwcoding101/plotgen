@@ -64,6 +64,9 @@ public class KnownRandom {
             npcList.remove(0);
             numberOfPeopleKnow = workingStringRelationships.getNumberOfRelationships();
 
+            if (npcList.size() < numberOfPeopleKnow) {
+                numberOfPeopleKnow = npcList.size();
+            }
             knowNPCList = pickNRandom(npcList, numberOfPeopleKnow);
 
             // add in the relationships

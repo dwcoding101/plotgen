@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.path.RelationshipTypeAndDirectionsTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-04-26T16:58:10" hostname="Pc" time="0.001">
+<testsuite name="apoc.path.RelationshipTypeAndDirectionsTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2017-04-26T17:24:35" hostname="Pc" time="0.001">
   <properties/>
-  <testcase name="parse[0: null -&gt; [(null, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
+  <testcase name="parse[0: null -&gt; [(null, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.001"/>
   <testcase name="parse[1:  -&gt; [(null, BOTH)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[2: &gt; -&gt; [(null, OUTGOING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
   <testcase name="parse[3: &lt; -&gt; [(null, INCOMING)]]" classname="apoc.path.RelationshipTypeAndDirectionsTest" time="0.0"/>
