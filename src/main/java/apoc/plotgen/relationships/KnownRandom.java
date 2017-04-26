@@ -57,9 +57,8 @@ public class KnownRandom {
             }
         }
 
-        ArrayList<StringRelationships> KnowableNpcList;
-        List<StringRelationships> knowNPCList;
         boolean cont = true;
+        List<StringRelationships> knowNPCList;
         while (cont) {
             StringRelationships workingStringRelationships = npcList.get(0);
             npcList.remove(0);
@@ -69,15 +68,15 @@ public class KnownRandom {
 
             // add in the relationships
             knowNPCList.forEach((known) -> {
-                String knowQuerry = "MATCH (a:NPC),(b:NPC) WHERE a.uuid='" + workingStringRelationships.getUuid() + "' AND b.uuid='" + known.getUuid() + "' WITH a,b MERGE (a)-[:KNOWS_OF]->(b) WITH a,b MERGE (b)-[:KNOWS_OF]->(a)";
-                try (Result result = db.execute(knowQuerry)) {
+                //    String knowQuerry = "MATCH (a:NPC),(b:NPC) WHERE a.uuid='" + workingStringRelationships.getUuid() + "' AND b.uuid='" + known.getUuid() + "' WITH a,b MERGE (a)-[:KNOWS_OF]->(b) WITH a,b MERGE (b)-[:KNOWS_OF]->(a)";
+                //        try (Result result = db.execute(knowQuerry)) {
 
-                }
+                //      }
             });
 
             npcList = reduceKnow(npcList,knowNPCList);
 
-            if(npcList.isEmpty()){
+            if(npcList.size()<=1){
                 cont = false;
             }
 
@@ -87,16 +86,16 @@ public class KnownRandom {
     public static ArrayList<StringRelationships> reduceKnow(List<StringRelationships> list, List<StringRelationships> known ) {
         known.forEach((person)->{
             list.forEach((mainPerson)-> {
-               if(mainPerson.getUuid().equals(person.getUuid())){
-                   mainPerson.numberOfRelationships--;
-               }
+                if(mainPerson.getUuid().equals(person.getUuid())){
+                    mainPerson.setNumberOfRelationships(mainPerson.getNumberOfRelationships()-1);
+                }
             });
         });
 
         // remove all zero relationships
         ArrayList<StringRelationships> ret = new ArrayList<>();
         list.forEach((mainPerson)->{
-            if (mainPerson.getNumberOfRelationships() > 1) {
+            if (mainPerson.getNumberOfRelationships() >= 1) {
                 ret.add(mainPerson);
             }
         });
@@ -104,10 +103,9 @@ public class KnownRandom {
         return ret;
     }
 
-    public static List<StringRelationships> pickNRandom(List<StringRelationships> lst, int n) {
+    public static List<StringRelationships> pickNRandom(ArrayList<StringRelationships> lst, int n) {
         List<StringRelationships> copy = new LinkedList<StringRelationships>(lst);
         Collections.shuffle(copy);
         return copy.subList(0, n);
     }
-
 }
