@@ -10,7 +10,7 @@ buildscript {
 plugins {
     id 'java'
     id 'idea'
- //   id 'com.github.johnrengelman.shadow' version '1.2.3'
+    id 'com.github.johnrengelman.shadow' version '1.2.4'
     id "org.asciidoctor.convert" version "1.5.3"
     id "com.bmuschko.nexus" version "2.3.1"
 }
