@@ -31,7 +31,7 @@ public class KnownRandom {
 
         int numberOfPeopleKnow;
 
-        ArrayList<String> npcList = new ArrayList<String>();
+        ArrayList<StringRelationships> npcList = new ArrayList<>();
 
         String query = "MATCH (a:NPC) RETURN a";
         try ( Result result = db.execute( query ) )
@@ -49,38 +49,60 @@ public class KnownRandom {
                     Object obj = row.get(key);
                     if(obj instanceof Node){
                         node = (Node) obj;
-                        npcList.add(node.getProperty("uuid").toString());
+                        StringRelationships stringRelationships = new StringRelationships(node.getProperty("uuid").toString(),(int) Dice.roll("1D6"));
+                        npcList.add(stringRelationships);
 
                     }
                 }
             }
         }
 
-        ArrayList KnowableNpcList;
-        List KnowNPCList;
-        for (int currentPosition = 0; currentPosition < npcList.size(); currentPosition++) {
-            String workingUuid = npcList.get(currentPosition).toString();
-            KnowableNpcList = npcList;
-            KnowableNpcList.remove(currentPosition);
-            numberOfPeopleKnow = (int) Dice.roll("1D6");
-            KnowNPCList = pickNRandom(KnowableNpcList,numberOfPeopleKnow);
+        ArrayList<StringRelationships> KnowableNpcList;
+        List<StringRelationships> knowNPCList;
+
+        while (!npcList.isEmpty()) {
+            StringRelationships workingStringRelationships = npcList.get(0);
+            npcList.remove(0);
+            numberOfPeopleKnow = workingStringRelationships.getNumberOfRelationships();
+
+            knowNPCList = pickNRandom(npcList, numberOfPeopleKnow);
 
             // add in the relationships
-            KnowableNpcList.forEach((knownUuid)->{
-                String knowQuerry = "MATCH (a:NPC),(b:NPC) WHERE a.uuid='"+workingUuid+"' AND b.uuid='"+knownUuid+"' WITH a,b MERGE (a)-[:KNOWS_OF]->(b) WITH a,b MERGE (b)-[:KNOWS_OF]->(a)";
-                try ( Result result = db.execute( knowQuerry ) ) {
+            knowNPCList.forEach((known) -> {
+                String knowQuerry = "MATCH (a:NPC),(b:NPC) WHERE a.uuid='" + workingStringRelationships.getUuid() + "' AND b.uuid='" + known.getUuid() + "' WITH a,b MERGE (a)-[:KNOWS_OF]->(b) WITH a,b MERGE (b)-[:KNOWS_OF]->(a)";
+                try (Result result = db.execute(knowQuerry)) {
 
                 }
             });
 
+            npcList = reduceKnow(npcList,knowNPCList);
+
+
         }
-
-
-
     }
 
-    public static List<String> pickNRandom(List<String> lst, int n) {
-        List<String> copy = new LinkedList<String>(lst);
+    public static ArrayList<StringRelationships> reduceKnow(List<StringRelationships> list, List<StringRelationships> known ) {
+        known.forEach((person)->{
+            list.forEach((mainPerson)-> {
+               if(mainPerson.getUuid().equals(person.getUuid())){
+                   mainPerson.numberOfRelationships--;
+               }
+            });
+        });
+
+        // remove all zero relationships
+        ArrayList<StringRelationships> ret = new ArrayList<>();
+        list.forEach((mainPerson)->{
+            if (mainPerson.getNumberOfRelationships() > 1) {
+                ret.add(mainPerson);
+            }
+        });
+
+        return ret;
+    }
+
+    public static List<StringRelationships> pickNRandom(List<StringRelationships> lst, int n) {
+        List<StringRelationships> copy = new LinkedList<StringRelationships>(lst);
         Collections.shuffle(copy);
         return copy.subList(0, n);
     }
