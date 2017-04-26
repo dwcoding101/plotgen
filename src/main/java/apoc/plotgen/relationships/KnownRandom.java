@@ -68,10 +68,10 @@ public class KnownRandom {
 
             // add in the relationships
             knowNPCList.forEach((known) -> {
-                //    String knowQuerry = "MATCH (a:NPC),(b:NPC) WHERE a.uuid='" + workingStringRelationships.getUuid() + "' AND b.uuid='" + known.getUuid() + "' WITH a,b MERGE (a)-[:KNOWS_OF]->(b) WITH a,b MERGE (b)-[:KNOWS_OF]->(a)";
-                //        try (Result result = db.execute(knowQuerry)) {
+                String knowQuerry = "MATCH (a:NPC),(b:NPC) WHERE a.uuid='" + workingStringRelationships.getUuid() + "' AND b.uuid='" + known.getUuid() + "' WITH a,b MERGE (a)-[:KNOWS_OF]->(b) WITH a,b MERGE (b)-[:KNOWS_OF]->(a)";
+                try (Result result = db.execute(knowQuerry)) {
 
-                //      }
+                }
             });
 
             npcList = reduceKnow(npcList,knowNPCList);

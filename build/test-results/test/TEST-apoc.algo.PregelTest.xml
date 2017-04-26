@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.PregelTest" tests="4" skipped="1" failures="0" errors="0" timestamp="2017-04-26T16:40:31" hostname="Pc" time="35.748">
+<testsuite name="apoc.algo.PregelTest" tests="4" skipped="1" failures="0" errors="0" timestamp="2017-04-26T16:55:30" hostname="Pc" time="33.355">
   <properties/>
   <testcase name="testCreateGraph" classname="apoc.algo.PregelTest" time="0.0">
     <skipped/>
   </testcase>
-  <testcase name="runPageRank" classname="apoc.algo.PregelTest" time="18.245"/>
-  <testcase name="runPageRank3" classname="apoc.algo.PregelTest" time="14.162"/>
-  <testcase name="runDegreeProgram" classname="apoc.algo.PregelTest" time="3.34"/>
+  <testcase name="runPageRank" classname="apoc.algo.PregelTest" time="15.608"/>
+  <testcase name="runPageRank3" classname="apoc.algo.PregelTest" time="14.196"/>
+  <testcase name="runDegreeProgram" classname="apoc.algo.PregelTest" time="3.551"/>
   <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[Generating Data took 17102 ms. nodes 100001 rels 950769
-PageRank Program ran for 100001 nodes in 519 ms. 10 hightest Ranks [1.3125209, 1.3138509, 1.3168213, 1.3177344, 1.3323275, 1.3679276, 1.376396, 1.3843566, 1.4682544, 1.468718]
-Generating Data took 13074 ms. nodes 100001 rels 950769
-PageRank Program ran for 100001 nodes in 374 ms. 10 hightest Ranks [1.3125207, 1.3138508, 1.3168212, 1.3177344, 1.3323275, 1.3679274, 1.376396, 1.3843565, 1.4682546, 1.468718]
-Program ran for 100001 nodes in 99 ms.
+  <system-err><![CDATA[Generating Data took 14348 ms. nodes 100001 rels 950769
+PageRank Program ran for 100001 nodes in 605 ms. 10 hightest Ranks [1.3125209, 1.3138509, 1.3168213, 1.3177344, 1.3323275, 1.3679276, 1.376396, 1.3843566, 1.4682544, 1.468718]
+Generating Data took 13223 ms. nodes 100001 rels 950769
+PageRank Program ran for 100001 nodes in 391 ms. 10 hightest Ranks [1.3125207, 1.3138508, 1.3168212, 1.3177344, 1.3323275, 1.3679274, 1.376396, 1.3843565, 1.4682546, 1.468718]
+Program ran for 100001 nodes in 103 ms.
 ]]></system-err>
 </testsuite>

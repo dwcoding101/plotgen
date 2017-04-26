@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.export.csv.ExportCsvTest" tests="4" skipped="0" failures="4" errors="0" timestamp="2017-04-26T16:42:06" hostname="Pc" time="0.166">
+<testsuite name="apoc.export.csv.ExportCsvTest" tests="4" skipped="0" failures="4" errors="0" timestamp="2017-04-26T16:57:07" hostname="Pc" time="0.139">
   <properties/>
-  <testcase name="testExportGraphCsv" classname="apoc.export.csv.ExportCsvTest" time="0.071">
+  <testcase name="testExportGraphCsv" classname="apoc.export.csv.ExportCsvTest" time="0.054">
     <failure message="org.junit.ComparisonFailure: expected:&lt;...tart&quot;,&quot;_end&quot;,&quot;_type&quot;[&#13;&#10;&quot;0&quot;,&quot;:User&quot;,&quot;foo&quot;,&quot;42&quot;,&quot;true&quot;,&quot;[&quot;&quot;a&quot;&quot;,&quot;&quot;b&quot;&quot;,&quot;&quot;c&quot;&quot;]&quot;,,,&#13;&#10;&quot;1&quot;,&quot;:User&quot;,&quot;bar&quot;,&quot;42&quot;,&quot;&quot;,&quot;&quot;,,,&#13;&#10;&quot;2&quot;,&quot;:User&quot;,&quot;&quot;,&quot;12&quot;,&quot;&quot;,&quot;&quot;,,,&#13;]&#10;,,,,,,&quot;0&quot;,&quot;1&quot;,&quot;KNOW...&gt; but was:&lt;...tart&quot;,&quot;_end&quot;,&quot;_type&quot;[&#10;&quot;0&quot;,&quot;:User&quot;,&quot;foo&quot;,&quot;42&quot;,&quot;true&quot;,&quot;[&quot;&quot;a&quot;&quot;,&quot;&quot;b&quot;&quot;,&quot;&quot;c&quot;&quot;]&quot;,,,&#10;&quot;1&quot;,&quot;:User&quot;,&quot;bar&quot;,&quot;42&quot;,&quot;&quot;,&quot;&quot;,,,&#10;&quot;2&quot;,&quot;:User&quot;,&quot;&quot;,&quot;12&quot;,&quot;&quot;,&quot;&quot;,,,]&#10;,,,,,,&quot;0&quot;,&quot;1&quot;,&quot;KNOW...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...tart&quot;,&quot;_end&quot;,&quot;_type&quot;[
 &quot;0&quot;,&quot;:User&quot;,&quot;foo&quot;,&quot;42&quot;,&quot;true&quot;,&quot;[&quot;&quot;a&quot;&quot;,&quot;&quot;b&quot;&quot;,&quot;&quot;c&quot;&quot;]&quot;,,,
 &quot;1&quot;,&quot;:User&quot;,&quot;bar&quot;,&quot;42&quot;,&quot;&quot;,&quot;&quot;,,,
@@ -37,7 +37,7 @@
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor91.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -46,7 +46,7 @@
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
 	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -95,7 +95,7 @@
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor91.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -104,7 +104,7 @@
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
 	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -117,7 +117,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testExportQueryNodesCsv" classname="apoc.export.csv.ExportCsvTest" time="0.031">
+  <testcase name="testExportQueryNodesCsv" classname="apoc.export.csv.ExportCsvTest" time="0.03">
     <failure message="org.junit.ComparisonFailure: expected:&lt;&quot;u&quot;[&#13;&#10;&quot;{&quot;&quot;id&quot;&quot;:0,&quot;&quot;labels&quot;&quot;:[&quot;&quot;User&quot;&quot;],&quot;&quot;properties&quot;&quot;:{&quot;&quot;name&quot;&quot;:&quot;&quot;foo&quot;&quot;,&quot;&quot;age&quot;&quot;:42,&quot;&quot;male&quot;&quot;:true,&quot;&quot;kids&quot;&quot;:[&quot;&quot;a&quot;&quot;,&quot;&quot;b&quot;&quot;,&quot;&quot;c&quot;&quot;]}}&quot;&#13;&#10;&quot;{&quot;&quot;id&quot;&quot;:1,&quot;&quot;labels&quot;&quot;:[&quot;&quot;User&quot;&quot;],&quot;&quot;properties&quot;&quot;:{&quot;&quot;name&quot;&quot;:&quot;&quot;bar&quot;&quot;,&quot;&quot;age&quot;&quot;:42}}&quot;&#13;]&#10;&quot;{&quot;&quot;id&quot;&quot;:2,&quot;&quot;labels...&gt; but was:&lt;&quot;u&quot;[&#10;&quot;{&quot;&quot;id&quot;&quot;:0,&quot;&quot;labels&quot;&quot;:[&quot;&quot;User&quot;&quot;],&quot;&quot;properties&quot;&quot;:{&quot;&quot;name&quot;&quot;:&quot;&quot;foo&quot;&quot;,&quot;&quot;age&quot;&quot;:42,&quot;&quot;male&quot;&quot;:true,&quot;&quot;kids&quot;&quot;:[&quot;&quot;a&quot;&quot;,&quot;&quot;b&quot;&quot;,&quot;&quot;c&quot;&quot;]}}&quot;&#10;&quot;{&quot;&quot;id&quot;&quot;:1,&quot;&quot;labels&quot;&quot;:[&quot;&quot;User&quot;&quot;],&quot;&quot;properties&quot;&quot;:{&quot;&quot;name&quot;&quot;:&quot;&quot;bar&quot;&quot;,&quot;&quot;age&quot;&quot;:42}}&quot;]&#10;&quot;{&quot;&quot;id&quot;&quot;:2,&quot;&quot;labels...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;&quot;u&quot;[
 &quot;{&quot;&quot;id&quot;&quot;:0,&quot;&quot;labels&quot;&quot;:[&quot;&quot;User&quot;&quot;],&quot;&quot;properties&quot;&quot;:{&quot;&quot;name&quot;&quot;:&quot;&quot;foo&quot;&quot;,&quot;&quot;age&quot;&quot;:42,&quot;&quot;male&quot;&quot;:true,&quot;&quot;kids&quot;&quot;:[&quot;&quot;a&quot;&quot;,&quot;&quot;b&quot;&quot;,&quot;&quot;c&quot;&quot;]}}&quot;
 &quot;{&quot;&quot;id&quot;&quot;:1,&quot;&quot;labels&quot;&quot;:[&quot;&quot;User&quot;&quot;],&quot;&quot;properties&quot;&quot;:{&quot;&quot;name&quot;&quot;:&quot;&quot;bar&quot;&quot;,&quot;&quot;age&quot;&quot;:42}}&quot;]
@@ -151,7 +151,7 @@
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor91.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -160,7 +160,7 @@
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
 	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -173,7 +173,7 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
-  <testcase name="testExportQueryCsv" classname="apoc.export.csv.ExportCsvTest" time="0.029">
+  <testcase name="testExportQueryCsv" classname="apoc.export.csv.ExportCsvTest" time="0.02">
     <failure message="org.junit.ComparisonFailure: expected:&lt;...&quot;u.kids&quot;,&quot;labels(u)&quot;[&#13;&#10;&quot;42&quot;,&quot;foo&quot;,&quot;true&quot;,&quot;[&quot;&quot;a&quot;&quot;,&quot;&quot;b&quot;&quot;,&quot;&quot;c&quot;&quot;]&quot;,&quot;[&quot;&quot;User&quot;&quot;]&quot;&#13;&#10;&quot;42&quot;,&quot;bar&quot;,&quot;&quot;,&quot;&quot;,&quot;[&quot;&quot;User&quot;&quot;]&quot;&#13;]&#10;&quot;12&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;[&quot;&quot;U...&gt; but was:&lt;...&quot;u.kids&quot;,&quot;labels(u)&quot;[&#10;&quot;42&quot;,&quot;foo&quot;,&quot;true&quot;,&quot;[&quot;&quot;a&quot;&quot;,&quot;&quot;b&quot;&quot;,&quot;&quot;c&quot;&quot;]&quot;,&quot;[&quot;&quot;User&quot;&quot;]&quot;&#10;&quot;42&quot;,&quot;bar&quot;,&quot;&quot;,&quot;&quot;,&quot;[&quot;&quot;User&quot;&quot;]&quot;]&#10;&quot;12&quot;,&quot;&quot;,&quot;&quot;,&quot;&quot;,&quot;[&quot;&quot;U...&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;...&quot;u.kids&quot;,&quot;labels(u)&quot;[
 &quot;42&quot;,&quot;foo&quot;,&quot;true&quot;,&quot;[&quot;&quot;a&quot;&quot;,&quot;&quot;b&quot;&quot;,&quot;&quot;c&quot;&quot;]&quot;,&quot;[&quot;&quot;User&quot;&quot;]&quot;
 &quot;42&quot;,&quot;bar&quot;,&quot;&quot;,&quot;&quot;,&quot;[&quot;&quot;User&quot;&quot;]&quot;]
@@ -207,7 +207,7 @@
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
 	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
 	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
-	at sun.reflect.GeneratedMethodAccessor88.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor91.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
@@ -216,7 +216,7 @@
 	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
 	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
 	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:109)
-	at sun.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor90.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)

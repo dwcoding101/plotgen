@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.coll.EqualityTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-04-26T16:41:30" hostname="Pc" time="0.105">
+<testsuite name="apoc.coll.EqualityTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-04-26T16:56:28" hostname="Pc" time="0.096">
   <properties/>
   <testcase name="testIn" classname="apoc.coll.EqualityTest" time="0.012"/>
-  <testcase name="testGraphEntities" classname="apoc.coll.EqualityTest" time="0.091"/>
+  <testcase name="testGraphEntities" classname="apoc.coll.EqualityTest" time="0.083"/>
   <testcase name="testPropertyEquality" classname="apoc.coll.EqualityTest" time="0.0"/>
-  <testcase name="testEquality" classname="apoc.coll.EqualityTest" time="0.001"/>
+  <testcase name="testEquality" classname="apoc.coll.EqualityTest" time="0.0"/>
   <testcase name="testSpecial" classname="apoc.coll.EqualityTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

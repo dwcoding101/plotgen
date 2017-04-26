@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.algo.CoreGraphAlgorithmsTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-26T16:40:27" hostname="Pc" time="0.005">
+<testsuite name="apoc.algo.CoreGraphAlgorithmsTest" tests="11" skipped="0" failures="0" errors="0" timestamp="2017-04-26T16:55:27" hostname="Pc" time="0.005">
   <properties/>
   <testcase name="testLoadDegreesBoth" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.002"/>
   <testcase name="labelPropagation" classname="apoc.algo.CoreGraphAlgorithmsTest" time="0.001"/>
