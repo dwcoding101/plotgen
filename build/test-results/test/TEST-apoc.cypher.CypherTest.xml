@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.cypher.CypherTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2017-04-26T10:36:53" hostname="Pc" time="1.518">
+<testsuite name="apoc.cypher.CypherTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2017-04-26T11:06:40" hostname="Pc" time="1.479">
   <properties/>
-  <testcase name="testParallel2" classname="apoc.cypher.CypherTest" time="0.46"/>
-  <testcase name="testRunFileWithResults" classname="apoc.cypher.CypherTest" time="0.07"/>
+  <testcase name="testParallel2" classname="apoc.cypher.CypherTest" time="0.461"/>
+  <testcase name="testRunFileWithResults" classname="apoc.cypher.CypherTest" time="0.069"/>
   <testcase name="testRunFileWithSchema" classname="apoc.cypher.CypherTest" time="0.007"/>
-  <testcase name="testRunNoParams" classname="apoc.cypher.CypherTest" time="0.006"/>
-  <testcase name="testRun" classname="apoc.cypher.CypherTest" time="0.007"/>
-  <testcase name="testWithTimeout" classname="apoc.cypher.CypherTest" time="0.12"/>
-  <testcase name="testMapParallel2" classname="apoc.cypher.CypherTest" time="0.17"/>
-  <testcase name="testMapParallel" classname="apoc.cypher.CypherTest" time="0.144"/>
-  <testcase name="testRunNullParams" classname="apoc.cypher.CypherTest" time="0.004"/>
-  <testcase name="testRunVariable" classname="apoc.cypher.CypherTest" time="0.007"/>
-  <testcase name="testRunFile" classname="apoc.cypher.CypherTest" time="0.015"/>
-  <testcase name="testRunMany" classname="apoc.cypher.CypherTest" time="0.018"/>
-  <testcase name="testSingular" classname="apoc.cypher.CypherTest" time="0.136"/>
-  <testcase name="testRunWithPeriodic" classname="apoc.cypher.CypherTest" time="0.182"/>
-  <testcase name="testParallel" classname="apoc.cypher.CypherTest" time="0.166"/>
+  <testcase name="testRunNoParams" classname="apoc.cypher.CypherTest" time="0.007"/>
+  <testcase name="testRun" classname="apoc.cypher.CypherTest" time="0.011"/>
+  <testcase name="testWithTimeout" classname="apoc.cypher.CypherTest" time="0.109"/>
+  <testcase name="testMapParallel2" classname="apoc.cypher.CypherTest" time="0.193"/>
+  <testcase name="testMapParallel" classname="apoc.cypher.CypherTest" time="0.119"/>
+  <testcase name="testRunNullParams" classname="apoc.cypher.CypherTest" time="0.003"/>
+  <testcase name="testRunVariable" classname="apoc.cypher.CypherTest" time="0.008"/>
+  <testcase name="testRunFile" classname="apoc.cypher.CypherTest" time="0.021"/>
+  <testcase name="testRunMany" classname="apoc.cypher.CypherTest" time="0.016"/>
+  <testcase name="testSingular" classname="apoc.cypher.CypherTest" time="0.123"/>
+  <testcase name="testRunWithPeriodic" classname="apoc.cypher.CypherTest" time="0.177"/>
+  <testcase name="testParallel" classname="apoc.cypher.CypherTest" time="0.153"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

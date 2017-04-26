@@ -59,8 +59,8 @@ public class KnownRandom {
 
         ArrayList<StringRelationships> KnowableNpcList;
         List<StringRelationships> knowNPCList;
-
-        while (!npcList.isEmpty()) {
+        boolean cont = true;
+        while (cont) {
             StringRelationships workingStringRelationships = npcList.get(0);
             npcList.remove(0);
             numberOfPeopleKnow = workingStringRelationships.getNumberOfRelationships();
@@ -77,6 +77,9 @@ public class KnownRandom {
 
             npcList = reduceKnow(npcList,knowNPCList);
 
+            if(npcList.isEmpty()){
+                cont = false;
+            }
 
         }
     }

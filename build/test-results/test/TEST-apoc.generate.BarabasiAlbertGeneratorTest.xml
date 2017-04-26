@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.generate.BarabasiAlbertGeneratorTest" tests="3" skipped="1" failures="0" errors="0" timestamp="2017-04-26T10:37:22" hostname="Pc" time="1.183">
+<testsuite name="apoc.generate.BarabasiAlbertGeneratorTest" tests="3" skipped="1" failures="0" errors="0" timestamp="2017-04-26T11:07:08" hostname="Pc" time="1.22">
   <properties/>
-  <testcase name="shouldGenerateCorrectNumberOfNodesAndRelationships" classname="apoc.generate.BarabasiAlbertGeneratorTest" time="1.075"/>
-  <testcase name="shouldGeneratePowerLawDistribution" classname="apoc.generate.BarabasiAlbertGeneratorTest" time="0.107"/>
+  <testcase name="shouldGenerateCorrectNumberOfNodesAndRelationships" classname="apoc.generate.BarabasiAlbertGeneratorTest" time="1.081"/>
+  <testcase name="shouldGeneratePowerLawDistribution" classname="apoc.generate.BarabasiAlbertGeneratorTest" time="0.139"/>
   <testcase name="shouldGenerateRelationshipsForLargeGraphInAReasonableAmountOfTime" classname="apoc.generate.BarabasiAlbertGeneratorTest" time="0.0">
     <skipped/>
   </testcase>
-  <system-out><![CDATA[{25,25,15,13,12,11,10,10,10,9,7,7,6,6,6,6,5,5,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2}
+  <system-out><![CDATA[{26,14,14,13,13,12,11,9,8,8,7,7,7,7,6,6,6,5,5,4,4,4,4,4,4,4,4,4,4,4,4,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2}
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

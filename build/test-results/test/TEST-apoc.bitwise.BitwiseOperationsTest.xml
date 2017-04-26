@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="apoc.bitwise.BitwiseOperationsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-26T10:36:20" hostname="Pc" time="0.009">
+<testsuite name="apoc.bitwise.BitwiseOperationsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-04-26T11:06:07" hostname="Pc" time="0.013">
   <properties/>
-  <testcase name="testOperations" classname="apoc.bitwise.BitwiseOperationsTest" time="0.008"/>
+  <testcase name="testOperations" classname="apoc.bitwise.BitwiseOperationsTest" time="0.012"/>
   <testcase name="testOperations2" classname="apoc.bitwise.BitwiseOperationsTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
