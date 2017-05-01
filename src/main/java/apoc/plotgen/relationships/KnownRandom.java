@@ -49,7 +49,7 @@ public class KnownRandom {
                     Object obj = row.get(key);
                     if(obj instanceof Node){
                         node = (Node) obj;
-                        StringRelationships stringRelationships = new StringRelationships(node.getProperty("uuid").toString(),(int) Dice.roll("1D6"));
+                        StringRelationships stringRelationships = new StringRelationships(node.getProperty("uuid").toString(),(int) Dice.roll("1D4"));
                         npcList.add(stringRelationships);
 
                     }

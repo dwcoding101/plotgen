@@ -9,6 +9,7 @@ gradle.properties
 *~
 \#*
 target
+build/*
 out
 .project
 .classpath
@@ -27,9 +28,7 @@ out
 .shell_history
 .mailmap
 .java-version
-.cache-main
-.cache-tests
+
 Thumbs.db
-.cache-main
-.cache-tests
+
 bin
